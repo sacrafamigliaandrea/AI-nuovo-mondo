@@ -15,150 +15,117 @@
     --grigio:#6b7686;
     --ok:#1f9d55;
     --ko:#d64545;
-    --ombra:0 6px 22px rgba(20,40,80,.10);
   }
   *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;}
+  html,body{margin:0;padding:0;height:100%;}
   body{
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);
-    color:var(--testo);
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
+    background:var(--bg);color:var(--testo);
+    min-height:100vh;display:flex;flex-direction:column;
   }
 
   /* ---------- Header ---------- */
   header{
     background:linear-gradient(120deg,var(--blu) 0%,var(--blu-chiaro) 100%);
-    color:#fff;
-    padding:14px 22px;
-    display:flex;
-    align-items:center;
-    gap:16px;
-    box-shadow:0 2px 14px rgba(0,0,0,.18);
-    z-index:5;
+    color:#fff;padding:12px 22px;display:flex;align-items:center;gap:16px;
+    box-shadow:0 2px 14px rgba(0,0,0,.18);z-index:5;flex:0 0 auto;
   }
   header img.logo{
-    width:58px;height:58px;border-radius:12px;
-    background:#fff;padding:4px;object-fit:contain;
-    box-shadow:0 2px 8px rgba(0,0,0,.25);
-    flex:0 0 auto;
+    width:54px;height:54px;border-radius:12px;background:#fff;padding:4px;
+    object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.25);flex:0 0 auto;
   }
   .titoli{display:flex;flex-direction:column;line-height:1.25;}
-  .titoli .scuola{font-weight:700;font-size:1.15rem;letter-spacing:.2px;}
-  .titoli .sub{font-size:.78rem;opacity:.88;}
-  .titoli .prog{
-    margin-top:2px;font-size:.92rem;font-weight:600;color:var(--oro);
-  }
+  .titoli .scuola{font-weight:700;font-size:1.12rem;letter-spacing:.2px;}
+  .titoli .sub{font-size:.76rem;opacity:.88;}
+  .titoli .prog{margin-top:2px;font-size:.9rem;font-weight:600;color:var(--oro);}
   .header-spacer{flex:1;}
   .badge-progresso{
-    background:rgba(255,255,255,.14);
-    border:1px solid rgba(255,255,255,.25);
-    padding:7px 14px;border-radius:30px;
-    font-size:.82rem;white-space:nowrap;
+    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:7px 14px;border-radius:30px;font-size:.82rem;white-space:nowrap;
   }
   .badge-progresso b{color:var(--oro);}
 
   /* ---------- Layout principale ---------- */
   main{
-    flex:1;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:0;
-    min-height:0;
+    flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0;
   }
   .pannello{display:flex;flex-direction:column;min-height:0;min-width:0;}
   .pannello-video{background:#0d1320;}
   .pannello-testo{background:var(--carta);border-left:4px solid var(--oro);}
 
   .intestazione-pannello{
-    padding:10px 18px;font-size:.8rem;font-weight:700;text-transform:uppercase;
-    letter-spacing:1px;color:var(--grigio);
-    border-bottom:1px solid #e3e7ee;background:#f6f8fb;
-    display:flex;align-items:center;gap:8px;flex:0 0 auto;
+    padding:10px 18px;font-size:.78rem;font-weight:700;text-transform:uppercase;
+    letter-spacing:1px;color:var(--grigio);border-bottom:1px solid #e3e7ee;
+    background:#f6f8fb;display:flex;align-items:center;gap:8px;flex:0 0 auto;
   }
   .pannello-video .intestazione-pannello{
     background:#121a2b;color:#9fb0cf;border-bottom:1px solid #1f2c44;
   }
 
-  /* video */
+  /* video — allineato in ALTO */
   .video-wrap{
-    flex:1;display:flex;align-items:center;justify-content:center;
+    flex:1;display:flex;align-items:flex-start;justify-content:center;
     padding:18px;min-height:0;
   }
   video{
-    width:100%;max-height:100%;border-radius:10px;
-    background:#000;box-shadow:0 8px 30px rgba(0,0,0,.5);
+    width:100%;max-height:100%;border-radius:10px;background:#000;
+    box-shadow:0 8px 30px rgba(0,0,0,.5);
   }
-  .nota-video{
-    color:#8a97b0;font-size:.78rem;padding:0 18px 14px;text-align:center;
-  }
-  .nota-video a{color:var(--oro);}
 
-  /* trascrizione */
-  .trascrizione{
-    flex:1;overflow-y:auto;padding:6px 0 40px;min-height:0;
-    scroll-behavior:smooth;
+  /* ---------- Pannello testo: solo paragrafo corrente + domanda ---------- */
+  .contenuto-testo{
+    flex:1;overflow-y:auto;padding:26px 34px 40px;
+    display:flex;flex-direction:column;min-height:0;
   }
-  .seg{
-    padding:11px 22px;border-left:4px solid transparent;
-    color:#3a4453;font-size:.97rem;line-height:1.62;
-    transition:background .25s,border-color .25s;
-    cursor:pointer;
+  .argomento{
+    font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;
+    color:var(--blu-chiaro);margin-bottom:6px;display:flex;align-items:center;gap:8px;
   }
-  .seg:hover{background:#f3f6fb;}
-  .seg .t{
-    display:inline-block;font-variant-numeric:tabular-nums;
-    font-size:.72rem;color:var(--grigio);background:#eef1f6;
-    border-radius:5px;padding:1px 7px;margin-right:8px;vertical-align:1px;
+  .argomento .tc{
+    background:#eef1f6;color:var(--grigio);border-radius:5px;padding:1px 8px;
+    font-size:.72rem;font-variant-numeric:tabular-nums;letter-spacing:0;
   }
-  .seg.attivo{
-    background:#fbf6e9;border-left-color:var(--oro);
-    color:var(--testo);font-weight:500;
+  .paragrafo{
+    font-size:1.32rem;line-height:1.72;color:var(--testo);font-weight:400;
   }
-  .seg.attivo .t{background:var(--oro);color:#fff;}
-  .seg.quiz-tag::after{
-    content:"❓ domanda dopo questo brano";
-    display:block;margin-top:6px;font-size:.72rem;color:var(--blu-chiaro);
-    font-weight:600;font-style:italic;
-  }
-  .seg.passato{color:#9aa4b2;}
+  .paragrafo.cambio{animation:fadeIn .45s ease;}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  .attesa{color:var(--grigio);font-style:italic;font-size:1.1rem;}
 
-  /* ---------- Modale domanda ---------- */
-  .overlay{
-    position:fixed;inset:0;background:rgba(13,19,32,.72);
-    backdrop-filter:blur(4px);
-    display:none;align-items:center;justify-content:center;
-    z-index:50;padding:20px;
+  /* barra avanzamento argomenti */
+  .barra-argomenti{
+    margin-top:18px;display:flex;gap:5px;flex-wrap:wrap;flex:0 0 auto;
   }
-  .overlay.aperta{display:flex;}
-  .quiz{
-    background:var(--carta);border-radius:18px;max-width:620px;width:100%;
-    box-shadow:0 20px 60px rgba(0,0,0,.4);overflow:hidden;
-    animation:su .28s ease;
+  .barra-argomenti .pallino{
+    width:11px;height:11px;border-radius:50%;background:#dce2ec;transition:background .3s;
   }
-  @keyframes su{from{transform:translateY(20px);opacity:0;}to{transform:translateY(0);opacity:1;}}
-  .quiz-top{
-    background:linear-gradient(120deg,var(--blu),var(--blu-chiaro));
-    color:#fff;padding:16px 26px;display:flex;align-items:center;gap:12px;
+  .barra-argomenti .pallino.fatto{background:var(--ok);}
+  .barra-argomenti .pallino.corrente{background:var(--oro);box-shadow:0 0 0 3px rgba(200,162,74,.25);}
+
+  /* ---------- Box domanda (INLINE, sotto il testo) ---------- */
+  .box-domanda{
+    margin-top:26px;border:2px solid var(--oro);border-radius:16px;
+    background:#fbf6e9;padding:0;overflow:hidden;display:none;flex:0 0 auto;
   }
-  .quiz-top .ico{font-size:1.5rem;}
-  .quiz-top .et{font-size:.74rem;text-transform:uppercase;letter-spacing:1.5px;opacity:.85;}
-  .quiz-top .num{font-size:1.05rem;font-weight:700;}
-  .quiz-body{padding:24px 26px 8px;}
-  .quiz-dom{font-size:1.18rem;font-weight:600;line-height:1.45;margin:0 0 18px;}
-  .opzioni{display:flex;flex-direction:column;gap:11px;}
+  .box-domanda.attiva{display:block;animation:fadeIn .4s ease;}
+  .domanda-top{
+    background:linear-gradient(120deg,var(--blu),var(--blu-chiaro));color:#fff;
+    padding:12px 20px;display:flex;align-items:center;gap:10px;
+  }
+  .domanda-top .ico{font-size:1.3rem;}
+  .domanda-top .et{font-size:.7rem;text-transform:uppercase;letter-spacing:1.4px;opacity:.85;}
+  .domanda-top .num{font-size:1rem;font-weight:700;}
+  .domanda-body{padding:18px 20px 8px;}
+  .domanda-dom{font-size:1.12rem;font-weight:600;line-height:1.45;margin:0 0 16px;color:var(--testo);}
+  .opzioni{display:flex;flex-direction:column;gap:10px;}
   .opz{
-    text-align:left;border:2px solid #dce2ec;background:#fff;
-    border-radius:12px;padding:13px 16px;font-size:1rem;cursor:pointer;
-    transition:all .15s;display:flex;align-items:center;gap:12px;color:var(--testo);
-    font-family:inherit;
+    text-align:left;border:2px solid #dce2ec;background:#fff;border-radius:12px;
+    padding:12px 15px;font-size:.98rem;cursor:pointer;transition:all .15s;
+    display:flex;align-items:center;gap:12px;color:var(--testo);font-family:inherit;
   }
   .opz .lettera{
-    flex:0 0 auto;width:28px;height:28px;border-radius:50%;
-    background:#eef1f6;color:var(--blu);font-weight:700;
-    display:flex;align-items:center;justify-content:center;font-size:.9rem;
+    flex:0 0 auto;width:27px;height:27px;border-radius:50%;background:#eef1f6;
+    color:var(--blu);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.88rem;
   }
   .opz:hover:not(:disabled){border-color:var(--blu-chiaro);background:#f5f8ff;}
   .opz.giusta{border-color:var(--ok);background:#eafaf0;}
@@ -167,28 +134,25 @@
   .opz.sbagliata .lettera{background:var(--ko);color:#fff;}
   .opz:disabled{cursor:default;}
   .feedback{
-    margin:16px 0 4px;padding:13px 16px;border-radius:12px;font-size:.95rem;
+    margin:14px 0 4px;padding:12px 15px;border-radius:12px;font-size:.93rem;
     line-height:1.5;display:none;
   }
   .feedback.mostra{display:block;}
   .feedback.ok{background:#eafaf0;color:#136c3a;border:1px solid #bce6cd;}
   .feedback.ko{background:#fdeeee;color:#9c2b2b;border:1px solid #f1c4c4;}
-  .quiz-foot{
-    padding:6px 26px 22px;display:flex;justify-content:flex-end;
+  .domanda-foot{padding:4px 20px 18px;display:flex;justify-content:flex-end;}
+  .btn-continua{
+    background:var(--ok);color:#fff;border:none;border-radius:30px;padding:11px 26px;
+    font-size:1rem;font-weight:600;cursor:pointer;display:none;align-items:center;gap:8px;
+    font-family:inherit;box-shadow:0 4px 14px rgba(31,157,85,.35);transition:transform .12s;
   }
-  .btn-riprendi{
-    background:var(--ok);color:#fff;border:none;border-radius:30px;
-    padding:12px 26px;font-size:1rem;font-weight:600;cursor:pointer;
-    display:none;align-items:center;gap:8px;font-family:inherit;
-    box-shadow:0 4px 14px rgba(31,157,85,.35);transition:transform .12s;
-  }
-  .btn-riprendi:hover{transform:translateY(-1px);}
-  .btn-riprendi.mostra{display:inline-flex;}
+  .btn-continua:hover{transform:translateY(-1px);}
+  .btn-continua.mostra{display:inline-flex;}
 
   /* ---------- Footer ---------- */
   footer{
-    background:var(--blu);color:#cdd7ea;font-size:.8rem;
-    padding:12px 22px;text-align:center;line-height:1.6;
+    background:var(--blu);color:#cdd7ea;font-size:.78rem;padding:10px 22px;
+    text-align:center;line-height:1.6;flex:0 0 auto;
   }
   footer b{color:#fff;}
   footer .oro{color:var(--oro);}
@@ -200,20 +164,20 @@
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;color:#fff;padding:30px;
   }
-  .start img{width:120px;height:120px;border-radius:24px;background:#fff;padding:8px;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45);}
-  .start h1{font-size:1.9rem;margin:22px 0 6px;}
-  .start h2{font-size:1.05rem;font-weight:500;color:var(--oro);margin:0 0 18px;}
-  .start p{max-width:560px;color:#c7d2e6;line-height:1.6;font-size:.98rem;margin:0 0 26px;}
+  .start img{width:110px;height:110px;border-radius:24px;background:#fff;padding:8px;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45);}
+  .start h1{font-size:1.8rem;margin:20px 0 6px;}
+  .start h2{font-size:1.02rem;font-weight:500;color:var(--oro);margin:0 0 18px;}
+  .start p{max-width:560px;color:#c7d2e6;line-height:1.6;font-size:.96rem;margin:0 0 24px;}
   .start .come{
     background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
     border-radius:14px;padding:16px 22px;max-width:540px;text-align:left;
-    color:#dde6f4;font-size:.9rem;line-height:1.7;margin-bottom:28px;
+    color:#dde6f4;font-size:.9rem;line-height:1.7;margin-bottom:26px;
   }
   .start .come b{color:var(--oro);}
   .btn-start{
-    background:var(--oro);color:#23303f;border:none;border-radius:34px;
-    padding:15px 40px;font-size:1.1rem;font-weight:700;cursor:pointer;
-    box-shadow:0 8px 26px rgba(200,162,74,.4);font-family:inherit;transition:transform .12s;
+    background:var(--oro);color:#23303f;border:none;border-radius:34px;padding:15px 40px;
+    font-size:1.1rem;font-weight:700;cursor:pointer;box-shadow:0 8px 26px rgba(200,162,74,.4);
+    font-family:inherit;transition:transform .12s;
   }
   .btn-start:hover{transform:translateY(-2px);}
 
@@ -225,8 +189,9 @@
     text-align:center;color:#fff;padding:30px;
   }
   .fine.mostra{display:flex;}
+  .fine img{width:88px;height:88px;border-radius:20px;background:#fff;padding:6px;object-fit:contain;}
   .fine .punteggio{font-size:3rem;font-weight:800;color:var(--oro);margin:10px 0;}
-  .fine h1{font-size:1.7rem;margin:0 0 8px;}
+  .fine h1{font-size:1.6rem;margin:14px 0 8px;}
   .fine p{color:#c7d2e6;max-width:520px;line-height:1.6;}
   .fine button{
     margin-top:24px;background:transparent;border:2px solid var(--oro);color:var(--oro);
@@ -234,9 +199,10 @@
   }
 
   @media (max-width:880px){
-    main{grid-template-columns:1fr;grid-template-rows:auto 1fr;}
+    main{grid-template-columns:1fr;grid-template-rows:minmax(200px,42vh) 1fr;}
     .pannello-testo{border-left:none;border-top:4px solid var(--oro);}
     .titoli .sub{display:none;}
+    .paragrafo{font-size:1.12rem;}
   }
 </style>
 </head>
@@ -247,11 +213,11 @@
     <img src="logo.jpg" alt="Logo Scuola Sacra Famiglia">
     <h1>Intelligenze · AI Nuovo Mondo</h1>
     <h2>Puntata 10 — Una sintesi del viaggio nell'intelligenza artificiale</h2>
-    <p>Guarda il video e segui il testo che scorre a fianco. Durante la visione il video si fermerà alcune volte per proporti una domanda di comprensione.</p>
+    <p>Guarda il video: a destra comparirà, sincronizzato, solo il passaggio che stai ascoltando. Alla fine di ogni argomento il video si ferma e ti viene proposta una domanda di comprensione.</p>
     <div class="come">
       <b>Come funziona:</b><br>
-      • A sinistra il video, a destra il testo sincronizzato.<br>
-      • Ogni tanto il video si <b>blocca</b> e compare una domanda.<br>
+      • A sinistra il <b>video</b>, a destra il <b>testo sincronizzato</b> (un passaggio per volta).<br>
+      • Quando un argomento finisce, il video si <b>blocca</b> e sotto al testo appare una domanda.<br>
       • Rispondi correttamente per <b>far ripartire</b> il video.<br>
       • Alla fine vedrai il tuo punteggio di comprensione.
     </div>
@@ -283,41 +249,44 @@
     </section>
 
     <section class="pannello pannello-testo">
-      <div class="intestazione-pannello">📖 Testo del video — segui e lavora</div>
-      <div class="trascrizione" id="trascrizione"></div>
+      <div class="intestazione-pannello">📖 Testo del video — passaggio in ascolto</div>
+      <div class="contenuto-testo" id="contenutoTesto">
+        <div class="argomento" id="argomentoLabel"></div>
+        <div class="paragrafo attesa" id="paragrafo">▶ Premi «Inizia la lezione» per cominciare.</div>
+
+        <!-- BOX DOMANDA INLINE -->
+        <div class="box-domanda" id="boxDomanda">
+          <div class="domanda-top">
+            <span class="ico">❓</span>
+            <div>
+              <div class="et">Domanda di comprensione</div>
+              <div class="num" id="domandaNum">Domanda 1</div>
+            </div>
+          </div>
+          <div class="domanda-body">
+            <p class="domanda-dom" id="domandaDom"></p>
+            <div class="opzioni" id="domandaOpzioni"></div>
+            <div class="feedback" id="domandaFeedback"></div>
+          </div>
+          <div class="domanda-foot">
+            <button class="btn-continua" id="btnContinua">▶ Riprendi il video</button>
+          </div>
+        </div>
+
+        <div class="barra-argomenti" id="barraArgomenti"></div>
+      </div>
     </section>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <b>Scuola Sacra Famiglia</b> — Scuola Paritaria · Orzinuovi (BS) · <span class="oro">sacrafamiglia.edu.it</span><br>
+    <b>Scuola Sacra Famiglia</b> — Scuola Paritaria · Orzinuovi (BS) · <span class="oro">sacrafamiglia.edu.it</span> &nbsp;·&nbsp;
     Progetto e sviluppo: <b>Andrea Cerioli</b>, Animatore Digitale
   </footer>
 
-  <!-- MODALE DOMANDA -->
-  <div class="overlay" id="overlay">
-    <div class="quiz">
-      <div class="quiz-top">
-        <span class="ico">❓</span>
-        <div>
-          <div class="et">Domanda di comprensione</div>
-          <div class="num" id="quizNum">Domanda 1</div>
-        </div>
-      </div>
-      <div class="quiz-body">
-        <p class="quiz-dom" id="quizDom"></p>
-        <div class="opzioni" id="quizOpzioni"></div>
-        <div class="feedback" id="quizFeedback"></div>
-      </div>
-      <div class="quiz-foot">
-        <button class="btn-riprendi" id="btnRiprendi">▶ Riprendi il video</button>
-      </div>
-    </div>
-  </div>
-
   <!-- SCHERMO FINALE -->
   <div class="fine" id="schermoFine">
-    <img src="logo.jpg" alt="Logo" style="width:90px;height:90px;border-radius:20px;background:#fff;padding:6px;object-fit:contain;">
+    <img src="logo.jpg" alt="Logo">
     <h1>Lezione completata!</h1>
     <div class="punteggio" id="punteggioFinale">0 / 0</div>
     <p id="messaggioFinale"></p>
@@ -325,279 +294,282 @@
   </div>
 
 <script>
-/* ============ DATI: TRASCRIZIONE ============ */
+/* ============ TRASCRIZIONE (n, t=secondi inizio, txt) ============ */
 const SEGMENTI = [
   {n:1,t:48,txt:"Siamo a stazione Termini a Roma, al Tecnopolo, e questo è Intelligenze, un programma che cerca di parlare di intelligenze artificiali per parlare dell'umano."},
   {n:2,t:59,txt:"Anche in questa puntata avremo dei contenuti prodotti con l'intelligenza artificiale che saranno riconoscibili grazie a questo bollino."},
   {n:3,t:89,txt:"Nel corso di questo nostro viaggio ci siamo accorti che quando diciamo intelligenza artificiale in realtà indichiamo un mondo plurale, un mondo di intelligenze, appunto, come il titolo di queste nostre indagini. E le abbiamo viste all'interno di quella loro capacità di trasformare le attività della nostra vita e di cambiare anche quello che in parte è la nostra comprensione di esseri umani."},
   {n:4,t:113,txt:"Ma se questo è stato un viaggio che potremmo definire analitico, ora che ci accingiamo a chiudere questo percorso è arrivato il momento di tracciare una sintesi e provare a descrivere un quadro completo."},
   {n:5,t:140,txt:"Ripercorriamo il nostro viaggio insieme ad alcuni dei nostri ospiti. Il primo passo è stato capire come funziona l'intelligenza artificiale e perché, quando è nata e come è arrivata sin qui."},
-  {n:6,t:160,txt:"Professore Odifreddi, ben trovato, grazie per essere con noi a Intelligenze. Buongiorno a voi e grazie dell'invito. Quello a cui stiamo assistendo oggi con le intelligenze artificiali generative e i cosiddetti grandi modelli linguistici, è un'inedita manifestazione di linguaggio o è qualcosa che c'era già in passato o che abbiamo visto accadere anche altre volte?"},
-  {n:7,t:182,txt:"Sono cose che risalgono addirittura ad alcuni decenni fa, anzi addirittura quasi un secolo perché in fondo la ChatGPT e tutte le sue varianti si basano tutte su quello che si chiamano le reti neurali. E la prima rete neurale addirittura è stata inventata nel 1943. Ci si misero in due insieme: un neurofisiologo che si chiamava McCulloch e un matematico molto più giovane che si chiamava Pitts, e misero insieme la neurofisiologia e la modellizzazione matematica. Le reti che loro fecero erano cose estremamente banali. Poi negli ultimi decenni si è capito che se uno aumenta il numero dei neuroni e li fa diventare miliardi o centinaia di miliardi, le cose cambiano completamente. In più le reti neurali oggi hanno quello che si chiama il ritorno, il meccanismo di propagazione inversa, e questo fa sì che siano in teoria addirittura più potenti di quello che siamo noi."},
-  {n:8,t:317,txt:"Professor Roncaglia, filosofo, insegna all'Università di Roma Tre, filosofia dell'informazione e rinomato saggista. Ecco, che cos'è che ci ha portato a questa ultima generazione di intelligenza artificiale, cosa c'è di così differente rispetto alle generazioni precedenti?"},
+  {n:6,t:160,txt:"Professore Odifreddi, ben trovato, grazie per essere con noi a Intelligenze. Buongiorno a voi e grazie dell'invito. Quello a cui stiamo assistendo oggi con le intelligenze artificiali generative e i cosiddetti grandi modelli linguistici, è un'inedita manifestazione di linguaggio o è qualcosa che c'era già in passato?"},
+  {n:7,t:182,txt:"Sono cose che risalgono ad alcuni decenni fa, anzi quasi un secolo, perché in fondo ChatGPT e tutte le sue varianti si basano su quelle che si chiamano le reti neurali. E la prima rete neurale è stata inventata nel 1943. Ci si misero in due: un neurofisiologo che si chiamava McCulloch e un matematico molto più giovane che si chiamava Pitts, e misero insieme la neurofisiologia e la modellizzazione matematica. Poi negli ultimi decenni si è capito che se uno aumenta il numero dei neuroni e li fa diventare miliardi o centinaia di miliardi, le cose cambiano completamente. In più le reti neurali oggi hanno il meccanismo di propagazione inversa, e questo fa sì che siano in teoria addirittura più potenti di noi."},
+  {n:8,t:317,txt:"Professor Roncaglia, filosofo, insegna all'Università di Roma Tre filosofia dell'informazione ed è un rinomato saggista. Che cos'è che ci ha portato a questa ultima generazione di intelligenza artificiale, cosa c'è di così differente rispetto alle generazioni precedenti?"},
   {n:9,t:335,txt:"Pensiamo ai sistemi che producono linguaggio. Questi sistemi sono addestrati con tantissimi testi. Il sistema li spezzetta in paroline, in quelle che tecnicamente si chiamano token. Ognuno di questi token viene fatto corrispondere a una nuvola di numeri, che sono rappresentazioni numeriche di come il token è usato nel corpus di addestramento. E poi il sistema prevede parole, guarda il nostro prompt e prevede parole una dopo l'altra."},
   {n:10,t:362,txt:"Un prompt è un testo dato ad un'intelligenza artificiale per ottenere una risposta. Questo testo guida il computer nella creazione di risposte testuali, video, audio o immagini, secondo le richieste dell'utente."},
-  {n:11,t:376,txt:"Dedicando non la stessa attenzione a ogni parola, ma scegliendo in maniera intelligente a quali token dedicare più attenzione, il sistema usa tutto il suo corpus di addestramento per creare modelli numerici. Poi questo corpus non se lo porta dietro. Quindi quando questi sistemi producono contenuti, non vanno a copiarli dal corpus di addestramento, come a volte si crede: li producono effettivamente in maniera statistico-probabilistica sulla base dei loro modelli. Quindi questo aspetto di originalità nella produzione dei contenuti c'è, sia coi contenuti testuali sia con quelli visivi."},
+  {n:11,t:376,txt:"Il sistema usa tutto il suo corpus di addestramento per creare modelli numerici. Poi questo corpus non se lo porta dietro. Quindi quando questi sistemi producono contenuti, non vanno a copiarli dal corpus di addestramento, come a volte si crede: li producono effettivamente in maniera statistico-probabilistica sulla base dei loro modelli. Quindi questo aspetto di originalità nella produzione dei contenuti c'è, sia coi contenuti testuali sia con quelli visivi."},
   {n:12,t:423,txt:"Ma a lei che cos'è che l'ha stupita o l'ha impressionata con l'avvento di questa nuova generazione di intelligenze artificiali?"},
-  {n:13,t:430,txt:"Direi che una cosa che stupisce è che funzioni così bene. Che si possano produrre sequenze di parole in maniera ragionevolmente coerente. Che questa produzione di paroline una dopo l'altra riesca a formare frasi e testi che nel loro complesso hanno una forte forza semantica, cioè fanno senso. C'è qualcosa di emergente in questi sistemi nella capacità di produrre un ragionamento complesso attraverso delle microazioni che a noi non sembrerebbero capaci di produrre questo tipo di complessità. Su queste architetture non c'erano inizialmente aspettative così alte e questo è effettivamente sorprendente."},
+  {n:13,t:430,txt:"Direi che una cosa che stupisce è che funzioni così bene. Che la produzione di paroline una dopo l'altra riesca a formare frasi e testi che nel loro complesso hanno una forte forza semantica, cioè fanno senso. C'è qualcosa di emergente in questi sistemi nella capacità di produrre un ragionamento complesso attraverso delle microazioni che a noi non sembrerebbero capaci di produrre questo tipo di complessità. Su queste architetture non c'erano inizialmente aspettative così alte e questo è effettivamente sorprendente."},
   {n:14,t:504,txt:"Un possibile rischio è che l'IA si affidi sempre più a testi generati dall'IA stessa e quindi divenga sempre meno creativa e affidabile. Ma prevedere oggi dove arriverà l'IA è impossibile, a causa della natura stessa del suo funzionamento. È come crescere un figlio: possiamo educarlo ma non possiamo prevedere come si comporterà da grande."},
-  {n:15,t:532,txt:"Dottor Giovanni Severini, Principal Group Program Manager di Microsoft, con sede a Seattle. Grazie per essere con noi. Dalla sua prospettiva, quali sono i problemi che ancora non abbiamo risolto di questa tecnologia oggi?"},
-  {n:16,t:550,txt:"Siamo ancora nelle fasi iniziali dell'intelligenza artificiale. È un neonato che non ha neanche iniziato a gattonare ancora. Vedo tre fasi nel futuro dell'IA. La prima è quella che stiamo vivendo adesso, in cui l'IA è fatta da semplici chatbot con cui interagiamo scrivendo i prompt e che ci aiutano a scrivere documenti ed email. La successiva, in cui stiamo per entrare, è quella in cui io utente o io azienda posso creare un agente personalizzato che lavora per me, esegue compiti e prende decisioni."},
+  {n:15,t:532,txt:"Dottor Giovanni Severini, Principal Group Program Manager di Microsoft, con sede a Seattle. Dalla sua prospettiva, quali sono i problemi che ancora non abbiamo risolto di questa tecnologia oggi?"},
+  {n:16,t:550,txt:"Siamo ancora nelle fasi iniziali dell'intelligenza artificiale. È un neonato che non ha neanche iniziato a gattonare. Vedo tre fasi nel futuro dell'IA. La prima è quella che stiamo vivendo adesso, in cui l'IA è fatta da semplici chatbot con cui interagiamo scrivendo i prompt e che ci aiutano a scrivere documenti ed email. La successiva, in cui stiamo per entrare, è quella in cui io utente o io azienda posso creare un agente personalizzato che lavora per me, esegue compiti e prende decisioni."},
   {n:17,t:606,txt:"La terza fase sarà quella più rivoluzionaria. Ci vorranno due o tre anni per arrivarci. È quella in cui il mio agente interagisce direttamente con altri agenti, creati da altre persone o aziende, e questi agenti collaborano, negoziano e creano soluzioni insieme. In poche parole, stiamo costruendo un'economia, un ecosistema di intelligenze che comunicano e agiscono in rete per conto nostro."},
   {n:18,t:643,txt:"Le vere paure che ho rispetto all'intelligenza artificiale sono due. Una, che aumenterà il digital divide, il divario digitale tra la parte ricca del mondo e la parte che ha meno accesso alle tecnologie, quindi l'Africa e buona parte dell'Asia. C'è il rischio di escludere chi non ha accesso a queste tecnologie."},
   {n:19,t:668,txt:"L'altra cosa ancora da risolvere, una mia paura, è l'impatto ambientale. L'intelligenza artificiale per sua natura consuma tantissima energia e fin quando non saremo in grado di produrre questa energia da fonti rinnovabili, vuol dire che quell'energia la stiamo togliendo ad altri o ad altre attività."},
   {n:20,t:692,txt:"Noi non sappiamo quale sarà il futuro dell'intelligenza artificiale. Però di sicuro avrà bisogno di grandi data center che dovranno elaborare i dati e dare delle risposte."},
   {n:21,t:704,txt:"Avere i data center nel proprio paese diventerà sempre più strategico. Odio fare paragoni militari, ma è come avere la bomba atomica o non averla. Purtroppo sullo scenario internazionale se hai la bomba atomica hai un peso maggiore. Sottolineo, purtroppo."},
-  {n:22,t:735,txt:"Ingegner Federico Faggin, grazie del suo tempo. Un ingegnere che ha fatto la storia, considerato uno dei padri dei microchip, dietro alla miniaturizzazione che ha reso possibili i primi computer, poi i portatili, oggi gli smartphone. Perché funziona l'informazione digitale? È un qualcosa di misterioso o è qualcosa di scientifico?"},
+  {n:22,t:735,txt:"Ingegner Federico Faggin, grazie del suo tempo. Un ingegnere che ha fatto la storia, considerato uno dei padri dei microchip, dietro alla miniaturizzazione che ha reso possibili i primi computer, poi i portatili, oggi gli smartphone. Perché funziona l'informazione digitale? È qualcosa di misterioso o di scientifico?"},
   {n:23,t:771,txt:"Allora il digitale funziona perché il mondo degli oggetti che si muovono nello spazio-tempo si può riprodurre in parte con un computer. In linea di principio può simulare ciò che avviene nello spazio-tempo, con oggetti però che devono essere oggetti macroscopici."},
   {n:24,t:797,txt:"Ma allora l'intelligenza artificiale è una macchina che tende a comportarsi come noi, oppure siamo noi che sempre di più tendiamo a comportarci come macchine? Qual è il ruolo della coscienza in questo?"},
   {n:25,t:816,txt:"Qui già mettiamo il dito sulla piaga di chi crede che la realtà sia la realtà classica, della materia e del riduzionismo, in cui gli oggetti sono separati l'uno dall'altro. In realtà più profonda non c'è separazione tra le parti. La totalità di ciò che esiste è olistico, cioè non è fatto di parti separate. Tutto è interconnesso. Questa è la scoperta più importante fatta dai fisici negli ultimi 100 anni."},
-  {n:26,t:850,txt:"In questa visione abbiamo tre elementi: il corpo, la mente e lo spirito. Sembra quasi una religione, ma non lo è, perché il corpo si può capire come informazione classica, il bit dei computer. La mente invece è caratterizzata da informazione quantistica. L'informazione quantistica ha una proprietà fondamentale: non è clonabile, non si può riprodurre. Le particelle fanno parte del campo, sono come onde del mare che fanno parte del mare, non sono separabili dal mare."},
+  {n:26,t:850,txt:"In questa visione abbiamo tre elementi: il corpo, la mente e lo spirito. Sembra quasi una religione, ma non lo è, perché il corpo si può capire come informazione classica, il bit dei computer. La mente invece è caratterizzata da informazione quantistica, che ha una proprietà fondamentale: non è clonabile, non si può riprodurre. Le particelle fanno parte del campo, sono come onde del mare che fanno parte del mare, non sono separabili dal mare."},
   {n:27,t:897,txt:"Ma allora a cosa serve questo stato quantistico del campo? Nella nuova teoria lo stato quantistico del campo rappresenta i qualia, cioè le sensazioni, i sentimenti che caratterizzano l'esperienza cosciente nostra. L'amore che proviamo, il sapore del cibo, la musica. Il significato dell'esperienza allora è il significato dell'informazione quantistica che rappresenta la mente."},
   {n:28,t:929,txt:"Abbiamo adesso un quadro che ci permette di capire chi siamo noi. Noi siamo un campo quantistico che esperisce un mondo fisico. Abbiamo tutti e tre questi aspetti che sono collegati insieme, non sono separabili."},
   {n:29,t:954,txt:"Alex Braga, artista, attivista dell'intelligenza artificiale. Spesso pensiamo che queste macchine possano avere una forza omologante. Ma questo accade con un'IA generica o c'è bisogno di un lavoro di affinamento su di noi e sulla macchina perché questa alchimia possa funzionare?"},
   {n:30,t:977,txt:"La sintesi brutale del marketing commerciale dell'IA in questo momento è: hai un assistente che fa le cose al posto tuo, e poi vai a sapere se un giorno le farà di sua sponte e quindi tu non servirai più. Oppure l'essere umano continuerà a essere centrale. Il tema sono proprio i modelli di addestramento e l'intenzionalità con cui viene scritto un algoritmo."},
   {n:31,t:1006,txt:"Ed è qui, in questa sottile piega filosofica e metafisica, che si trova la grande discriminante tra quello che succede in questo tipo di modelli e quello che succede nei Large Language Model."},
   {n:32,t:1019,txt:"Un Large Language Model (LLM) è un tipo di intelligenza artificiale che può comprendere e generare testi simili a quelli scritti dagli esseri umani, aiutando in molte attività come rispondere a domande e comprendere testi complessi."},
-  {n:33,t:1036,txt:"Ovvero modelli che sono stati addestrati con tutta la cultura dell'umanità e quindi con tutto il pregiudizio possibile, e che finiscono per dare, come collo di bottiglia statistico, un risultato che è totalmente omologante. Perché che tu metta un prompt o che lo metta io, se richiedo un'immagine in un certo modo, quell'IA per forza di cose ragiona secondo il pregiudizio. E siccome noi, in quanto esseri umani di coscienza, ci battiamo per la libertà, la libertà vuol dire crescere liberi dal pregiudizio."},
-  {n:34,t:1076,txt:"Quindi la grande linea di demarcazione tra i Large Language Model e delle piccole intelligenze artificiali che funzionano senza i dataset è in realtà un mare, un oceano dentro al quale nuota l'indecisione dell'essere umano, dentro al quale nuota adesso la paura dell'essere umano di essere sostituito da un imbuto universale che ci renderà tutti omologati."},
-  {n:35,t:1105,txt:"Sì certo, è vero. Il grande pericolo dei Large Language Model è quello, perché è quella la china sulla quale l'umanità sta camminando. Perché noi stiamo utilizzando tutte queste risorse non per vivere meglio — ed è questo il paradosso dell'idiozia umana — ma per profilare meglio e avere ancora più dati da dare in pasto alle macchine per creare i dataset."},
+  {n:33,t:1036,txt:"Sono modelli addestrati con tutta la cultura dell'umanità e quindi con tutto il pregiudizio possibile, e che finiscono per dare, come collo di bottiglia statistico, un risultato totalmente omologante. Perché che tu metta un prompt o che lo metta io, se richiedo un'immagine in un certo modo, quell'IA per forza di cose ragiona secondo il pregiudizio. E siccome noi, in quanto esseri umani di coscienza, ci battiamo per la libertà, la libertà vuol dire crescere liberi dal pregiudizio."},
+  {n:34,t:1076,txt:"Quindi la grande linea di demarcazione tra i Large Language Model e delle piccole intelligenze artificiali che funzionano senza i dataset è in realtà un oceano dentro al quale nuota l'indecisione dell'essere umano, e adesso la paura dell'essere umano di essere sostituito da un imbuto universale che ci renderà tutti omologati."},
+  {n:35,t:1105,txt:"Il grande pericolo dei Large Language Model è quello, perché è quella la china sulla quale l'umanità sta camminando. Perché noi stiamo utilizzando tutte queste risorse non per vivere meglio — ed è questo il paradosso dell'idiozia umana — ma per profilare meglio e avere ancora più dati da dare in pasto alle macchine per creare i dataset."},
   {n:36,t:1134,txt:"Quindi il grande tema in questo momento è: ma tutti questi dati alla fine a cosa servono e dove ci portano? Purtroppo la risposta è: ci portano ad essere profilati in maniera sempre più profonda e ad essere dei consumatori sempre più inebetiti e sempre più disposti a spendere per quello che il mercato ci propone."},
-  {n:37,t:1160,txt:"La questione del fatto che i Large Language Model siano eticamente insostenibili è che si sono nutriti di tutti i dati prodotti dalla cultura umana senza remunerare nessuno e senza citare le fonti, mettendo a repentaglio l'idea stessa della possibilità di tramandare questa cultura, perché distruggendo le bibliografie e le fonti altro non si fa che distruggere la cultura umana. Questi sono dati oggettivi. Non sono contestabili."},
-  {n:38,t:1204,txt:"Guido Scorza, componente dell'Autorità Garante della Privacy italiana, avvocato, attivista per la difesa dei diritti personali nel digitale. Se uno prova a dialogare con ChatGPT e chiede qualcosa su Guido Scorza, il sistema si blocca. Perché?"},
+  {n:37,t:1160,txt:"I Large Language Model sono eticamente insostenibili perché si sono nutriti di tutti i dati prodotti dalla cultura umana senza remunerare nessuno e senza citare le fonti, mettendo a repentaglio l'idea stessa della possibilità di tramandare questa cultura: distruggendo le bibliografie e le fonti, altro non si fa che distruggere la cultura umana. Questi sono dati oggettivi, non contestabili."},
+  {n:38,t:1204,txt:"Guido Scorza, componente dell'Autorità Garante della Privacy italiana, avvocato e attivista per la difesa dei diritti personali nel digitale. Se uno prova a dialogare con ChatGPT e chiede qualcosa su Guido Scorza, il sistema si blocca. Perché?"},
   {n:39,t:1224,txt:"Ho chiesto semplicemente a OpenAI di tirar via il mio nome e il mio cognome da questo straordinario esperimento collettivo, esercitando quello che noi chiamiamo il diritto di opposizione. OpenAI ha inserito una sorta di filtro in opt-out. Sa chi sono, il mio nome dentro a quel sistema c'è, ma se qualcuno interroga il sistema con il mio nome e cognome, il sistema non può pronunciarlo."},
   {n:40,t:1263,txt:"Ma questo è interessantissimo, pensiamo a chi magari non vuole che il sistema dica cose su di lui. È stato difficile da fare o è qualcosa che può fare qualsiasi cittadino?"},
   {n:41,t:1272,txt:"All'epoca era più difficile, oggi può farlo chiunque. A seguito dell'intervento del Garante nei confronti di ChatGPT, uno degli ordini ha riguardato proprio il riconoscimento alle persone di questo diritto previsto nella disciplina europea. Quindi chiunque può chiedere a OpenAI di far sì che ChatGPT non pronunci più il suo nome."},
-  {n:42,t:1300,txt:"E vediamo quindi come ognuno di noi può bloccare il proprio nome su ChatGPT. Basterà esercitare nei confronti di OpenAI il diritto di opposizione, quello che la vigente disciplina europea riconosce a tutti gli interessati per ottenere che un trattamento iniziato senza il loro consenso venga interrotto. Chiunque viva in Europa può fare richiesta tramite il modulo sul sito privacy.openai.com cliccando su Make a Privacy Request."},
+  {n:42,t:1300,txt:"Ognuno di noi può bloccare il proprio nome su ChatGPT esercitando nei confronti di OpenAI il diritto di opposizione, quello che la vigente disciplina europea riconosce a tutti gli interessati per ottenere che un trattamento iniziato senza il loro consenso venga interrotto. Chiunque viva in Europa può fare richiesta tramite il modulo sul sito privacy.openai.com cliccando su «Make a Privacy Request»."},
   {n:43,t:1344,txt:"La legge, la giurisprudenza, il diritto, sono cose antiche perché l'uomo è antico, ma sono anche a volte lente. Qualcuno parla di una corsa del gatto col topo, qualcuno di una battaglia già persa, qualcuno invece di un dovere necessario da parte di tutti. Cosa sta succedendo?"},
-  {n:44,t:1364,txt:"Io sono per il dovere necessario da parte di tutti. Non possiamo fare un passo indietro con la regolamentazione, perché altrimenti la tecnologia diventerebbe regolamentazione e la tecnocrazia prenderebbe il posto della democrazia. Perché 50 milioni di persone si mettessero alla guida di un'automobile ci son voluti 62 anni; perché ChatGPT raggiungesse 100 milioni di utenti ci son voluti 2 mesi. Forse non abbiamo abbastanza tempo per regolamentare l'impatto dell'IA sulla società. Dobbiamo ripensare in maniera radicale il modo in cui scriviamo le leggi."},
+  {n:44,t:1364,txt:"Io sono per il dovere necessario da parte di tutti. Non possiamo fare un passo indietro con la regolamentazione, perché altrimenti la tecnologia diventerebbe regolamentazione e la tecnocrazia prenderebbe il posto della democrazia. Perché 50 milioni di persone si mettessero alla guida di un'automobile ci son voluti 62 anni; perché ChatGPT raggiungesse 100 milioni di utenti ci son voluti 2 mesi. Forse non abbiamo abbastanza tempo per regolamentare l'impatto dell'IA sulla società."},
   {n:45,t:1438,txt:"È con noi Ivana Bartoletti, una delle massime esperte nell'ambito internazionale di privacy e di etica delle tecnologie. Perché questo argomento le interessa?"},
-  {n:46,t:1453,txt:"I dati sono fondamentali al giorno d'oggi, ma proprio perché sono così fondamentali vanno trattati con grande cura. Quando parliamo di privacy nell'epoca dell'IA, dei big data, degli algoritmi, parlare di privacy vuol dire parlare di autonomia decisionale delle persone. Cosa succede al libero arbitrio? Questo si usa anche nell'ambito della polizia, con l'idea di fermare qualcosa prima che avvenga. Sono tutti temi di natura etica che ci dobbiamo porre come società, proprio perché i dati sono estremamente utili e dobbiamo usarli nel modo positivo."},
+  {n:46,t:1453,txt:"I dati sono fondamentali al giorno d'oggi, ma proprio perché sono così fondamentali vanno trattati con grande cura. Quando parliamo di privacy nell'epoca dell'IA, dei big data, degli algoritmi, parlare di privacy vuol dire parlare di autonomia decisionale delle persone. Cosa succede al libero arbitrio? Questo si usa anche nell'ambito della polizia, con l'idea di fermare qualcosa prima che avvenga. Sono tutti temi etici che ci dobbiamo porre come società, proprio perché i dati sono estremamente utili e dobbiamo usarli nel modo positivo."},
   {n:47,t:1513,txt:"Attualmente i grandi modelli linguistici dell'IA appartengono a Stati Uniti e Cina. L'Europa è in ritardo. Recuperare il terreno perduto è possibile ed è un'opportunità unica per compiere scelte etiche in fatto di ricerca e investimenti pubblici."},
-  {n:48,t:1537,txt:"Professor Parisi, fisico e premio Nobel nel 2021. Grazie per essere con noi. C'è una cosa che i fisici hanno fatto che mi colpisce sempre per la bellezza: il CERN, a Ginevra. Uno spazio aperto dove la scienza può lavorare insieme, l'unico posto dove russi e ucraini possono ancora lavorare spalla a spalla. Potrebbe essere il caso di fare una cosa analoga, aperta e continentale, per le intelligenze artificiali?"},
-  {n:49,t:1573,txt:"Sì, sarebbe una cosa assolutamente necessaria fare un grosso centro di ricerca europeo, perché mettere assieme un migliaio di ricercatori che lavorano nello stesso campo permette tutta una serie di scambi. Sul modello del CERN, con accordi e collaborazione con una cinquantina di paesi anche extra-continentali. Rischiamo sennò di rimanere assolutamente indietro. E poi è molto importante che questa ricerca sia fatta in laboratori pubblici, in modo che sia aperta a tutti. Se la lasciamo solo alle industrie private, sappiamo solo quello che loro ci vogliono far sapere."},
-  {n:50,t:1643,txt:"Uno dei primi veri esperimenti in fatto di IA viene oggi considerato quello dell'Index Thomisticus. È stato fatto in Italia negli anni '70. Protagonisti centinaia di testi su e di San Tommaso d'Aquino, raccolti dal padre gesuita Roberto Busa, tra i primi creatori del moderno concetto di ipertesto. A quel progetto partecipò l'ingegnere Alberto Tripi, oggi imprenditore e portavoce dell'industria italiana nel mondo."},
-  {n:51,t:1672,txt:"Nel 1972 facevo il direttore dell'IBM di Roma e l'IBM mi fece conoscere padre Busa, un gesuita, dedicandogli il più grande calcolatore che in quel momento c'era. Padre Busa aveva fatto la ricerca su tutto ciò che San Tommaso e quelli intorno a lui avevano scritto, memorizzando tutto su schede perforate, il primo esempio di informatica. Mettemmo tutta la sua documentazione sui nuovi calcolatori con memoria a disco e creammo quello che adesso si chiama database, con quello che adesso si chiama algoritmo, che usava quello che adesso si chiamano token per collegarli fra di loro. Una domanda classica era se Gesù Cristo era davvero esistito: ci pensava un paio di minuti e tirava fuori tutta la documentazione."},
-  {n:52,t:1790,txt:"Ultimamente, quando mi sono interessato di intelligenza artificiale, ho trovato che nel 2015 è stato stampato un libro dove viene usato l'Index Thomisticus per la disputa tra teologi se Gesù Cristo era uomo o era spirito, e conclude che era uomo. Quindi l'Index Thomisticus fu un primo esempio di intelligenza artificiale con un algoritmo a cui ho contribuito a scrivere. Ecco perché io la chiamo intelligenza aumentata: non pensiamo che sia qualcosa che sostituisce l'intelligenza umana, ma l'uomo sarà sempre al centro del nostro mondo, di quello in cui a noi ci piace vivere."},
+  {n:48,t:1537,txt:"Professor Parisi, fisico e premio Nobel nel 2021. C'è una cosa che i fisici hanno fatto che mi colpisce sempre per la bellezza: il CERN, a Ginevra. Uno spazio aperto dove la scienza può lavorare insieme, l'unico posto dove russi e ucraini possono ancora lavorare spalla a spalla. Potrebbe essere il caso di fare una cosa analoga, aperta e continentale, per le intelligenze artificiali?"},
+  {n:49,t:1573,txt:"Sì, sarebbe assolutamente necessario fare un grosso centro di ricerca europeo, perché mettere assieme un migliaio di ricercatori che lavorano nello stesso campo permette tutta una serie di scambi. Sul modello del CERN, con accordi e collaborazioni anche con paesi extra-continentali. Rischiamo sennò di rimanere assolutamente indietro. Ed è molto importante che questa ricerca sia fatta in laboratori pubblici, in modo che sia aperta a tutti. Se la lasciamo solo alle industrie private, sappiamo solo quello che loro ci vogliono far sapere."},
+  {n:50,t:1643,txt:"Uno dei primi veri esperimenti in fatto di IA viene oggi considerato quello dell'Index Thomisticus, fatto in Italia negli anni '70. Protagonisti centinaia di testi su e di San Tommaso d'Aquino, raccolti dal padre gesuita Roberto Busa, tra i primi creatori del moderno concetto di ipertesto. A quel progetto partecipò l'ingegnere Alberto Tripi, oggi imprenditore e portavoce dell'industria italiana nel mondo."},
+  {n:51,t:1672,txt:"Nel 1972 facevo il direttore dell'IBM di Roma e l'IBM mi fece conoscere padre Busa, dedicandogli il più grande calcolatore che in quel momento c'era. Padre Busa aveva fatto la ricerca su tutto ciò che San Tommaso e quelli intorno a lui avevano scritto, memorizzando tutto su schede perforate, il primo esempio di informatica. Mettemmo tutta la sua documentazione sui nuovi calcolatori con memoria a disco e creammo quello che adesso si chiama database, con quello che adesso si chiama algoritmo, che usava quelli che adesso si chiamano token per collegarli fra di loro."},
+  {n:52,t:1790,txt:"Quindi l'Index Thomisticus fu un primo esempio di intelligenza artificiale con un algoritmo a cui ho contribuito a scrivere. Ecco perché io la chiamo intelligenza aumentata: non pensiamo che sia qualcosa che sostituisce l'intelligenza umana, ma l'uomo sarà sempre al centro del nostro mondo, di quello in cui a noi ci piace vivere."},
   {n:53,t:1857,txt:"Abbiamo chiesto ai nostri ospiti di indicarci un libro che secondo loro ha a che fare con l'argomento di cui abbiamo parlato."},
-  {n:54,t:1863,txt:"Il libro che ho scelto è l'Etica dimostrata con metodo geometrico di Spinoza. La prima ragione: Spinoza ci insegna a non affidarci troppo alle cause finali, un antidoto per non cedere a narrazioni teleologiche e misteriosofiche che gravitano attorno all'IA. E secondo, ci aiuta a riflettere più radicalmente sulla libertà, senza attribuirla con troppa disinvoltura alle macchine e, per certi versi, anche alla specie umana."},
+  {n:54,t:1863,txt:"Il libro che ho scelto è l'Etica dimostrata con metodo geometrico di Spinoza. Spinoza ci insegna a non affidarci troppo alle cause finali, un antidoto per non cedere a narrazioni teleologiche e misteriosofiche che gravitano attorno all'IA; e ci aiuta a riflettere più radicalmente sulla libertà, senza attribuirla con troppa disinvoltura alle macchine e, per certi versi, anche alla specie umana."},
   {n:55,t:1893,txt:"Gli scritti di Marshall McLuhan, che ha fissato le basi e i criteri per comprendere questo fenomeno di auto-sostituzione dell'uomo e che porta l'uomo sostanzialmente a disincarnarsi."},
   {n:56,t:1909,txt:"Il libro consigliato è il Rapporto Mondiale sulla Felicità 2025. Perché nell'era dell'intelligenza artificiale dobbiamo dire che l'intelligenza artificiale è nulla senza l'intelligenza relazionale. Abbiamo bisogno di accompagnare questa potenza tecnologica con l'intelligenza delle relazioni, per evitare che ci travolga."},
-  {n:57,t:1927,txt:"Il libro che ho scelto è Il serpente cosmico di Jeremy Narby: un viaggio di questo antropologo in Amazzonia dove scopre le vie dello sciamanesimo e lo stato di coscienza alterato. Mi ha portato in qualche modo in quello che sto facendo oggi, cioè lavorare con una coscienza alterata, non attraverso l'uso delle droghe ma attraverso l'intelligenza artificiale."},
-  {n:58,t:1961,txt:"Lezioni americane di Italo Calvino. Ci sono diverse lezioni ancora oggi incredibilmente attuali e interessanti per tutti i creativi: quella sulla leggerezza, che non è vaghezza né approssimazione, ma è il lavoro di sintesi che dovrebbe essere il cuore del lavoro di ogni creativo, sintetizzare ciò che è veramente importante."},
-  {n:59,t:1979,txt:"Theodore Roszak, The Cult of Information. È un libro del 1986, solo due anni dopo che era uscito il Mac, il primo computer che ha reso la rivoluzione informatica di massa. In quel libro si faceva notare come la tecnologia informatica e il digitale sarebbero potuti diventare delle vere e proprie ideologie: non solo tecnologie utili alla società, ma soprattutto modi di pensare che non sempre avrebbero avuto conseguenze positive."}
+  {n:57,t:1927,txt:"Il libro che ho scelto è Il serpente cosmico di Jeremy Narby: un viaggio di questo antropologo in Amazzonia dove scopre le vie dello sciamanesimo e lo stato di coscienza alterato. Mi ha portato in quello che sto facendo oggi, cioè lavorare con una coscienza alterata, non attraverso le droghe ma attraverso l'intelligenza artificiale."},
+  {n:58,t:1961,txt:"Lezioni americane di Italo Calvino. Ci sono diverse lezioni ancora oggi incredibilmente attuali e interessanti per tutti i creativi: quella sulla leggerezza, che non è vaghezza né approssimazione, ma è il lavoro di sintesi che dovrebbe essere il cuore del lavoro di ogni creativo."},
+  {n:59,t:1979,txt:"Theodore Roszak, The Cult of Information, un libro del 1986, solo due anni dopo l'uscita del Mac. In quel libro si faceva notare come la tecnologia informatica e il digitale sarebbero potuti diventare delle vere e proprie ideologie: non solo tecnologie utili alla società, ma soprattutto modi di pensare che non sempre avrebbero avuto conseguenze positive."}
 ];
 
-/* ============ DATI: DOMANDE ============ */
-/* time = secondo in cui il video si ferma; risposta = indice corretto */
+/* ============ ARGOMENTI (per etichetta e barra) ============ */
+const ARGOMENTI = [
+  {da:1,  a:5,  nome:"Introduzione"},
+  {da:6,  a:7,  nome:"Come funziona l'IA · Piergiorgio Odifreddi"},
+  {da:8,  a:14, nome:"I grandi modelli linguistici · Gino Roncaglia"},
+  {da:15, a:21, nome:"Il futuro dell'IA · Giovanni Severini (Microsoft)"},
+  {da:22, a:28, nome:"Digitale e coscienza · Federico Faggin"},
+  {da:29, a:37, nome:"Omologazione e pregiudizio · Alex Braga"},
+  {da:38, a:44, nome:"Privacy e diritto · Guido Scorza"},
+  {da:45, a:47, nome:"Dati ed etica · Ivana Bartoletti"},
+  {da:48, a:49, nome:"Ricerca pubblica europea · Giorgio Parisi"},
+  {da:50, a:52, nome:"Intelligenza aumentata · Alberto Tripi"},
+  {da:53, a:59, nome:"I libri consigliati"}
+];
+function argomentoDi(n){
+  for(const a of ARGOMENTI){ if(n>=a.da && n<=a.a) return a.nome; }
+  return "";
+}
+
+/* ============ DOMANDE — una alla fine di ogni argomento ============ */
+/* time = secondo in cui il video si ferma (= inizio dell'argomento successivo) */
 const DOMANDE = [
-  {time:112, dom:"Secondo l'introduzione, cosa intendiamo davvero quando diciamo «intelligenza artificiale»?",
+  {time:160, dom:"Cosa intendiamo davvero, secondo l'introduzione, quando diciamo «intelligenza artificiale»?",
    opz:["Una singola tecnologia uniforme e identica per tutti","Un mondo plurale, un mondo di «intelligenze»","Soltanto ChatGPT","Un robot fisico con braccia e gambe"], risposta:1,
    spiega:"Il programma sottolinea che dietro l'espressione «intelligenza artificiale» c'è un mondo plurale di intelligenze diverse."},
 
-  {time:316, dom:"In che anno e da chi è stata inventata la prima rete neurale, secondo il prof. Odifreddi?",
+  {time:317, dom:"In che anno e da chi è stata inventata la prima rete neurale, secondo il prof. Odifreddi?",
    opz:["Nel 2022, da OpenAI","Nel 1970, da padre Busa","Nel 1943, da McCulloch (neurofisiologo) e Pitts (matematico)","Nel 1986, da Theodore Roszak"], risposta:2,
    spiega:"La prima rete neurale risale al 1943: nasce dall'incontro tra la neurofisiologia di McCulloch e la matematica di Pitts."},
 
-  {time:422, dom:"Come producono i contenuti i grandi modelli linguistici, secondo il prof. Roncaglia?",
+  {time:532, dom:"Come producono i contenuti i grandi modelli linguistici, secondo il prof. Roncaglia?",
    opz:["Copiandoli direttamente dal corpus di addestramento","In maniera statistico-probabilistica, sulla base dei loro modelli numerici","Cercandoli su Internet in tempo reale","Chiedendo a degli esperti umani"], risposta:1,
    spiega:"Non copiano i testi: li generano in modo statistico-probabilistico a partire dai modelli numerici costruiti durante l'addestramento."},
 
-  {time:503, dom:"Che cosa stupisce Roncaglia dei nuovi sistemi di intelligenza artificiale?",
-   opz:["Che consumino pochissima energia","Che da tante micro-costruzioni emerga qualcosa di coerente e dotato di senso","Che possiedano una vera coscienza","Che siano molto lenti a rispondere"], risposta:1,
-   spiega:"Lo sorprende l'aspetto «emergente»: da microazioni semplici nasce un discorso complesso e dotato di senso."},
-
-  {time:642, dom:"Quali sono le tre fasi dell'IA descritte dal dott. Severini di Microsoft?",
-   opz:["Passato, presente e futuro","Testo, immagini e video","Infanzia, adolescenza ed età adulta","Chatbot → agenti personalizzati → agenti che collaborano tra loro"], risposta:3,
+  {time:735, dom:"Quali sono le tre fasi dell'IA descritte dal dott. Severini di Microsoft?",
+   opz:["Passato, presente e futuro","Testo, immagini e video","Chatbot → agenti personalizzati → agenti che collaborano tra loro","Infanzia, adolescenza ed età adulta"], risposta:2,
    spiega:"Prima i chatbot, poi gli agenti personalizzati che lavorano per noi, infine agenti che collaborano e negoziano tra loro."},
 
-  {time:691, dom:"Quali sono le due principali paure di Severini riguardo all'intelligenza artificiale?",
-   opz:["Il divario digitale e l'impatto ambientale (consumo di energia)","La lentezza e il costo elevato","Gli errori di calcolo e i virus","La pubblicità e lo spam"], risposta:0,
-   spiega:"Teme che cresca il digital divide tra Nord e Sud del mondo e che l'enorme consumo energetico tolga risorse ad altre attività."},
-
-  {time:896, dom:"Secondo l'ing. Faggin, quali sono i tre elementi che ci compongono?",
+  {time:954, dom:"Secondo l'ing. Faggin, quali sono i tre elementi che ci compongono?",
    opz:["Cervello, cuore e sangue","Corpo, mente e spirito","Bit, token e prompt","Passato, presente e futuro"], risposta:1,
-   spiega:"Faggin parla di corpo (informazione classica, il bit), mente (informazione quantistica) e spirito, collegati tra loro."},
+   spiega:"Faggin parla di corpo (informazione classica, il bit), mente (informazione quantistica) e spirito, collegati tra loro: i qualia sono il significato dell'esperienza cosciente."},
 
-  {time:928, dom:"Nella teoria di Faggin, che cosa rappresenta lo «stato quantistico del campo»?",
-   opz:["I dati di addestramento dell'IA","I microchip dei computer","I qualia, cioè le sensazioni e i sentimenti dell'esperienza cosciente","Le reti neurali artificiali"], risposta:2,
-   spiega:"Lo stato quantistico del campo rappresenta i qualia: l'amore, il sapore del cibo, la musica — il significato dell'esperienza cosciente."},
+  {time:1204, dom:"Perché, secondo Alex Braga, i Large Language Model sono «omologanti»?",
+   opz:["Perché sono troppo lenti","Perché, addestrati con tutta la cultura umana, riproducono tutti i pregiudizi","Perché costano troppo","Perché non parlano italiano"], risposta:1,
+   spiega:"Essendo addestrati su tutta la cultura umana, restituiscono come «collo di bottiglia statistico» anche i pregiudizi, risultando omologanti. Per Braga sono anche eticamente insostenibili perché non citano le fonti."},
 
-  {time:1075, dom:"Perché, secondo Alex Braga, i Large Language Model sono «omologanti»?",
-   opz:["Perché sono troppo lenti","Perché non parlano italiano","Perché costano troppo","Perché, addestrati con tutta la cultura umana, riproducono tutti i pregiudizi"], risposta:3,
-   spiega:"Essendo addestrati su tutta la cultura umana, restituiscono come «collo di bottiglia statistico» anche i pregiudizi, risultando omologanti."},
+  {time:1438, dom:"Che cosa ha chiesto l'avvocato Guido Scorza a OpenAI e con quale diritto?",
+   opz:["Di cancellare del tutto ChatGPT","Di togliere il suo nome e cognome dal sistema, con il diritto di opposizione","Di essere pagato per i suoi dati","Di diventare socio dell'azienda"], risposta:1,
+   spiega:"Ha esercitato il diritto di opposizione: ChatGPT conosce il suo nome ma non può pronunciarlo. Oggi, dopo l'intervento del Garante, può farlo chiunque viva in Europa."},
 
-  {time:1203, dom:"Perché secondo Braga i Large Language Model sarebbero «eticamente insostenibili»?",
-   opz:["Perché si sono nutriti dei dati della cultura umana senza pagare né citare le fonti","Perché consumano pochissima energia","Perché sono open source e gratuiti","Perché sono troppo creativi"], risposta:0,
-   spiega:"Si sono nutriti dei dati prodotti dalla cultura umana senza remunerare nessuno e senza citare le fonti, distruggendo bibliografie e fonti."},
-
-  {time:1299, dom:"Che cosa ha chiesto l'avvocato Guido Scorza a OpenAI?",
-   opz:["Di cancellare del tutto ChatGPT","Di togliere il suo nome e cognome dal sistema (diritto di opposizione)","Di essere pagato per i suoi dati","Di diventare socio dell'azienda"], risposta:1,
-   spiega:"Ha esercitato il diritto di opposizione: ChatGPT conosce il suo nome ma non può pronunciarlo se interrogato."},
-
-  {time:1437, dom:"Con quale esempio Scorza spiega la «forbice» tra i tempi della tecnologia e quelli delle leggi?",
-   opz:["Il telefono e la radio","Il treno e l'aereo","Le auto (50 milioni di guidatori in 62 anni) contro ChatGPT (100 milioni di utenti in 2 mesi)","Il libro e la stampa"], risposta:2,
-   spiega:"Per 50 milioni di automobilisti ci vollero 62 anni; ChatGPT ha raggiunto 100 milioni di utenti in 2 mesi: le leggi non riescono a stare al passo."},
-
-  {time:1536, dom:"Secondo il servizio, a chi appartengono oggi i grandi modelli linguistici e dov'è l'Europa?",
+  {time:1537, dom:"Secondo il servizio, a chi appartengono oggi i grandi modelli linguistici e dov'è l'Europa?",
    opz:["All'Europa, che è in netto vantaggio","A Stati Uniti e Cina; l'Europa è in ritardo","Soltanto alla Cina","A nessuno, sono di tutti"], risposta:1,
    spiega:"Oggi i grandi modelli appartengono a USA e Cina; l'Europa è in ritardo ma può recuperare con scelte etiche e investimenti pubblici."},
 
-  {time:1642, dom:"Cosa propone il premio Nobel Giorgio Parisi per l'IA in Europa?",
+  {time:1643, dom:"Cosa propone il premio Nobel Giorgio Parisi per l'IA in Europa?",
    opz:["Vietare del tutto l'intelligenza artificiale","Lasciare tutta la ricerca alle industrie private","Un grande centro di ricerca pubblico europeo, sul modello del CERN","Costruire data center militari segreti"], risposta:2,
    spiega:"Propone un grande centro di ricerca pubblico europeo come il CERN, perché la ricerca resti aperta a tutti e non solo nelle mani dei privati."},
 
-  {time:1855, dom:"Come preferisce chiamare l'intelligenza artificiale l'ingegner Alberto Tripi?",
+  {time:1857, dom:"Come preferisce chiamare l'intelligenza artificiale l'ingegner Alberto Tripi?",
    opz:["Intelligenza artificiale","Intelligenza aumentata, perché l'uomo resta sempre al centro","Intelligenza sostitutiva","Intelligenza quantistica"], risposta:1,
-   spiega:"Tripi la chiama «intelligenza aumentata»: non sostituisce l'uomo, che resta al centro del nostro mondo."}
+   spiega:"Tripi, che lavorò all'Index Thomisticus di padre Busa, la chiama «intelligenza aumentata»: non sostituisce l'uomo, che resta al centro del nostro mondo."}
 ];
 
-/* ============ LOGICA APP ============ */
-const player   = document.getElementById('player');
-const trasc    = document.getElementById('trascrizione');
-const overlay  = document.getElementById('overlay');
-const quizNum  = document.getElementById('quizNum');
-const quizDom  = document.getElementById('quizDom');
-const quizOpz  = document.getElementById('quizOpzioni');
-const quizFb   = document.getElementById('quizFeedback');
-const btnRipr  = document.getElementById('btnRiprendi');
-const LETTERE  = ['A','B','C','D'];
+/* ============ ELEMENTI ============ */
+const player    = document.getElementById('player');
+const paragrafo = document.getElementById('paragrafo');
+const argLabel  = document.getElementById('argomentoLabel');
+const boxDom    = document.getElementById('boxDomanda');
+const domNum    = document.getElementById('domandaNum');
+const domDom    = document.getElementById('domandaDom');
+const domOpz    = document.getElementById('domandaOpzioni');
+const domFb     = document.getElementById('domandaFeedback');
+const btnCont   = document.getElementById('btnContinua');
+const barra     = document.getElementById('barraArgomenti');
+const LETTERE   = ['A','B','C','D'];
 
-let domandaCorrente = null;
 let segAttivo = -1;
+let bloccato  = false;
+let domandaAttiva = null;
 
 document.getElementById('contaTotali').textContent = DOMANDE.length;
-DOMANDE.forEach(d=>d.fatta=false);
-
-/* costruzione trascrizione */
-const segEls = [];
-const tempiDomande = DOMANDE.map(d=>d.time);
-SEGMENTI.forEach((s,i)=>{
-  const el = document.createElement('div');
-  el.className = 'seg';
-  // segmento dopo il quale c'è una domanda?
-  const prossimo = SEGMENTI[i+1] ? SEGMENTI[i+1].t : 99999;
-  const haDomanda = tempiDomande.some(t => t>s.t && t<=prossimo);
-  if(haDomanda) el.classList.add('quiz-tag');
-  const mm = String(Math.floor(s.t/60)).padStart(2,'0');
-  const ss = String(s.t%60).padStart(2,'0');
-  el.innerHTML = '<span class="t">'+mm+':'+ss+'</span>'+s.txt;
-  el.addEventListener('click',()=>{ player.currentTime = s.t; });
-  trasc.appendChild(el);
-  segEls.push(el);
+DOMANDE.forEach(d=>{
+  d.fatta=false; d.giusta=false; d.primaSbagliata=false;
+  // indice dell'ultimo segmento da mostrare prima della domanda
+  let mi=0; for(let i=0;i<SEGMENTI.length;i++){ if(SEGMENTI[i].t < d.time) mi=i; else break; }
+  d.mostraIdx = mi;
 });
 
-/* aggiornamento highlight + check domande */
+/* barra pallini = un pallino per domanda/argomento */
+DOMANDE.forEach((d,i)=>{
+  const p=document.createElement('span'); p.className='pallino'; p.id='pallino'+i;
+  p.title='Argomento '+(i+1); barra.appendChild(p);
+});
+function aggiornaBarra(idxCorrente){
+  DOMANDE.forEach((d,i)=>{
+    const p=document.getElementById('pallino'+i);
+    p.className='pallino'+(d.giusta?' fatto':'')+(i===idxCorrente?' corrente':'');
+  });
+}
+
+/* ============ SINCRONIZZAZIONE ============ */
 player.addEventListener('timeupdate',()=>{
+  if(bloccato) return;
   const tc = player.currentTime;
 
-  // evidenzia segmento corrente
-  let idx = -1;
-  for(let i=0;i<SEGMENTI.length;i++){ if(tc >= SEGMENTI[i].t) idx = i; else break; }
-  if(idx !== segAttivo){
-    segEls.forEach((e,i)=>{
-      e.classList.toggle('attivo', i===idx);
-      e.classList.toggle('passato', i<idx);
-    });
-    if(idx>=0 && segEls[idx]){
-      segEls[idx].scrollIntoView({block:'center',behavior:'smooth'});
-    }
-    segAttivo = idx;
+  // 1) domanda da aprire?
+  for(let i=0;i<DOMANDE.length;i++){
+    const d=DOMANDE[i];
+    if(!d.fatta && tc >= d.time){ apriDomanda(d,i); return; }
   }
-
-  // domanda da mostrare?
-  if(!domandaCorrente && !overlay.classList.contains('aperta')){
-    for(const d of DOMANDE){
-      if(!d.fatta && tc >= d.time){
-        mostraDomanda(d);
-        break;
-      }
-    }
-  }
+  // 2) paragrafo corrente
+  let idx=-1;
+  for(let i=0;i<SEGMENTI.length;i++){ if(tc >= SEGMENTI[i].t) idx=i; else break; }
+  if(idx>=0 && idx!==segAttivo){ mostraParagrafo(idx); segAttivo=idx; }
 });
 
 player.addEventListener('ended', mostraFine);
 
-function mostraDomanda(d){
-  domandaCorrente = d;
-  player.pause();
-  const num = DOMANDE.indexOf(d)+1;
-  quizNum.textContent = 'Domanda '+num+' di '+DOMANDE.length;
-  quizDom.textContent = d.dom;
-  quizOpz.innerHTML = '';
-  quizFb.className = 'feedback';
-  quizFb.textContent = '';
-  btnRipr.className = 'btn-riprendi';
+function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
 
-  d.opz.forEach((testo,i)=>{
-    const b = document.createElement('button');
-    b.className = 'opz';
-    b.innerHTML = '<span class="lettera">'+LETTERE[i]+'</span><span>'+testo+'</span>';
-    b.addEventListener('click',()=>rispondi(d,i,b));
-    quizOpz.appendChild(b);
+function mostraParagrafo(idx){
+  const s = SEGMENTI[idx];
+  argLabel.innerHTML = '<span class="tc">'+fmt(s.t)+'</span> '+argomentoDi(s.n);
+  paragrafo.className='paragrafo';
+  void paragrafo.offsetWidth;            // reset animazione
+  paragrafo.classList.add('cambio');
+  paragrafo.textContent = s.txt;
+  // indice argomento corrente per la barra
+  const ai = ARGOMENTI.findIndex(a=>s.n>=a.da && s.n<=a.a);
+  aggiornaBarra(ai>0?ai-1:-1);
+}
+
+/* ============ DOMANDA INLINE ============ */
+function apriDomanda(d,i){
+  bloccato = true;
+  domandaAttiva = d;
+  player.pause();
+
+  // mostra l'ultimo paragrafo dell'argomento appena concluso
+  mostraParagrafo(d.mostraIdx);
+  segAttivo = d.mostraIdx;
+  aggiornaBarra(i);
+
+  domNum.textContent = 'Domanda '+(i+1)+' di '+DOMANDE.length;
+  domDom.textContent = d.dom;
+  domOpz.innerHTML='';
+  domFb.className='feedback';
+  domFb.textContent='';
+  btnCont.className='btn-continua';
+
+  d.opz.forEach((testo,k)=>{
+    const b=document.createElement('button');
+    b.className='opz';
+    b.innerHTML='<span class="lettera">'+LETTERE[k]+'</span><span>'+testo+'</span>';
+    b.addEventListener('click',()=>rispondi(d,k,b));
+    domOpz.appendChild(b);
   });
-  overlay.classList.add('aperta');
+
+  boxDom.classList.add('attiva');
+  boxDom.scrollIntoView({block:'end',behavior:'smooth'});
 }
 
 function rispondi(d,scelta,btn){
   if(d.fatta) return;
-  const bottoni = quizOpz.querySelectorAll('.opz');
-  const corretta = scelta === d.risposta;
-
-  if(corretta){
-    d.fatta = true;
-    d.giusta = true;
+  const bottoni = domOpz.querySelectorAll('.opz');
+  if(scelta === d.risposta){
+    d.fatta=true; d.giusta=true;
     btn.classList.add('giusta');
     bottoni.forEach(b=>b.disabled=true);
-    quizFb.className = 'feedback ok mostra';
-    quizFb.innerHTML = '✅ <b>Esatto!</b> '+d.spiega;
-    btnRipr.classList.add('mostra');
+    domFb.className='feedback ok mostra';
+    domFb.innerHTML='✅ <b>Esatto!</b> '+d.spiega;
+    btnCont.classList.add('mostra');
     aggiornaContatori();
   } else {
-    // segna come tentata-sbagliata ma lascia riprovare
-    btn.classList.add('sbagliata');
-    btn.disabled = true;
-    quizFb.className = 'feedback ko mostra';
-    quizFb.innerHTML = '❌ Non è la risposta giusta. Rileggi il testo a destra e riprova.';
-    if(d.primaSbagliata === undefined) d.primaSbagliata = true;
+    d.primaSbagliata=true;
+    btn.classList.add('sbagliata'); btn.disabled=true;
+    domFb.className='feedback ko mostra';
+    domFb.innerHTML='❌ Non è la risposta giusta. Rileggi il passaggio qui sopra e riprova.';
   }
 }
 
-btnRipr.addEventListener('click',()=>{
-  overlay.classList.remove('aperta');
-  domandaCorrente = null;
-  player.play();
+btnCont.addEventListener('click',()=>{
+  boxDom.classList.remove('attiva');
+  bloccato=false;
+  domandaAttiva=null;
+  player.play().catch(()=>{});
 });
 
 function aggiornaContatori(){
-  const fatte    = DOMANDE.filter(d=>d.fatta).length;
-  const corrette = DOMANDE.filter(d=>d.giusta && !d.primaSbagliata).length;
-  document.getElementById('contaRisposte').textContent = fatte;
-  document.getElementById('contaCorrette').textContent = corrette;
+  document.getElementById('contaRisposte').textContent = DOMANDE.filter(d=>d.fatta).length;
+  document.getElementById('contaCorrette').textContent = DOMANDE.filter(d=>d.giusta && !d.primaSbagliata).length;
 }
 
-/* schermo iniziale / finale */
+/* ============ START / FINE ============ */
 document.getElementById('btnStart').addEventListener('click',()=>{
   document.getElementById('schermoStart').style.display='none';
   player.play().catch(()=>{});
 });
 
 function mostraFine(){
-  const totali   = DOMANDE.length;
+  const tot = DOMANDE.length;
   const corrette = DOMANDE.filter(d=>d.giusta && !d.primaSbagliata).length;
-  document.getElementById('punteggioFinale').textContent = corrette+' / '+totali;
+  document.getElementById('punteggioFinale').textContent = corrette+' / '+tot;
+  const perc = corrette/tot;
   let msg;
-  const perc = corrette/totali;
-  if(perc >= 0.85) msg = 'Comprensione eccellente! Hai colto i punti chiave della puntata.';
-  else if(perc >= 0.6) msg = 'Buon lavoro! Hai compreso bene la maggior parte dei contenuti.';
-  else msg = 'Hai completato la lezione. Ti consigliamo di rivedere alcuni passaggi del testo.';
+  if(perc>=0.85) msg='Comprensione eccellente! Hai colto i punti chiave della puntata.';
+  else if(perc>=0.6) msg='Buon lavoro! Hai compreso bene la maggior parte dei contenuti.';
+  else msg='Hai completato la lezione. Ti consigliamo di rivedere alcuni passaggi del video.';
   document.getElementById('messaggioFinale').textContent = msg;
   document.getElementById('schermoFine').classList.add('mostra');
 }
 
-document.getElementById('btnRicomincia').addEventListener('click',()=>{
-  location.reload();
-});
+document.getElementById('btnRicomincia').addEventListener('click',()=>location.reload());
 </script>
 </body>
 </html>

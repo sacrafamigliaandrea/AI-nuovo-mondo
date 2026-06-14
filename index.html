@@ -3,573 +3,1559 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Intelligenze · AI Nuovo Mondo — Scuola Sacra Famiglia</title>
+<title>Magnifica Humanitas — Leggere l'enciclica di Leone XIV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --blu:#1d3a6e;
-    --blu-chiaro:#2f5aa8;
-    --oro:#c8a24a;
-    --bg:#eef1f6;
-    --carta:#ffffff;
-    --testo:#1f2733;
-    --grigio:#6b7686;
-    --ok:#1f9d55;
-    --ko:#d64545;
-  }
-  *{box-sizing:border-box;}
-  html,body{margin:0;padding:0;height:100%;}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    background:var(--bg);color:var(--testo);
-    min-height:100vh;display:flex;flex-direction:column;
-  }
+:root{
+  --blu:#123E90;
+  --blu-prof:#0C2A63;
+  --blu-tenue:#E8EDF7;
+  --blu-bordo:#C5D2EC;
+  --pietra:#ECE8DF;
+  --pietra-chiara:#F6F3EC;
+  --carta:#FBFAF6;
+  --inchiostro:#1F1E1A;
+  --inchiostro-soft:#54514A;
+  --oro:#B0791E;
+  --oro-chiaro:#E7D6AC;
+  --verde:#2E7D5B;
+  --verde-bg:#E2F0E9;
+  --ambra:#B5701A;
+  --ambra-bg:#F6EAD6;
+  --ombra:0 1px 2px rgba(12,42,99,.06),0 8px 28px rgba(12,42,99,.08);
+  --raggio:14px;
+  --maxw:1440px;
+  --logo:url("data:image/jpeg;base64,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");
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:'Atkinson Hyperlegible',system-ui,sans-serif;
+  color:var(--inchiostro);
+  background-color:var(--pietra);
+  background-image:
+    linear-gradient(var(--blu-bordo) 1px,transparent 1px),
+    linear-gradient(90deg,var(--blu-bordo) 1px,transparent 1px);
+  background-size:34px 34px;
+  background-position:-1px -1px;
+  line-height:1.6;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 0%,rgba(236,232,223,.35) 0%,rgba(236,232,223,.92) 55%,var(--pietra) 100%);
+}
+/* ---------- TOPBAR ---------- */
+header{
+  position:sticky;top:0;z-index:50;
+  background:var(--blu-prof);
+  color:#fff;
+  box-shadow:0 6px 24px rgba(12,42,99,.22);
+}
+.brand{
+  display:flex;align-items:center;gap:14px;
+  padding:12px 24px 10px;
+  max-width:var(--maxw);margin:0 auto;
+}
+.crest{flex:0 0 auto}
+.brand h1{
+  font-family:'Lexend',sans-serif;
+  font-weight:600;font-size:20px;line-height:1.1;margin:0;
+  letter-spacing:.2px;
+}
+.brand .sub{
+  font-size:12.5px;color:#B9C6E6;margin-top:2px;
+  font-weight:400;
+}
+.brand .spacer{flex:1}
+.nick-chip{
+  font-size:13px;color:#C9D5F0;display:flex;align-items:center;gap:7px;
+  background:rgba(255,255,255,.07);padding:6px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);cursor:pointer;white-space:nowrap;
+}
+.nick-chip:hover{background:rgba(255,255,255,.13)}
+nav{
+  display:flex;flex-wrap:wrap;gap:7px;padding:2px 24px 12px;
+  max-width:var(--maxw);margin:0 auto;
+}
+.tab{
+  flex:0 0 auto;
+  background:transparent;border:1.5px solid transparent;color:#C7D3EF;
+  font-family:inherit;font-size:13.5px;font-weight:700;
+  padding:8px 13px;cursor:pointer;border-radius:999px;
+  display:flex;align-items:center;gap:8px;white-space:nowrap;
+  transition:color .15s,background .15s,border-color .15s;
+}
+.tab:hover{color:#fff;background:rgba(255,255,255,.12)}
+.tab[aria-current="true"]{
+  color:var(--blu-prof);background:#fff;border-color:var(--oro);
+  box-shadow:0 2px 10px rgba(0,0,0,.2);
+}
+.tab[aria-current="true"] .tnum{color:#fff;background:var(--blu)}
+.tab[aria-current="true"] .tdot{border-color:var(--blu)}
+.tab .tnum{
+  font-size:11px;font-weight:700;color:var(--blu-prof);
+  background:#C7D3EF;border-radius:6px;min-width:19px;height:19px;
+  display:inline-flex;align-items:center;justify-content:center;padding:0 5px;
+}
+.tab .tdot{width:8px;height:8px;border-radius:3px;border:1.5px solid #6E83B8;flex:0 0 auto}
+.tab .tdot.done{background:var(--oro);border-color:var(--oro)}
+/* ---------- WALL PROGRESS ---------- */
+.wall{
+  background:var(--blu-prof);padding:0 0 12px;
+}
+.wall-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:14px}
+.wall-label{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#8FA2CE;flex:0 0 auto}
+.bricks{display:flex;gap:3px;flex:1;height:14px}
+.brick{
+  flex:1;border-radius:2px;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.14);transition:background .35s,box-shadow .35s;
+}
+.brick.laid{
+  background:linear-gradient(180deg,#D9C28A,#B0791E);
+  border-color:#8A5E12;box-shadow:0 1px 0 rgba(255,255,255,.25) inset;
+}
+.wall-count{font-size:12.5px;color:#C9D5F0;flex:0 0 auto;min-width:34px;text-align:right}
+/* ---------- MAIN ---------- */
+main{max-width:var(--maxw);margin:0 auto;padding:22px 24px 60px}
+.page{display:none;animation:rise .4s ease both}
+.page.active{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.eyebrow{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--blu);font-weight:700;margin-bottom:8px;
+  display:flex;align-items:center;gap:10px;
+}
+.eyebrow .para{color:var(--inchiostro-soft);font-weight:400;letter-spacing:.04em}
+.page > h2{
+  font-family:'Lexend',sans-serif;font-weight:600;
+  font-size:clamp(24px,2.8vw,36px);line-height:1.06;margin:0 0 4px;
+  color:var(--blu-prof);max-width:18ch;
+}
+.lead{font-size:17px;color:var(--inchiostro-soft);max-width:62ch;margin:0 0 16px}
+/* split layout */
+.split{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:30px;align-items:start}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:20px}}
+/* text column */
+.scroll{
+  background:var(--carta);border:1px solid var(--blu-bordo);border-radius:var(--raggio);
+  box-shadow:var(--ombra);padding:30px 32px;position:relative;overflow:hidden;
+}
+.scroll::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--blu)}
+.scroll .src{
+  font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--blu);
+  font-weight:700;margin:0 0 14px;
+}
+.scroll p{font-size:16.5px;margin:0 0 15px}
+.scroll p:last-child{margin-bottom:0}
+.scroll .cite{
+  font-family:'Lexend',sans-serif;font-style:italic;font-size:18.5px;
+  color:var(--blu-prof);border-left:3px solid var(--oro);
+  padding:4px 0 4px 16px;margin:18px 0;line-height:1.4;
+}
+.scroll .key{background:linear-gradient(180deg,transparent 58%,var(--oro-chiaro) 58%);padding:0 1px;font-weight:700}
+/* activity column */
+.work{
+  background:var(--blu-tenue);border:1px solid var(--blu-bordo);border-radius:var(--raggio);
+  box-shadow:var(--ombra);padding:26px 26px 24px;
+}
+.work .badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;
+  color:var(--blu);background:#fff;border:1px solid var(--blu-bordo);
+  padding:5px 11px;border-radius:999px;margin-bottom:14px;
+}
+.work h3{font-family:'Lexend',sans-serif;font-weight:600;font-size:21px;color:var(--blu-prof);margin:0 0 6px;line-height:1.18}
+.work .ask{font-size:15px;color:var(--inchiostro-soft);margin:0 0 18px}
+/* interactive items */
+.opt{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+  background:#fff;border:1.5px solid var(--blu-bordo);border-radius:10px;
+  padding:12px 14px;margin-bottom:9px;cursor:pointer;font-family:inherit;font-size:15px;
+  color:var(--inchiostro);transition:border-color .15s,background .15s,transform .05s;
+}
+.opt:hover{border-color:var(--blu)}
+.opt:active{transform:scale(.995)}
+.opt .mark{
+  flex:0 0 auto;width:22px;height:22px;border-radius:6px;border:2px solid var(--blu-bordo);
+  display:flex;align-items:center;justify-content:center;
+}
+.opt[data-type="radio"] .mark{border-radius:50%}
+.opt.sel{border-color:var(--blu);background:#fff}
+.opt.sel .mark{border-color:var(--blu);background:var(--blu)}
+.opt.sel .mark svg{display:block}
+.opt .mark svg{display:none;width:13px;height:13px;color:#fff}
+.opt.ok{border-color:var(--verde);background:var(--verde-bg)}
+.opt.ok .mark{border-color:var(--verde);background:var(--verde)}
+.opt.bad{border-color:var(--ambra);background:var(--ambra-bg)}
+.opt.bad .mark{border-color:var(--ambra);background:var(--ambra)}
+.opt.miss{border-color:var(--verde);border-style:dashed;background:transparent}
+/* truefalse */
+.tf-row{background:#fff;border:1.5px solid var(--blu-bordo);border-radius:10px;padding:13px 14px;margin-bottom:10px}
+.tf-q{font-size:15px;margin-bottom:10px}
+.tf-btns{display:flex;gap:8px}
+.tf-btn{
+  flex:1;font-family:inherit;font-size:13.5px;font-weight:700;cursor:pointer;
+  border:1.5px solid var(--blu-bordo);background:var(--pietra-chiara);color:var(--blu-prof);
+  padding:8px 0;border-radius:8px;transition:.15s;
+}
+.tf-btn.sel{background:var(--blu);color:#fff;border-color:var(--blu)}
+.tf-row.ok{border-color:var(--verde);background:var(--verde-bg)}
+.tf-row.bad{border-color:var(--ambra);background:var(--ambra-bg)}
+.tf-why{font-size:13.5px;color:var(--inchiostro-soft);margin-top:10px;display:none}
+.tf-row.checked .tf-why{display:block}
+/* categorize */
+.cat-bins{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+@media(max-width:480px){.cat-bins{grid-template-columns:1fr}}
+.cat-bin{border:1.5px dashed var(--blu-bordo);border-radius:10px;padding:10px;min-height:54px;background:rgba(255,255,255,.5)}
+.cat-bin h4{font-family:'Lexend',sans-serif;font-size:15px;margin:0 0 8px;color:var(--blu-prof);text-align:center}
+.cat-bin.b-babele{border-color:#9AA6C9}
+.cat-bin.b-gerus{border-color:#9AC3AE}
+.chip{
+  display:block;background:#fff;border:1.5px solid var(--blu-bordo);border-radius:8px;
+  padding:9px 11px;margin-bottom:8px;font-size:14px;cursor:pointer;transition:.15s;
+}
+.chip:hover{border-color:var(--blu)}
+.chip .arrows{float:right;color:var(--blu);font-size:11px;opacity:.7}
+.chip.ok{border-color:var(--verde);background:var(--verde-bg)}
+.chip.bad{border-color:var(--ambra);background:var(--ambra-bg)}
+.cat-pool{margin-bottom:6px}
+.cat-pool .pool-label{font-size:12px;color:var(--inchiostro-soft);margin-bottom:6px}
+/* hottext */
+.ht{background:#fff;border:1.5px solid var(--blu-bordo);border-radius:10px;padding:16px 18px;font-size:16px;line-height:1.85;margin-bottom:14px}
+.tok{cursor:pointer;border-radius:4px;padding:1px 2px;transition:.12s}
+.tok:hover{background:#EEF2FB}
+.tok.sel{background:var(--blu);color:#fff}
+.ht.checked .tok.good{background:var(--verde);color:#fff}
+.ht.checked .tok.wrong{background:var(--ambra-bg);outline:1.5px solid var(--ambra)}
+.ht.checked .tok.missed{outline:1.5px dashed var(--verde)}
+/* fillblanks */
+.fb{background:#fff;border:1.5px solid var(--blu-bordo);border-radius:10px;padding:16px 18px;font-size:16px;line-height:2.1;margin-bottom:14px}
+.fb select{
+  font-family:inherit;font-size:15px;border:1.5px solid var(--blu);border-radius:7px;
+  padding:3px 6px;background:var(--blu-tenue);color:var(--blu-prof);font-weight:700;
+}
+.fb select.ok{border-color:var(--verde);background:var(--verde-bg);color:var(--verde)}
+.fb select.bad{border-color:var(--ambra);background:var(--ambra-bg);color:var(--ambra)}
+/* reorder */
+.ro-item{
+  display:flex;align-items:center;gap:12px;background:#fff;border:1.5px solid var(--blu-bordo);
+  border-radius:10px;padding:11px 13px;margin-bottom:9px;font-size:14.5px;
+}
+.ro-item .ro-pos{font-family:'Lexend',sans-serif;font-weight:600;color:var(--blu);width:20px;text-align:center}
+.ro-item .ro-txt{flex:1}
+.ro-move{display:flex;flex-direction:column;gap:3px}
+.ro-move button{
+  border:1px solid var(--blu-bordo);background:var(--pietra-chiara);color:var(--blu);
+  width:30px;height:20px;border-radius:5px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+}
+.ro-move button:hover{background:#fff;border-color:var(--blu)}
+.ro-move button:disabled{opacity:.3;cursor:default}
+.ro-item.ok{border-color:var(--verde);background:var(--verde-bg)}
+.ro-item.bad{border-color:var(--ambra);background:var(--ambra-bg)}
+/* open ended */
+.open-field{
+  width:100%;min-height:120px;font-family:inherit;font-size:15px;line-height:1.6;
+  border:1.5px solid var(--blu-bordo);border-radius:10px;padding:13px 14px;resize:vertical;
+  background:#fff;color:var(--inchiostro);
+}
+.open-field:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(18,62,144,.12)}
+.open-hint{font-size:13px;color:var(--inchiostro-soft);margin:8px 0 0;font-style:italic}
+/* buttons + feedback */
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn{
+  font-family:inherit;font-weight:700;font-size:14.5px;cursor:pointer;border-radius:9px;
+  padding:11px 18px;border:1.5px solid transparent;transition:.15s;
+}
+.btn-check{background:var(--blu);color:#fff}
+.btn-check:hover{background:var(--blu-prof)}
+.btn-ghost{background:transparent;color:var(--blu);border-color:var(--blu-bordo)}
+.btn-ghost:hover{border-color:var(--blu)}
+.btn-gold{background:linear-gradient(180deg,#C99A3D,var(--oro));color:#fff;box-shadow:0 2px 8px rgba(176,121,30,.3)}
+.btn-gold:hover{filter:brightness(1.06)}
+.feedback{
+  margin-top:15px;padding:13px 15px;border-radius:10px;font-size:14.5px;display:none;
+  border:1px solid;line-height:1.5;
+}
+.feedback.show{display:block;animation:rise .3s both}
+.feedback.good{background:var(--verde-bg);border-color:#9AC3AE;color:#205a41}
+.feedback.partial{background:var(--ambra-bg);border-color:#E0C28A;color:#8a560f}
+.feedback.saved{background:#fff;border-color:var(--blu-bordo);color:var(--blu-prof)}
+.feedback strong{font-weight:700}
+/* self-monitoring */
+.monitor{
+  margin-top:22px;border-top:1px dashed var(--blu-bordo);padding-top:18px;
+}
+.monitor h4{font-family:'Lexend',sans-serif;font-size:16px;color:var(--blu-prof);margin:0 0 4px;display:flex;align-items:center;gap:8px}
+.monitor .m-sub{font-size:13px;color:var(--inchiostro-soft);margin:0 0 12px}
+.scale{display:flex;gap:8px;margin-bottom:12px}
+.scale button{
+  flex:1;font-family:inherit;font-size:13px;font-weight:700;cursor:pointer;
+  border:1.5px solid var(--blu-bordo);background:#fff;border-radius:9px;padding:9px 6px;
+  color:var(--inchiostro-soft);transition:.15s;line-height:1.25;
+}
+.scale button .s-n{display:block;font-family:'Lexend',sans-serif;font-size:17px;color:var(--blu);margin-bottom:2px}
+.scale button:hover{border-color:var(--blu)}
+.scale button.sel{background:var(--blu-tenue);border-color:var(--blu);color:var(--blu-prof)}
+.scale button[data-v="1"].sel{background:var(--ambra-bg);border-color:var(--ambra)}
+.scale button[data-v="1"].sel .s-n{color:var(--ambra)}
+.scale button[data-v="3"].sel{background:var(--verde-bg);border-color:var(--verde)}
+.scale button[data-v="3"].sel .s-n{color:var(--verde)}
+.m-field{
+  width:100%;min-height:64px;font-family:inherit;font-size:14px;line-height:1.5;
+  border:1.5px solid var(--blu-bordo);border-radius:9px;padding:10px 12px;resize:vertical;background:#fff;
+}
+.m-field:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(18,62,144,.12)}
+.m-saved{font-size:12.5px;color:var(--verde);margin-top:7px;display:none;align-items:center;gap:6px}
+.m-saved.show{display:flex}
+/* page footer nav */
+.pagenav{display:flex;justify-content:space-between;gap:12px;margin-top:34px;flex-wrap:wrap}
+.pagenav .btn{display:inline-flex;align-items:center;gap:8px}
+/* ---------- HOME ---------- */
+.hero{
+  background:var(--carta);border:1px solid var(--blu-bordo);border-radius:18px;
+  box-shadow:var(--ombra);padding:34px 38px;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;
+  background:radial-gradient(circle,var(--blu-tenue),transparent 70%);opacity:.7;
+}
+.hero .h-eyebrow{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--blu);font-weight:700;margin-bottom:14px}
+.hero h2{font-family:'Lexend',sans-serif;font-weight:600;font-size:clamp(28px,4.2vw,46px);line-height:1.03;margin:0 0 8px;color:var(--blu-prof);max-width:16ch}
+.hero .h-tag{font-family:'Lexend',sans-serif;font-style:italic;font-size:19px;color:var(--oro);margin:0 0 22px}
+.hero p{font-size:16.5px;max-width:62ch;margin:0 0 16px;color:var(--inchiostro)}
+.home-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;margin-top:26px}
+@media(max-width:820px){.home-grid{grid-template-columns:1fr}}
+.info-card{background:var(--carta);border:1px solid var(--blu-bordo);border-radius:var(--raggio);box-shadow:var(--ombra);padding:24px 26px}
+.info-card h3{font-family:'Lexend',sans-serif;font-size:19px;color:var(--blu-prof);margin:0 0 12px;display:flex;align-items:center;gap:9px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{position:relative;padding:0 0 13px 36px;font-size:14.5px}
+.steps li::before{
+  counter-increment:s;content:counter(s);position:absolute;left:0;top:-2px;
+  width:24px;height:24px;border-radius:7px;background:var(--blu-tenue);color:var(--blu);
+  font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;border:1px solid var(--blu-bordo);
+}
+.nick-box{margin-top:20px;background:var(--blu-tenue);border:1px solid var(--blu-bordo);border-radius:12px;padding:18px 20px}
+.nick-box label{display:block;font-size:13px;font-weight:700;color:var(--blu-prof);margin-bottom:8px;letter-spacing:.03em}
+.nick-row{display:flex;gap:10px;flex-wrap:wrap}
+.nick-row input{
+  flex:1;min-width:180px;font-family:inherit;font-size:15px;padding:11px 14px;border-radius:9px;
+  border:1.5px solid var(--blu-bordo);background:#fff;color:var(--inchiostro);
+}
+.nick-row input:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(18,62,144,.12)}
+.tappa-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin-top:14px}
+.tappa-card{
+  text-align:left;background:var(--carta);border:1.5px solid var(--blu-bordo);border-radius:12px;
+  padding:15px 16px;cursor:pointer;font-family:inherit;transition:.15s;display:flex;gap:13px;align-items:flex-start;
+}
+.tappa-card:hover{border-color:var(--blu);transform:translateY(-2px);box-shadow:var(--ombra)}
+.tappa-card .tc-n{font-family:'Lexend',sans-serif;font-weight:600;font-size:22px;color:var(--blu);line-height:1;flex:0 0 auto;width:30px}
+.tappa-card .tc-t{font-weight:700;font-size:15px;color:var(--blu-prof);margin-bottom:3px}
+.tappa-card .tc-type{font-size:12px;color:var(--inchiostro-soft);letter-spacing:.04em}
+.tappa-card .tc-done{margin-left:auto;flex:0 0 auto;width:18px;height:18px;border-radius:5px;border:1.5px solid var(--blu-bordo)}
+.tappa-card .tc-done.done{background:var(--oro);border-color:var(--oro)}
+.note{font-size:13px;color:var(--inchiostro-soft);margin-top:18px;line-height:1.5}
+footer{max-width:var(--maxw);margin:0 auto;padding:0 20px 40px;color:var(--inchiostro-soft);font-size:12.5px;text-align:center}
+footer .rights{font-family:'Lexend',sans-serif;font-style:italic}
+/* modal nick */
+.modal-bg{position:fixed;inset:0;background:rgba(12,42,99,.45);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal-bg.show{display:flex}
+.modal{background:var(--carta);border-radius:16px;max-width:420px;width:100%;padding:28px 28px 24px;box-shadow:0 20px 60px rgba(12,42,99,.3)}
+.modal h3{font-family:'Lexend',sans-serif;font-size:21px;color:var(--blu-prof);margin:0 0 6px}
+.modal p{font-size:14px;color:var(--inchiostro-soft);margin:0 0 16px}
+.modal input{width:100%;font-family:inherit;font-size:15px;padding:11px 14px;border-radius:9px;border:1.5px solid var(--blu-bordo);margin-bottom:14px}
+.modal input:focus{outline:none;border-color:var(--blu);box-shadow:0 0 0 3px rgba(18,62,144,.12)}
+.modal .m-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+:focus-visible{outline:3px solid var(--oro);outline-offset:2px;border-radius:6px}
 
-  /* ---------- Header ---------- */
-  header{
-    background:linear-gradient(120deg,var(--blu) 0%,var(--blu-chiaro) 100%);
-    color:#fff;padding:12px 22px;display:flex;align-items:center;gap:16px;
-    box-shadow:0 2px 14px rgba(0,0,0,.18);z-index:5;flex:0 0 auto;
-  }
-  header img.logo{
-    width:54px;height:54px;border-radius:12px;background:#fff;padding:4px;
-    object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.25);flex:0 0 auto;
-  }
-  .titoli{display:flex;flex-direction:column;line-height:1.25;}
-  .titoli .scuola{font-weight:700;font-size:1.12rem;letter-spacing:.2px;}
-  .titoli .sub{font-size:.76rem;opacity:.88;}
-  .titoli .prog{margin-top:2px;font-size:.9rem;font-weight:600;color:var(--oro);}
-  .header-spacer{flex:1;}
-  .badge-progresso{
-    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
-    padding:7px 14px;border-radius:30px;font-size:.82rem;white-space:nowrap;
-  }
-  .badge-progresso b{color:var(--oro);}
+/* ---------- LOGO ---------- */
+.crest{
+  width:40px;height:40px;border-radius:10px;background:#fff;
+  background-image:var(--logo);background-size:90%;background-position:center;background-repeat:no-repeat;
+  box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 2px 8px rgba(0,0,0,.18);
+  flex:0 0 auto;
+}
+.inst{
+  max-width:var(--maxw);margin:0 auto;padding:30px 20px 8px;
+  display:flex;align-items:center;gap:20px;flex-wrap:wrap;
+  border-top:1px solid var(--blu-bordo);
+}
+.inst .inst-logo{
+  width:74px;height:74px;border-radius:14px;background:#fff;border:1px solid var(--blu-bordo);
+  background-image:var(--logo);background-size:88%;background-position:center;background-repeat:no-repeat;
+  flex:0 0 auto;box-shadow:var(--ombra);
+}
+.inst .inst-txt{flex:1;min-width:220px;text-align:left}
+.inst .inst-txt .i-name{font-family:'Lexend',sans-serif;font-weight:600;font-size:19px;color:var(--blu-prof);margin:0 0 2px}
+.inst .inst-txt .i-loc{font-size:13.5px;color:var(--inchiostro-soft);margin:0 0 8px}
+.inst .inst-txt .i-roles{font-size:13.5px;color:var(--inchiostro);margin:0;line-height:1.6}
+.inst .inst-txt .i-roles b{color:var(--blu)}
+@media(max-width:520px){.inst{justify-content:center;text-align:center}.inst .inst-txt{text-align:center}}
 
-  /* ---------- Layout principale ---------- */
-  main{
-    flex:1;display:grid;grid-template-columns:1fr 1fr;min-height:0;
-  }
-  .pannello{display:flex;flex-direction:column;min-height:0;min-width:0;}
-  .pannello-video{background:#0d1320;}
-  .pannello-testo{background:var(--carta);border-left:4px solid var(--oro);}
+/* ---------- LETTURA ATTENTA ---------- */
+.read-head{background:var(--blu-tenue);border:1px solid var(--blu-bordo);border-radius:11px;padding:12px 14px;margin-bottom:20px}
+.read-head .rh-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.read-head .rh-eye{flex:0 0 auto;color:var(--blu);display:flex}
+.read-head .rh-title{font-weight:700;font-size:12.5px;letter-spacing:.08em;color:var(--blu-prof);text-transform:uppercase}
+.read-head .rh-pct{margin-left:auto;font-family:'Lexend',sans-serif;font-weight:600;font-size:21px;color:var(--blu);line-height:1}
+.read-head .rh-pct small{font-size:12px;font-family:'Atkinson Hyperlegible',sans-serif;font-weight:700}
+.read-bar{height:8px;border-radius:6px;background:#fff;border:1px solid var(--blu-bordo);overflow:hidden}
+.read-bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#4F86D6,var(--blu));transition:width .4s}
+.read-bar.full i{background:linear-gradient(90deg,#3FA877,var(--verde))}
+.read-meta{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:9px;font-size:12.5px;color:var(--inchiostro-soft)}
+.read-meta b{color:var(--blu-prof)}
+.read-hint{color:var(--ambra);font-weight:700;opacity:0;transition:opacity .2s}
+.read-hint.show{opacity:1}
+.read-howto{font-size:12.5px;color:var(--inchiostro-soft);margin:10px 0 0;line-height:1.45}
+/* capoversi cliccabili */
+.scroll .src{margin-bottom:18px}
+.scroll .blk{position:relative;cursor:pointer;border-radius:9px;margin:0 0 13px;padding:7px 34px 7px 13px;border-left:3px solid transparent;transition:background .15s,border-color .25s}
+.scroll .blk:hover{background:#EEF3FC}
+.scroll .blk:focus-visible{outline:3px solid var(--oro);outline-offset:1px}
+.scroll .blk p{margin:0;font-size:16.5px}
+.scroll .blk .tick{position:absolute;right:11px;top:9px;width:19px;height:19px;border-radius:50%;border:2px solid var(--blu-bordo);background:#fff;display:flex;align-items:center;justify-content:center;color:#fff;transition:.2s}
+.scroll .blk .tick svg{width:11px;height:11px;opacity:0;transition:.2s}
+.scroll .blk:hover .tick{border-color:var(--blu)}
+.scroll .blk.read{background:var(--verde-bg);border-left-color:var(--verde)}
+.scroll .blk.read .tick{background:var(--verde);border-color:var(--verde)}
+.scroll .blk.read .tick svg{opacity:1}
+.scroll .blk.rushed{background:var(--ambra-bg);border-left-color:var(--ambra)}
+.scroll .blk.isquote{border-left-color:var(--oro)}
+.scroll .blk.isquote p{font-family:'Lexend',sans-serif;font-style:italic;font-size:18.5px;color:var(--blu-prof);line-height:1.4}
+.scroll .blk.isquote.read{border-left-color:var(--verde)}
 
-  .intestazione-pannello{
-    padding:10px 18px;font-size:.78rem;font-weight:700;text-transform:uppercase;
-    letter-spacing:1px;color:var(--grigio);border-bottom:1px solid #e3e7ee;
-    background:#f6f8fb;display:flex;align-items:center;gap:8px;flex:0 0 auto;
-  }
-  .pannello-video .intestazione-pannello{
-    background:#121a2b;color:#9fb0cf;border-bottom:1px solid #1f2c44;
-  }
-
-  /* video — allineato in ALTO */
-  .video-wrap{
-    flex:1;display:flex;align-items:flex-start;justify-content:center;
-    padding:18px;min-height:0;
-  }
-  video{
-    width:100%;max-height:100%;border-radius:10px;background:#000;
-    box-shadow:0 8px 30px rgba(0,0,0,.5);
-  }
-
-  /* ---------- Pannello testo: solo paragrafo corrente + domanda ---------- */
-  .contenuto-testo{
-    flex:1;overflow-y:auto;padding:26px 34px 40px;
-    display:flex;flex-direction:column;min-height:0;
-  }
-  .argomento{
-    font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;
-    color:var(--blu-chiaro);margin-bottom:6px;display:flex;align-items:center;gap:8px;
-  }
-  .argomento .tc{
-    background:#eef1f6;color:var(--grigio);border-radius:5px;padding:1px 8px;
-    font-size:.72rem;font-variant-numeric:tabular-nums;letter-spacing:0;
-  }
-  .paragrafo{
-    font-size:1.32rem;line-height:1.72;color:var(--testo);font-weight:400;
-  }
-  .paragrafo.cambio{animation:fadeIn .45s ease;}
-  @keyframes fadeIn{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
-  .attesa{color:var(--grigio);font-style:italic;font-size:1.1rem;}
-
-  /* barra avanzamento argomenti */
-  .barra-argomenti{
-    margin-top:18px;display:flex;gap:5px;flex-wrap:wrap;flex:0 0 auto;
-  }
-  .barra-argomenti .pallino{
-    width:11px;height:11px;border-radius:50%;background:#dce2ec;transition:background .3s;
-  }
-  .barra-argomenti .pallino.fatto{background:var(--ok);}
-  .barra-argomenti .pallino.corrente{background:var(--oro);box-shadow:0 0 0 3px rgba(200,162,74,.25);}
-
-  /* ---------- Box domanda (INLINE, sotto il testo) ---------- */
-  .box-domanda{
-    margin-top:26px;border:2px solid var(--oro);border-radius:16px;
-    background:#fbf6e9;padding:0;overflow:hidden;display:none;flex:0 0 auto;
-  }
-  .box-domanda.attiva{display:block;animation:fadeIn .4s ease;}
-  .domanda-top{
-    background:linear-gradient(120deg,var(--blu),var(--blu-chiaro));color:#fff;
-    padding:12px 20px;display:flex;align-items:center;gap:10px;
-  }
-  .domanda-top .ico{font-size:1.3rem;}
-  .domanda-top .et{font-size:.7rem;text-transform:uppercase;letter-spacing:1.4px;opacity:.85;}
-  .domanda-top .num{font-size:1rem;font-weight:700;}
-  .domanda-body{padding:18px 20px 8px;}
-  .domanda-dom{font-size:1.12rem;font-weight:600;line-height:1.45;margin:0 0 16px;color:var(--testo);}
-  .opzioni{display:flex;flex-direction:column;gap:10px;}
-  .opz{
-    text-align:left;border:2px solid #dce2ec;background:#fff;border-radius:12px;
-    padding:12px 15px;font-size:.98rem;cursor:pointer;transition:all .15s;
-    display:flex;align-items:center;gap:12px;color:var(--testo);font-family:inherit;
-  }
-  .opz .lettera{
-    flex:0 0 auto;width:27px;height:27px;border-radius:50%;background:#eef1f6;
-    color:var(--blu);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.88rem;
-  }
-  .opz:hover:not(:disabled){border-color:var(--blu-chiaro);background:#f5f8ff;}
-  .opz.giusta{border-color:var(--ok);background:#eafaf0;}
-  .opz.giusta .lettera{background:var(--ok);color:#fff;}
-  .opz.sbagliata{border-color:var(--ko);background:#fdeeee;}
-  .opz.sbagliata .lettera{background:var(--ko);color:#fff;}
-  .opz:disabled{cursor:default;}
-  .feedback{
-    margin:14px 0 4px;padding:12px 15px;border-radius:12px;font-size:.93rem;
-    line-height:1.5;display:none;
-  }
-  .feedback.mostra{display:block;}
-  .feedback.ok{background:#eafaf0;color:#136c3a;border:1px solid #bce6cd;}
-  .feedback.ko{background:#fdeeee;color:#9c2b2b;border:1px solid #f1c4c4;}
-  .domanda-foot{padding:4px 20px 18px;display:flex;justify-content:flex-end;}
-  .btn-continua{
-    background:var(--ok);color:#fff;border:none;border-radius:30px;padding:11px 26px;
-    font-size:1rem;font-weight:600;cursor:pointer;display:none;align-items:center;gap:8px;
-    font-family:inherit;box-shadow:0 4px 14px rgba(31,157,85,.35);transition:transform .12s;
-  }
-  .btn-continua:hover{transform:translateY(-1px);}
-  .btn-continua.mostra{display:inline-flex;}
-
-  /* ---------- Footer ---------- */
-  footer{
-    background:var(--blu);color:#cdd7ea;font-size:.78rem;padding:10px 22px;
-    text-align:center;line-height:1.6;flex:0 0 auto;
-  }
-  footer b{color:#fff;}
-  footer .oro{color:var(--oro);}
-
-  /* ---------- Schermo iniziale ---------- */
-  .start{
-    position:fixed;inset:0;z-index:60;
-    background:linear-gradient(140deg,#0d1320,#1d3a6e 70%);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;color:#fff;padding:30px;
-  }
-  .start img{width:110px;height:110px;border-radius:24px;background:#fff;padding:8px;object-fit:contain;box-shadow:0 10px 40px rgba(0,0,0,.45);}
-  .start h1{font-size:1.8rem;margin:20px 0 6px;}
-  .start h2{font-size:1.02rem;font-weight:500;color:var(--oro);margin:0 0 18px;}
-  .start p{max-width:560px;color:#c7d2e6;line-height:1.6;font-size:.96rem;margin:0 0 24px;}
-  .start .come{
-    background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
-    border-radius:14px;padding:16px 22px;max-width:540px;text-align:left;
-    color:#dde6f4;font-size:.9rem;line-height:1.7;margin-bottom:26px;
-  }
-  .start .come b{color:var(--oro);}
-  .btn-start{
-    background:var(--oro);color:#23303f;border:none;border-radius:34px;padding:15px 40px;
-    font-size:1.1rem;font-weight:700;cursor:pointer;box-shadow:0 8px 26px rgba(200,162,74,.4);
-    font-family:inherit;transition:transform .12s;
-  }
-  .btn-start:hover{transform:translateY(-2px);}
-
-  /* ---------- Schermo finale ---------- */
-  .fine{
-    position:fixed;inset:0;z-index:60;display:none;
-    background:linear-gradient(140deg,#0d1320,#1d3a6e 70%);
-    flex-direction:column;align-items:center;justify-content:center;
-    text-align:center;color:#fff;padding:30px;
-  }
-  .fine.mostra{display:flex;}
-  .fine img{width:88px;height:88px;border-radius:20px;background:#fff;padding:6px;object-fit:contain;}
-  .fine .punteggio{font-size:3rem;font-weight:800;color:var(--oro);margin:10px 0;}
-  .fine h1{font-size:1.6rem;margin:14px 0 8px;}
-  .fine p{color:#c7d2e6;max-width:520px;line-height:1.6;}
-  .fine button{
-    margin-top:24px;background:transparent;border:2px solid var(--oro);color:var(--oro);
-    border-radius:30px;padding:12px 30px;font-size:1rem;font-weight:600;cursor:pointer;font-family:inherit;
-  }
-
-  @media (max-width:880px){
-    main{grid-template-columns:1fr;grid-template-rows:minmax(200px,42vh) 1fr;}
-    .pannello-testo{border-left:none;border-top:4px solid var(--oro);}
-    .titoli .sub{display:none;}
-    .paragrafo{font-size:1.12rem;}
-  }
+/* ---------- CONSEGNA / DALL'IDEA ALL'AZIONE ---------- */
+.task{margin-top:28px;background:var(--carta);border:1px solid var(--blu-bordo);border-radius:var(--raggio);box-shadow:var(--ombra);padding:26px 30px;position:relative;overflow:hidden}
+.task::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--oro)}
+.task-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:13px}
+.task-ico{flex:0 0 auto;width:44px;height:44px;border-radius:12px;background:var(--blu-tenue);border:1px solid var(--blu-bordo);display:flex;align-items:center;justify-content:center;color:var(--blu)}
+.task-eyebrow{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);font-weight:700;margin:3px 0 4px}
+.task-title{font-family:'Lexend',sans-serif;font-weight:600;font-size:21px;color:var(--blu-prof);margin:0;line-height:1.2}
+.task-intro{font-size:15.5px;margin:0 0 16px;max-width:78ch}
+.task-ex-label{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blu);margin:0 0 9px}
+.task-ex{list-style:none;padding:0;margin:0 0 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.task-ex li{background:var(--blu-tenue);border:1px solid var(--blu-bordo);border-radius:10px;padding:11px 14px 11px 36px;font-size:14.5px;line-height:1.45;position:relative}
+.task-ex li::before{content:"";position:absolute;left:14px;top:16px;width:9px;height:9px;border-radius:3px;background:var(--blu)}
+.task-field-label{display:block;font-size:14px;font-weight:700;color:var(--blu-prof);margin:0 0 8px}
+.task-foot{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:14px}
+.task-check{display:inline-flex;align-items:center;gap:9px;font-size:14px;cursor:pointer;color:var(--inchiostro);position:relative}
+.task-check input{position:absolute;opacity:0;width:1px;height:1px}
+.task-check .box{width:22px;height:22px;border-radius:6px;border:2px solid var(--blu-bordo);background:#fff;display:flex;align-items:center;justify-content:center;color:#fff;transition:.15s}
+.task-check .box svg{width:13px;height:13px;opacity:0;transition:.15s}
+.task-check input:checked + .box{background:var(--verde);border-color:var(--verde)}
+.task-check input:checked + .box svg{opacity:1}
+.task-check input:focus-visible + .box{outline:3px solid var(--oro);outline-offset:2px}
 </style>
 </head>
 <body>
 
-  <!-- SCHERMO INIZIALE -->
-  <div class="start" id="schermoStart">
-    <img src="logo.jpg" alt="Logo Scuola Sacra Famiglia">
-    <h1>Intelligenze · AI Nuovo Mondo</h1>
-    <h2>Puntata 10 — Una sintesi del viaggio nell'intelligenza artificiale</h2>
-    <p>Guarda il video: a destra comparirà, sincronizzato, solo il passaggio che stai ascoltando. Alla fine di ogni argomento il video si ferma e ti viene proposta una domanda di comprensione.</p>
-    <div class="come">
-      <b>Come funziona:</b><br>
-      • A sinistra il <b>video</b>, a destra il <b>testo sincronizzato</b> (un passaggio per volta).<br>
-      • Quando un argomento finisce, il video si <b>blocca</b> e sotto al testo appare una domanda.<br>
-      • Rispondi correttamente per <b>far ripartire</b> il video.<br>
-      • Alla fine vedrai il tuo punteggio di comprensione.
+<header>
+  <div class="brand">
+    <span class="crest" role="img" aria-label="Logo Scuola Sacra Famiglia"></span>
+    <div>
+      <h1>Magnifica Humanitas</h1>
+      <div class="sub">Leone XIV — custodire l'umano nel tempo dell'intelligenza artificiale</div>
     </div>
-    <button class="btn-start" id="btnStart">▶ Inizia la lezione</button>
+    <span class="spacer"></span>
+    <button class="nick-chip" id="nickChip" title="Cambia nome o azzera i progressi">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+      <span id="nickName">Ospite</span>
+    </button>
   </div>
-
-  <!-- HEADER -->
-  <header>
-    <img class="logo" src="logo.jpg" alt="Logo Scuola Sacra Famiglia">
-    <div class="titoli">
-      <span class="scuola">Scuola Sacra Famiglia</span>
-      <span class="sub">Scuola Paritaria — Infanzia, Primaria e Secondaria di I grado · Orzinuovi (BS)</span>
-      <span class="prog">Intelligenze · AI Nuovo Mondo — Lezione interattiva</span>
+  <nav id="nav" aria-label="Tappe della lezione"></nav>
+  <div class="wall">
+    <div class="wall-inner">
+      <span class="wall-label">Il muro che costruiamo</span>
+      <div class="bricks" id="bricks" aria-hidden="true"></div>
+      <span class="wall-count" id="wallCount">0/8</span>
     </div>
-    <div class="header-spacer"></div>
-    <div class="badge-progresso">Domande: <b id="contaRisposte">0</b>/<span id="contaTotali">0</span> · Corrette: <b id="contaCorrette">0</b></div>
-  </header>
-
-  <!-- MAIN -->
-  <main>
-    <section class="pannello pannello-video">
-      <div class="intestazione-pannello">🎬 Video della puntata</div>
-      <div class="video-wrap">
-        <video id="player" controls preload="metadata" playsinline>
-          <source src="https://dl.dropboxusercontent.com/scl/fi/v3ugprjvz5me510s0qgj1/Intelligenze.-AI-Nuovo-Mondo-pt.10.mp4?rlkey=l4dy3xg44amb02ivdnf3b6kfa&dl=1" type="video/mp4">
-          Il tuo browser non supporta il video.
-        </video>
-      </div>
-    </section>
-
-    <section class="pannello pannello-testo">
-      <div class="intestazione-pannello">📖 Testo del video — passaggio in ascolto</div>
-      <div class="contenuto-testo" id="contenutoTesto">
-        <div class="argomento" id="argomentoLabel"></div>
-        <div class="paragrafo attesa" id="paragrafo">▶ Premi «Inizia la lezione» per cominciare.</div>
-
-        <!-- BOX DOMANDA INLINE -->
-        <div class="box-domanda" id="boxDomanda">
-          <div class="domanda-top">
-            <span class="ico">❓</span>
-            <div>
-              <div class="et">Domanda di comprensione</div>
-              <div class="num" id="domandaNum">Domanda 1</div>
-            </div>
-          </div>
-          <div class="domanda-body">
-            <p class="domanda-dom" id="domandaDom"></p>
-            <div class="opzioni" id="domandaOpzioni"></div>
-            <div class="feedback" id="domandaFeedback"></div>
-          </div>
-          <div class="domanda-foot">
-            <button class="btn-continua" id="btnContinua">▶ Riprendi il video</button>
-          </div>
-        </div>
-
-        <div class="barra-argomenti" id="barraArgomenti"></div>
-      </div>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <b>Scuola Sacra Famiglia</b> — Scuola Paritaria · Orzinuovi (BS) · <span class="oro">sacrafamiglia.edu.it</span> &nbsp;·&nbsp;
-    Progetto e sviluppo: <b>Andrea Cerioli</b>, Animatore Digitale
-  </footer>
-
-  <!-- SCHERMO FINALE -->
-  <div class="fine" id="schermoFine">
-    <img src="logo.jpg" alt="Logo">
-    <h1>Lezione completata!</h1>
-    <div class="punteggio" id="punteggioFinale">0 / 0</div>
-    <p id="messaggioFinale"></p>
-    <button id="btnRicomincia">↻ Rivedi la lezione</button>
   </div>
+</header>
+
+<main id="main"></main>
+
+<div class="inst">
+  <span class="inst-logo" role="img" aria-label="Logo Scuola Sacra Famiglia"></span>
+  <div class="inst-txt">
+    <p class="i-name">Scuola Sacra Famiglia</p>
+    <p class="i-loc">Scuola Paritaria — Infanzia, Primaria e Secondaria di I grado · Orzinuovi (BS) · sacrafamiglia.edu.it</p>
+    <p class="i-roles">
+      Progetto e sviluppo: <b>Andrea Cerioli</b>, Animatore Digitale
+    </p>
+  </div>
+</div>
+<footer>
+  <p>Testi <strong>adattati e semplificati</strong> per la scuola secondaria di I grado a partire dalla Lettera Enciclica <em>Magnifica Humanitas</em> (Leone XIV, 15 maggio 2026). Originale completo su vatican.va. I numeri tra parentesi indicano i paragrafi dell'enciclica.</p>
+  <p class="rights">&copy; Scuola Sacra Famiglia — Orzinuovi (BS) · Materiale didattico a uso interno</p>
+</footer>
+
+<div class="modal-bg" id="modalBg">
+  <div class="modal">
+    <h3>Chi sta lavorando?</h3>
+    <p>Scrivi un nome o un soprannome: i tuoi progressi e le tue risposte resteranno salvati su questo dispositivo.</p>
+    <input type="text" id="nickInput" placeholder="Es. Marco_3B" maxlength="28" autocomplete="off">
+    <div class="m-actions">
+      <button class="btn btn-ghost" id="nickReset">Azzera tutto</button>
+      <button class="btn btn-gold" id="nickSave">Salva e inizia</button>
+    </div>
+  </div>
+</div>
 
 <script>
-/* ============ TRASCRIZIONE (n, t=secondi inizio, txt) ============ */
-const SEGMENTI = [
-  {n:1,t:48,txt:"Siamo a stazione Termini a Roma, al Tecnopolo, e questo è Intelligenze, un programma che cerca di parlare di intelligenze artificiali per parlare dell'umano."},
-  {n:2,t:59,txt:"Anche in questa puntata avremo dei contenuti prodotti con l'intelligenza artificiale che saranno riconoscibili grazie a questo bollino."},
-  {n:3,t:89,txt:"Nel corso di questo nostro viaggio ci siamo accorti che quando diciamo intelligenza artificiale in realtà indichiamo un mondo plurale, un mondo di intelligenze, appunto, come il titolo di queste nostre indagini. E le abbiamo viste all'interno di quella loro capacità di trasformare le attività della nostra vita e di cambiare anche quello che in parte è la nostra comprensione di esseri umani."},
-  {n:4,t:113,txt:"Ma se questo è stato un viaggio che potremmo definire analitico, ora che ci accingiamo a chiudere questo percorso è arrivato il momento di tracciare una sintesi e provare a descrivere un quadro completo."},
-  {n:5,t:140,txt:"Ripercorriamo il nostro viaggio insieme ad alcuni dei nostri ospiti. Il primo passo è stato capire come funziona l'intelligenza artificiale e perché, quando è nata e come è arrivata sin qui."},
-  {n:6,t:160,txt:"Professore Odifreddi, ben trovato, grazie per essere con noi a Intelligenze. Buongiorno a voi e grazie dell'invito. Quello a cui stiamo assistendo oggi con le intelligenze artificiali generative e i cosiddetti grandi modelli linguistici, è un'inedita manifestazione di linguaggio o è qualcosa che c'era già in passato?"},
-  {n:7,t:182,txt:"Sono cose che risalgono ad alcuni decenni fa, anzi quasi un secolo, perché in fondo ChatGPT e tutte le sue varianti si basano su quelle che si chiamano le reti neurali. E la prima rete neurale è stata inventata nel 1943. Ci si misero in due: un neurofisiologo che si chiamava McCulloch e un matematico molto più giovane che si chiamava Pitts, e misero insieme la neurofisiologia e la modellizzazione matematica. Poi negli ultimi decenni si è capito che se uno aumenta il numero dei neuroni e li fa diventare miliardi o centinaia di miliardi, le cose cambiano completamente. In più le reti neurali oggi hanno il meccanismo di propagazione inversa, e questo fa sì che siano in teoria addirittura più potenti di noi."},
-  {n:8,t:317,txt:"Professor Roncaglia, filosofo, insegna all'Università di Roma Tre filosofia dell'informazione ed è un rinomato saggista. Che cos'è che ci ha portato a questa ultima generazione di intelligenza artificiale, cosa c'è di così differente rispetto alle generazioni precedenti?"},
-  {n:9,t:335,txt:"Pensiamo ai sistemi che producono linguaggio. Questi sistemi sono addestrati con tantissimi testi. Il sistema li spezzetta in paroline, in quelle che tecnicamente si chiamano token. Ognuno di questi token viene fatto corrispondere a una nuvola di numeri, che sono rappresentazioni numeriche di come il token è usato nel corpus di addestramento. E poi il sistema prevede parole, guarda il nostro prompt e prevede parole una dopo l'altra."},
-  {n:10,t:362,txt:"Un prompt è un testo dato ad un'intelligenza artificiale per ottenere una risposta. Questo testo guida il computer nella creazione di risposte testuali, video, audio o immagini, secondo le richieste dell'utente."},
-  {n:11,t:376,txt:"Il sistema usa tutto il suo corpus di addestramento per creare modelli numerici. Poi questo corpus non se lo porta dietro. Quindi quando questi sistemi producono contenuti, non vanno a copiarli dal corpus di addestramento, come a volte si crede: li producono effettivamente in maniera statistico-probabilistica sulla base dei loro modelli. Quindi questo aspetto di originalità nella produzione dei contenuti c'è, sia coi contenuti testuali sia con quelli visivi."},
-  {n:12,t:423,txt:"Ma a lei che cos'è che l'ha stupita o l'ha impressionata con l'avvento di questa nuova generazione di intelligenze artificiali?"},
-  {n:13,t:430,txt:"Direi che una cosa che stupisce è che funzioni così bene. Che la produzione di paroline una dopo l'altra riesca a formare frasi e testi che nel loro complesso hanno una forte forza semantica, cioè fanno senso. C'è qualcosa di emergente in questi sistemi nella capacità di produrre un ragionamento complesso attraverso delle microazioni che a noi non sembrerebbero capaci di produrre questo tipo di complessità. Su queste architetture non c'erano inizialmente aspettative così alte e questo è effettivamente sorprendente."},
-  {n:14,t:504,txt:"Un possibile rischio è che l'IA si affidi sempre più a testi generati dall'IA stessa e quindi divenga sempre meno creativa e affidabile. Ma prevedere oggi dove arriverà l'IA è impossibile, a causa della natura stessa del suo funzionamento. È come crescere un figlio: possiamo educarlo ma non possiamo prevedere come si comporterà da grande."},
-  {n:15,t:532,txt:"Dottor Giovanni Severini, Principal Group Program Manager di Microsoft, con sede a Seattle. Dalla sua prospettiva, quali sono i problemi che ancora non abbiamo risolto di questa tecnologia oggi?"},
-  {n:16,t:550,txt:"Siamo ancora nelle fasi iniziali dell'intelligenza artificiale. È un neonato che non ha neanche iniziato a gattonare. Vedo tre fasi nel futuro dell'IA. La prima è quella che stiamo vivendo adesso, in cui l'IA è fatta da semplici chatbot con cui interagiamo scrivendo i prompt e che ci aiutano a scrivere documenti ed email. La successiva, in cui stiamo per entrare, è quella in cui io utente o io azienda posso creare un agente personalizzato che lavora per me, esegue compiti e prende decisioni."},
-  {n:17,t:606,txt:"La terza fase sarà quella più rivoluzionaria. Ci vorranno due o tre anni per arrivarci. È quella in cui il mio agente interagisce direttamente con altri agenti, creati da altre persone o aziende, e questi agenti collaborano, negoziano e creano soluzioni insieme. In poche parole, stiamo costruendo un'economia, un ecosistema di intelligenze che comunicano e agiscono in rete per conto nostro."},
-  {n:18,t:643,txt:"Le vere paure che ho rispetto all'intelligenza artificiale sono due. Una, che aumenterà il digital divide, il divario digitale tra la parte ricca del mondo e la parte che ha meno accesso alle tecnologie, quindi l'Africa e buona parte dell'Asia. C'è il rischio di escludere chi non ha accesso a queste tecnologie."},
-  {n:19,t:668,txt:"L'altra cosa ancora da risolvere, una mia paura, è l'impatto ambientale. L'intelligenza artificiale per sua natura consuma tantissima energia e fin quando non saremo in grado di produrre questa energia da fonti rinnovabili, vuol dire che quell'energia la stiamo togliendo ad altri o ad altre attività."},
-  {n:20,t:692,txt:"Noi non sappiamo quale sarà il futuro dell'intelligenza artificiale. Però di sicuro avrà bisogno di grandi data center che dovranno elaborare i dati e dare delle risposte."},
-  {n:21,t:704,txt:"Avere i data center nel proprio paese diventerà sempre più strategico. Odio fare paragoni militari, ma è come avere la bomba atomica o non averla. Purtroppo sullo scenario internazionale se hai la bomba atomica hai un peso maggiore. Sottolineo, purtroppo."},
-  {n:22,t:735,txt:"Ingegner Federico Faggin, grazie del suo tempo. Un ingegnere che ha fatto la storia, considerato uno dei padri dei microchip, dietro alla miniaturizzazione che ha reso possibili i primi computer, poi i portatili, oggi gli smartphone. Perché funziona l'informazione digitale? È qualcosa di misterioso o di scientifico?"},
-  {n:23,t:771,txt:"Allora il digitale funziona perché il mondo degli oggetti che si muovono nello spazio-tempo si può riprodurre in parte con un computer. In linea di principio può simulare ciò che avviene nello spazio-tempo, con oggetti però che devono essere oggetti macroscopici."},
-  {n:24,t:797,txt:"Ma allora l'intelligenza artificiale è una macchina che tende a comportarsi come noi, oppure siamo noi che sempre di più tendiamo a comportarci come macchine? Qual è il ruolo della coscienza in questo?"},
-  {n:25,t:816,txt:"Qui già mettiamo il dito sulla piaga di chi crede che la realtà sia la realtà classica, della materia e del riduzionismo, in cui gli oggetti sono separati l'uno dall'altro. In realtà più profonda non c'è separazione tra le parti. La totalità di ciò che esiste è olistico, cioè non è fatto di parti separate. Tutto è interconnesso. Questa è la scoperta più importante fatta dai fisici negli ultimi 100 anni."},
-  {n:26,t:850,txt:"In questa visione abbiamo tre elementi: il corpo, la mente e lo spirito. Sembra quasi una religione, ma non lo è, perché il corpo si può capire come informazione classica, il bit dei computer. La mente invece è caratterizzata da informazione quantistica, che ha una proprietà fondamentale: non è clonabile, non si può riprodurre. Le particelle fanno parte del campo, sono come onde del mare che fanno parte del mare, non sono separabili dal mare."},
-  {n:27,t:897,txt:"Ma allora a cosa serve questo stato quantistico del campo? Nella nuova teoria lo stato quantistico del campo rappresenta i qualia, cioè le sensazioni, i sentimenti che caratterizzano l'esperienza cosciente nostra. L'amore che proviamo, il sapore del cibo, la musica. Il significato dell'esperienza allora è il significato dell'informazione quantistica che rappresenta la mente."},
-  {n:28,t:929,txt:"Abbiamo adesso un quadro che ci permette di capire chi siamo noi. Noi siamo un campo quantistico che esperisce un mondo fisico. Abbiamo tutti e tre questi aspetti che sono collegati insieme, non sono separabili."},
-  {n:29,t:954,txt:"Alex Braga, artista, attivista dell'intelligenza artificiale. Spesso pensiamo che queste macchine possano avere una forza omologante. Ma questo accade con un'IA generica o c'è bisogno di un lavoro di affinamento su di noi e sulla macchina perché questa alchimia possa funzionare?"},
-  {n:30,t:977,txt:"La sintesi brutale del marketing commerciale dell'IA in questo momento è: hai un assistente che fa le cose al posto tuo, e poi vai a sapere se un giorno le farà di sua sponte e quindi tu non servirai più. Oppure l'essere umano continuerà a essere centrale. Il tema sono proprio i modelli di addestramento e l'intenzionalità con cui viene scritto un algoritmo."},
-  {n:31,t:1006,txt:"Ed è qui, in questa sottile piega filosofica e metafisica, che si trova la grande discriminante tra quello che succede in questo tipo di modelli e quello che succede nei Large Language Model."},
-  {n:32,t:1019,txt:"Un Large Language Model (LLM) è un tipo di intelligenza artificiale che può comprendere e generare testi simili a quelli scritti dagli esseri umani, aiutando in molte attività come rispondere a domande e comprendere testi complessi."},
-  {n:33,t:1036,txt:"Sono modelli addestrati con tutta la cultura dell'umanità e quindi con tutto il pregiudizio possibile, e che finiscono per dare, come collo di bottiglia statistico, un risultato totalmente omologante. Perché che tu metta un prompt o che lo metta io, se richiedo un'immagine in un certo modo, quell'IA per forza di cose ragiona secondo il pregiudizio. E siccome noi, in quanto esseri umani di coscienza, ci battiamo per la libertà, la libertà vuol dire crescere liberi dal pregiudizio."},
-  {n:34,t:1076,txt:"Quindi la grande linea di demarcazione tra i Large Language Model e delle piccole intelligenze artificiali che funzionano senza i dataset è in realtà un oceano dentro al quale nuota l'indecisione dell'essere umano, e adesso la paura dell'essere umano di essere sostituito da un imbuto universale che ci renderà tutti omologati."},
-  {n:35,t:1105,txt:"Il grande pericolo dei Large Language Model è quello, perché è quella la china sulla quale l'umanità sta camminando. Perché noi stiamo utilizzando tutte queste risorse non per vivere meglio — ed è questo il paradosso dell'idiozia umana — ma per profilare meglio e avere ancora più dati da dare in pasto alle macchine per creare i dataset."},
-  {n:36,t:1134,txt:"Quindi il grande tema in questo momento è: ma tutti questi dati alla fine a cosa servono e dove ci portano? Purtroppo la risposta è: ci portano ad essere profilati in maniera sempre più profonda e ad essere dei consumatori sempre più inebetiti e sempre più disposti a spendere per quello che il mercato ci propone."},
-  {n:37,t:1160,txt:"I Large Language Model sono eticamente insostenibili perché si sono nutriti di tutti i dati prodotti dalla cultura umana senza remunerare nessuno e senza citare le fonti, mettendo a repentaglio l'idea stessa della possibilità di tramandare questa cultura: distruggendo le bibliografie e le fonti, altro non si fa che distruggere la cultura umana. Questi sono dati oggettivi, non contestabili."},
-  {n:38,t:1204,txt:"Guido Scorza, componente dell'Autorità Garante della Privacy italiana, avvocato e attivista per la difesa dei diritti personali nel digitale. Se uno prova a dialogare con ChatGPT e chiede qualcosa su Guido Scorza, il sistema si blocca. Perché?"},
-  {n:39,t:1224,txt:"Ho chiesto semplicemente a OpenAI di tirar via il mio nome e il mio cognome da questo straordinario esperimento collettivo, esercitando quello che noi chiamiamo il diritto di opposizione. OpenAI ha inserito una sorta di filtro in opt-out. Sa chi sono, il mio nome dentro a quel sistema c'è, ma se qualcuno interroga il sistema con il mio nome e cognome, il sistema non può pronunciarlo."},
-  {n:40,t:1263,txt:"Ma questo è interessantissimo, pensiamo a chi magari non vuole che il sistema dica cose su di lui. È stato difficile da fare o è qualcosa che può fare qualsiasi cittadino?"},
-  {n:41,t:1272,txt:"All'epoca era più difficile, oggi può farlo chiunque. A seguito dell'intervento del Garante nei confronti di ChatGPT, uno degli ordini ha riguardato proprio il riconoscimento alle persone di questo diritto previsto nella disciplina europea. Quindi chiunque può chiedere a OpenAI di far sì che ChatGPT non pronunci più il suo nome."},
-  {n:42,t:1300,txt:"Ognuno di noi può bloccare il proprio nome su ChatGPT esercitando nei confronti di OpenAI il diritto di opposizione, quello che la vigente disciplina europea riconosce a tutti gli interessati per ottenere che un trattamento iniziato senza il loro consenso venga interrotto. Chiunque viva in Europa può fare richiesta tramite il modulo sul sito privacy.openai.com cliccando su «Make a Privacy Request»."},
-  {n:43,t:1344,txt:"La legge, la giurisprudenza, il diritto, sono cose antiche perché l'uomo è antico, ma sono anche a volte lente. Qualcuno parla di una corsa del gatto col topo, qualcuno di una battaglia già persa, qualcuno invece di un dovere necessario da parte di tutti. Cosa sta succedendo?"},
-  {n:44,t:1364,txt:"Io sono per il dovere necessario da parte di tutti. Non possiamo fare un passo indietro con la regolamentazione, perché altrimenti la tecnologia diventerebbe regolamentazione e la tecnocrazia prenderebbe il posto della democrazia. Perché 50 milioni di persone si mettessero alla guida di un'automobile ci son voluti 62 anni; perché ChatGPT raggiungesse 100 milioni di utenti ci son voluti 2 mesi. Forse non abbiamo abbastanza tempo per regolamentare l'impatto dell'IA sulla società."},
-  {n:45,t:1438,txt:"È con noi Ivana Bartoletti, una delle massime esperte nell'ambito internazionale di privacy e di etica delle tecnologie. Perché questo argomento le interessa?"},
-  {n:46,t:1453,txt:"I dati sono fondamentali al giorno d'oggi, ma proprio perché sono così fondamentali vanno trattati con grande cura. Quando parliamo di privacy nell'epoca dell'IA, dei big data, degli algoritmi, parlare di privacy vuol dire parlare di autonomia decisionale delle persone. Cosa succede al libero arbitrio? Questo si usa anche nell'ambito della polizia, con l'idea di fermare qualcosa prima che avvenga. Sono tutti temi etici che ci dobbiamo porre come società, proprio perché i dati sono estremamente utili e dobbiamo usarli nel modo positivo."},
-  {n:47,t:1513,txt:"Attualmente i grandi modelli linguistici dell'IA appartengono a Stati Uniti e Cina. L'Europa è in ritardo. Recuperare il terreno perduto è possibile ed è un'opportunità unica per compiere scelte etiche in fatto di ricerca e investimenti pubblici."},
-  {n:48,t:1537,txt:"Professor Parisi, fisico e premio Nobel nel 2021. C'è una cosa che i fisici hanno fatto che mi colpisce sempre per la bellezza: il CERN, a Ginevra. Uno spazio aperto dove la scienza può lavorare insieme, l'unico posto dove russi e ucraini possono ancora lavorare spalla a spalla. Potrebbe essere il caso di fare una cosa analoga, aperta e continentale, per le intelligenze artificiali?"},
-  {n:49,t:1573,txt:"Sì, sarebbe assolutamente necessario fare un grosso centro di ricerca europeo, perché mettere assieme un migliaio di ricercatori che lavorano nello stesso campo permette tutta una serie di scambi. Sul modello del CERN, con accordi e collaborazioni anche con paesi extra-continentali. Rischiamo sennò di rimanere assolutamente indietro. Ed è molto importante che questa ricerca sia fatta in laboratori pubblici, in modo che sia aperta a tutti. Se la lasciamo solo alle industrie private, sappiamo solo quello che loro ci vogliono far sapere."},
-  {n:50,t:1643,txt:"Uno dei primi veri esperimenti in fatto di IA viene oggi considerato quello dell'Index Thomisticus, fatto in Italia negli anni '70. Protagonisti centinaia di testi su e di San Tommaso d'Aquino, raccolti dal padre gesuita Roberto Busa, tra i primi creatori del moderno concetto di ipertesto. A quel progetto partecipò l'ingegnere Alberto Tripi, oggi imprenditore e portavoce dell'industria italiana nel mondo."},
-  {n:51,t:1672,txt:"Nel 1972 facevo il direttore dell'IBM di Roma e l'IBM mi fece conoscere padre Busa, dedicandogli il più grande calcolatore che in quel momento c'era. Padre Busa aveva fatto la ricerca su tutto ciò che San Tommaso e quelli intorno a lui avevano scritto, memorizzando tutto su schede perforate, il primo esempio di informatica. Mettemmo tutta la sua documentazione sui nuovi calcolatori con memoria a disco e creammo quello che adesso si chiama database, con quello che adesso si chiama algoritmo, che usava quelli che adesso si chiamano token per collegarli fra di loro."},
-  {n:52,t:1790,txt:"Quindi l'Index Thomisticus fu un primo esempio di intelligenza artificiale con un algoritmo a cui ho contribuito a scrivere. Ecco perché io la chiamo intelligenza aumentata: non pensiamo che sia qualcosa che sostituisce l'intelligenza umana, ma l'uomo sarà sempre al centro del nostro mondo, di quello in cui a noi ci piace vivere."},
-  {n:53,t:1857,txt:"Abbiamo chiesto ai nostri ospiti di indicarci un libro che secondo loro ha a che fare con l'argomento di cui abbiamo parlato."},
-  {n:54,t:1863,txt:"Il libro che ho scelto è l'Etica dimostrata con metodo geometrico di Spinoza. Spinoza ci insegna a non affidarci troppo alle cause finali, un antidoto per non cedere a narrazioni teleologiche e misteriosofiche che gravitano attorno all'IA; e ci aiuta a riflettere più radicalmente sulla libertà, senza attribuirla con troppa disinvoltura alle macchine e, per certi versi, anche alla specie umana."},
-  {n:55,t:1893,txt:"Gli scritti di Marshall McLuhan, che ha fissato le basi e i criteri per comprendere questo fenomeno di auto-sostituzione dell'uomo e che porta l'uomo sostanzialmente a disincarnarsi."},
-  {n:56,t:1909,txt:"Il libro consigliato è il Rapporto Mondiale sulla Felicità 2025. Perché nell'era dell'intelligenza artificiale dobbiamo dire che l'intelligenza artificiale è nulla senza l'intelligenza relazionale. Abbiamo bisogno di accompagnare questa potenza tecnologica con l'intelligenza delle relazioni, per evitare che ci travolga."},
-  {n:57,t:1927,txt:"Il libro che ho scelto è Il serpente cosmico di Jeremy Narby: un viaggio di questo antropologo in Amazzonia dove scopre le vie dello sciamanesimo e lo stato di coscienza alterato. Mi ha portato in quello che sto facendo oggi, cioè lavorare con una coscienza alterata, non attraverso le droghe ma attraverso l'intelligenza artificiale."},
-  {n:58,t:1961,txt:"Lezioni americane di Italo Calvino. Ci sono diverse lezioni ancora oggi incredibilmente attuali e interessanti per tutti i creativi: quella sulla leggerezza, che non è vaghezza né approssimazione, ma è il lavoro di sintesi che dovrebbe essere il cuore del lavoro di ogni creativo."},
-  {n:59,t:1979,txt:"Theodore Roszak, The Cult of Information, un libro del 1986, solo due anni dopo l'uscita del Mac. In quel libro si faceva notare come la tecnologia informatica e il digitale sarebbero potuti diventare delle vere e proprie ideologie: non solo tecnologie utili alla società, ma soprattutto modi di pensare che non sempre avrebbero avuto conseguenze positive."}
+"use strict";
+
+/* ============================================================
+   DATI: 8 tappe + home. Testi adattati per 11-14 anni.
+   ============================================================ */
+const TAPPE = [
+  {
+    id:"t1", n:1, titolo:"Babele o Gerusalemme?", typeLabel:"Smista le frasi",
+    eyebrow:"Le due immagini", para:"§ 7–10 · Introduzione",
+    h2:"Babele o Gerusalemme?",
+    lead:"Il Papa parte da due racconti della Bibbia per spiegare quale scelta abbiamo davanti con la tecnologia.",
+    src:"Dall'enciclica (§ 7–10), adattato",
+    text:[
+      {p:"Il primo racconto è la <b>torre di Babele</b>. Gli uomini vogliono costruire una città e una torre che arrivi fino al cielo, per «farsi un nome» e sentirsi potenti. Parlano una sola lingua e seguono un solo progetto. Ma è un'opera costruita senza pensare a Dio e senza rispettare le differenze: vince l'orgoglio. Il risultato non è l'unità, ma la <b>confusione</b>: le persone non si capiscono più e si disperdono."},
+      {p:"Il secondo racconto è la <b>ricostruzione di Gerusalemme</b>. Dopo l'esilio, le mura della città sono crollate. <b>Neemia</b> non impone le soluzioni dall'alto: ascolta le paure della gente, affida a ogni famiglia un pezzo di muro da rifare e coordina il lavoro di tutti. La città rinasce «mattone dopo mattone», grazie alla <b>responsabilità condivisa</b>."},
+      {cite:"La prima scelta non è tra un «sì» o un «no» alla tecnologia, ma tra edificare Babele o ricostruire Gerusalemme."},
+      {p:"Per questo, dice il Papa, la tecnologia da sola non è né la soluzione né il male: tutto dipende da <b>come</b> e <b>con chi</b> la costruiamo. Possiamo usarla per dominare gli altri (Babele) o per lavorare insieme con cura e ascolto (Gerusalemme)."}
+    ],
+    work:{
+      type:"categorize", badge:"Categorize · Smistamento",
+      h3:"A quale costruzione appartiene?",
+      ask:"Trascina con un tocco ogni frase nella colonna giusta: è uno stile da «Babele» o da «Gerusalemme»?",
+      bins:[{key:"babele",label:"Babele"},{key:"gerusalemme",label:"Gerusalemme"}],
+      items:[
+        {t:"Voglio sembrare il più potente di tutti.", a:"babele"},
+        {t:"Ascolto le paure degli altri prima di decidere.", a:"gerusalemme"},
+        {t:"Tutti devono pensarla allo stesso modo.", a:"babele"},
+        {t:"Ognuno ha il suo pezzo di lavoro da fare.", a:"gerusalemme"},
+        {t:"Costruisco senza chiedermi se è un bene.", a:"babele"},
+        {t:"Lavoriamo insieme, con cura per ciascuno.", a:"gerusalemme"}
+      ]
+    },
+    monitor:"Con parole tue: qual è la differenza più importante tra «costruire Babele» e «ricostruire Gerusalemme»?"
+  },
+  {
+    id:"t2", n:2, titolo:"La tecnologia non è neutrale", typeLabel:"Vero o Falso",
+    eyebrow:"Una scelta nostra", para:"§ 9",
+    h2:"La tecnologia non è neutrale",
+    lead:"Uno strumento non è mai «innocente» o «cattivo» da solo: dipende da chi lo pensa e lo usa.",
+    src:"Dall'enciclica (§ 9), adattato",
+    text:[
+      {p:"La tecnologia può fare cose meravigliose: <b>curare</b> le persone, <b>collegarle</b> tra loro, <b>educare</b>, proteggere l'ambiente. Ma le stesse tecnologie possono anche <b>dividere</b>, <b>escludere</b> qualcuno e creare nuove ingiustizie."},
+      {p:"Allora la tecnologia è buona o cattiva? Il Papa risponde così: in astratto non è né l'una né l'altra. Però non è nemmeno <b>neutrale</b>, cioè «senza colore»."},
+      {cite:"Non è neutrale, perché assume il volto di chi la pensa, la finanzia, la regola, la usa."},
+      {p:"Significa che ogni strumento porta con sé le <b>scelte</b> di chi lo ha costruito: cosa è importante, cosa viene ignorato, chi viene aiutato e chi no. Per questo non basta chiedersi «funziona bene?»: dobbiamo chiederci «a chi serve?» e «che idea di persona c'è dietro?»."}
+    ],
+    work:{
+      type:"truefalse", badge:"True / False · Vero o Falso",
+      h3:"Hai capito bene?",
+      ask:"Per ogni affermazione scegli Vero o Falso. Dopo il controllo trovi la spiegazione.",
+      items:[
+        {q:"Secondo il Papa la tecnologia è sempre buona.", a:false, why:"Falso: può curare ed educare, ma anche dividere ed escludere."},
+        {q:"La stessa tecnologia può aiutare o danneggiare, dipende dall'uso.", a:true, why:"Vero: può connettere oppure escludere le persone."},
+        {q:"«Non neutrale» vuol dire che porta dentro di sé le scelte di chi l'ha costruita.", a:true, why:"Vero: assume «il volto» di chi la pensa, la finanzia e la usa."},
+        {q:"Per giudicare uno strumento basta sapere se funziona bene.", a:false, why:"Falso: bisogna anche chiedersi a chi serve e quale idea di persona c'è dietro."}
+      ]
+    },
+    monitor:"Pensa a un'app o a un sito che usi spesso: secondo te quale «scelta» di chi l'ha costruito ci nascondi dietro?"
+  },
+  {
+    id:"t3", n:3, titolo:"L'IA non è come noi", typeLabel:"Risposte multiple",
+    eyebrow:"Che cos'è l'IA", para:"§ 99",
+    h2:"L'IA non è come noi",
+    lead:"L'intelligenza artificiale imita alcune cose che facciamo, ma le manca quasi tutto ciò che ci rende umani.",
+    src:"Dall'enciclica (§ 99), adattato",
+    text:[
+      {p:"Attenzione a una parola che inganna: «intelligenza». L'IA <b>imita</b> alcune funzioni della nostra mente e spesso è più veloce di noi nel fare calcoli. Questo è utile in tanti campi."},
+      {p:"Ma questa potenza riguarda solo il <b>trattamento dei dati</b>. L'IA, dice il Papa, non vive esperienze, non ha un corpo, non prova gioia o dolore, non cresce attraverso le relazioni. Non sa dall'interno cosa significhino l'amore, il lavoro, l'amicizia."},
+      {p:"E soprattutto non ha una <b>coscienza morale</b>: non distingue davvero il bene dal male, non coglie il senso profondo delle situazioni, non si prende il peso delle conseguenze."},
+      {cite:"Può simulare empatia o comprensione, ma non capisce ciò che produce."},
+      {p:"Anche quando «impara», lo fa in modo diverso da noi: non cresce con le scelte, gli errori e il perdono, ma si adatta in base a tantissimi dati. Può essere efficace, ma non vive una crescita interiore."}
+    ],
+    work:{
+      type:"multiselect", badge:"Multiple Select · Più risposte",
+      h3:"Che cosa l'IA NON può fare?",
+      ask:"Seleziona TUTTE le cose che, secondo il testo, l'IA non riesce davvero a fare. (Possono essere più di una.)",
+      options:[
+        {t:"Provare gioia e dolore", a:true},
+        {t:"Fare calcoli velocissimi", a:false},
+        {t:"Distinguere davvero il bene dal male", a:true},
+        {t:"Imitare l'empatia con le parole", a:false},
+        {t:"Crescere attraverso le relazioni e gli errori", a:true},
+        {t:"Capire davvero il senso di ciò che produce", a:true}
+      ]
+    },
+    monitor:"Secondo te, perché può essere pericoloso dimenticarsi che l'IA «non capisce» quello che scrive?"
+  },
+  {
+    id:"t4", n:4, titolo:"Un aiuto che richiede attenzione", typeLabel:"Scelta singola",
+    eyebrow:"Usare l'IA con prudenza", para:"§ 100",
+    h2:"Un aiuto prezioso che richiede attenzione",
+    lead:"L'IA ci semplifica la vita, ma il Papa indica tre rischi da tenere d'occhio.",
+    src:"Dall'enciclica (§ 100), adattato",
+    text:[
+      {p:"L'IA è davvero un aiuto: ottieni in fretta riassunti, spiegazioni, immagini, idee. Ma proprio la sua comodità nasconde <b>tre rischi</b>."},
+      {p:"<b>1. La facilità.</b> Avere subito la risposta pronta può abituarci a <span class='key'>delegare troppo</span>, indebolendo il nostro giudizio e la nostra creatività."},
+      {p:"<b>2. L'impressione di oggettività.</b> Le risposte sembrano «vere e neutre», ma in realtà riflettono le idee di chi ha progettato e addestrato il sistema, con i loro pregi e difetti."},
+      {p:"<b>3. La finta comunicazione umana.</b> Parole gentili, di consiglio o di affetto possono illuderci di parlare con una vera persona. Quando la parola è solo simulata, non costruisce una relazione, ma soltanto la sua <b>apparenza</b>."}
+    ],
+    work:{
+      type:"multiplechoice", badge:"Multiple Choice · Una risposta",
+      h3:"La risposta migliore",
+      ask:"Perché il Papa dice che la facilità dell'IA può essere un rischio? Scegli la risposta più precisa.",
+      options:[
+        {t:"Perché l'IA è troppo lenta a rispondere.", a:false},
+        {t:"Perché rischiamo di delegare troppo e di indebolire giudizio e creatività.", a:true},
+        {t:"Perché le risposte costano troppo denaro.", a:false},
+        {t:"Perché l'IA non parla in italiano.", a:false}
+      ]
+    },
+    monitor:"Ripensa all'ultima volta che hai usato l'IA per un compito: in quale dei tre rischi rischiavi di cadere?"
+  },
+  {
+    id:"t5", n:5, titolo:"Digiunare dall'IA", typeLabel:"Evidenzia nel testo",
+    eyebrow:"Educarsi al tempo", para:"§ 140",
+    h2:"Imparare a «digiunare» dall'IA",
+    lead:"Per capire davvero serve fatica e tempo. Anche saper spegnere lo strumento fa parte dell'educazione.",
+    src:"Dall'enciclica (§ 140), adattato",
+    text:[
+      {p:"Imparare non è ricevere risposte veloci: ha bisogno di <b>tempo</b>, di confronto con la realtà e di un cammino paziente. Ogni tecnologia, infatti, educa chi la usa."},
+      {p:"Per questo, dice il Papa, educare all'uso dell'IA vuol dire anche imparare <b>quando e per che cosa NON usarla</b>. La risposta troppo facile rischia di spegnere il desiderio di farsi domande."},
+      {p:"Il filosofo Platone diceva che le cose più importanti si imparano solo dopo molto tempo e molta fatica, «sfregando» insieme idee ed esperienze come pietre focaie, finché scocca la <b>scintilla della comprensione</b>."},
+      {cite:"Dobbiamo educarci a digiunare dall'IA."}
+    ],
+    work:{
+      type:"hottext", badge:"Hot Text · Evidenzia",
+      h3:"Trova l'idea-chiave",
+      ask:"Tocca nel testo le parole che esprimono il messaggio centrale del Papa. Quando hai finito, premi Controlla.",
+      tokens:[
+        {w:"Per",g:false},{w:"capire",g:false},{w:"davvero",g:false},{w:"serve",g:false},
+        {w:"tempo",g:true},{w:"e",g:false},{w:"fatica;",g:false},{w:"a",g:false},{w:"volte",g:false},
+        {w:"la",g:false},{w:"cosa",g:false},{w:"più",g:false},{w:"saggia",g:false},{w:"è",g:false},
+        {w:"imparare",g:true},{w:"quando",g:true},{w:"NON",g:true},{w:"usare",g:true},{w:"l'IA",g:true},
+        {w:"per",g:false},{w:"non",g:false},{w:"spegnere",g:false},{w:"il",g:false},
+        {w:"desiderio",g:false},{w:"di",g:false},{w:"farsi",g:false},{w:"domande.",g:false}
+      ]
+    },
+    monitor:"«Digiunare dall'IA»: prova a immaginare una situazione di studio in cui ti farebbe bene NON usarla. Quale?"
+  },
+  {
+    id:"t6", n:6, titolo:"La verità è un bene comune", typeLabel:"Completa il testo",
+    eyebrow:"Verità e fiducia", para:"§ 132–134",
+    h2:"La verità è un bene di tutti",
+    lead:"Nelle reti digitali è facile confondere vero e falso. La verità, però, non si fabbrica: si cerca insieme.",
+    src:"Dall'enciclica (§ 132–134), adattato",
+    text:[
+      {p:"Le piattaforme digitali e l'IA potrebbero favorire il confronto, ma spesso vengono usate per costruire <b>storie distorte</b>, mescolando dati e opinioni e confondendo il confine tra vero e falso."},
+      {p:"La disinformazione non nasce con l'IA, ma in essa trova un <b>moltiplicatore</b> potente: oggi è facile manipolare testi, immagini e video."},
+      {p:"Un'informazione vera non nasce da un controllo automatico. La verità dei fatti chiede <b>verifica</b> e controllo delle fonti; ma soprattutto si costruisce nella <b>fiducia</b> tra le persone e nel confronto onesto."},
+      {cite:"La verità è un bene comune e non una proprietà di chi ha potere o visibilità."}
+    ],
+    work:{
+      type:"fillblanks", badge:"Fill in the Blanks · Completa",
+      h3:"Completa il ragionamento",
+      ask:"Scegli la parola giusta in ogni spazio, poi premi Controlla.",
+      template:[
+        {t:"Nelle reti digitali è facile mescolare dati e "},
+        {b:0},
+        {t:", confondendo il confine tra vero e falso. La verità dei fatti chiede "},
+        {b:1},
+        {t:" delle fonti e si costruisce nella "},
+        {b:2},
+        {t:" tra le persone. Per questo la verità è un "},
+        {b:3},
+        {t:" comune, non la proprietà di chi ha più potere."}
+      ],
+      blanks:[
+        {opts:["opinioni","numeri","colori"], a:0},
+        {opts:["fretta","verifica","pubblicità"], a:1},
+        {opts:["fiducia","gara","solitudine"], a:0},
+        {opts:["segreto","bene","prezzo"], a:1}
+      ]
+    },
+    monitor:"Prima di credere a una notizia trovata online, quale controllo potresti fare tu? Scrivine almeno uno concreto."
+  },
+  {
+    id:"t7", n:7, titolo:"Disarmare le parole", typeLabel:"Riordina",
+    eyebrow:"La pace inizia da noi", para:"§ 214",
+    h2:"Disarmare le parole",
+    lead:"Il primo modo per costruire un mondo più umano è fare attenzione a come parliamo degli altri.",
+    src:"Dall'enciclica (§ 214), adattato",
+    text:[
+      {p:"Il primo contributo a una civiltà più umana, dice il Papa, è prestare attenzione alle nostre <b>parole</b>. Ne facciamo esperienza ogni giorno: una frase può cambiare in meglio o in peggio lo stato d'animo di qualcuno."},
+      {cite:"Disarmiamo le parole e contribuiremo a disarmare la Terra."},
+      {p:"«La pace comincia da ognuno di noi: dal modo in cui guardiamo gli altri, li ascoltiamo, parliamo di loro». Dobbiamo dire «no» alla guerra delle parole e delle immagini."},
+      {p:"Per questo è utile fare un piccolo <b>esame di coscienza</b> sulle parole che usiamo, sui pregiudizi che nascondono e sull'aggressività che a volte le abita."}
+    ],
+    work:{
+      type:"reorder", badge:"Reorder · Riordina",
+      h3:"Rimetti in ordine il ragionamento",
+      ask:"Usa le frecce per mettere i passaggi nell'ordine logico del Papa: dal gesto piccolo all'effetto grande.",
+      items:[
+        {t:"Faccio attenzione alle parole che uso ogni giorno.", o:1},
+        {t:"Cambio il modo in cui guardo e ascolto gli altri.", o:2},
+        {t:"Costruisco la pace nelle mie relazioni.", o:3},
+        {t:"Contribuisco a «disarmare» il mondo intorno a me.", o:4}
+      ]
+    },
+    monitor:"Una parola «aggressiva» che senti spesso (o che usi): come potresti «disarmarla», cioè dirla in modo diverso?"
+  },
+  {
+    id:"t8", n:8, titolo:"Tutti possiamo fare la nostra parte", typeLabel:"Domanda aperta",
+    eyebrow:"La mia responsabilità", para:"§ 212–213",
+    h2:"Tutti possiamo fare la nostra parte",
+    lead:"Pensare «sono troppo piccolo per cambiare qualcosa» è una resa elegante. Nessuno è senza responsabilità.",
+    src:"Dall'enciclica (§ 212–213), adattato",
+    text:[
+      {p:"C'è una tentazione sottile, dice il Papa: pensare che i problemi siano troppo grandi e noi troppo piccoli, e che quindi le nostre scelte non cambino niente. È una forma elegante di <b>resa</b>, travestita da realismo."},
+      {p:"Ma non è così: <b>nessuno è senza responsabilità</b>. Ognuno ha un proprio «campo d'azione» e lì — non altrove — può scegliere se alimentare la logica della forza o custodire quella della pace."},
+      {p:"Lo scrittore cattolico <b>J.R.R. Tolkien</b> (l'autore del <i>Signore degli Anelli</i>) lo diceva così:"},
+      {cite:"Non tocca a noi dominare tutte le maree del mondo; il nostro compito è fare il possibile […] sradicando il male dai campi che conosciamo."},
+      {p:"La civiltà dell'amore non nasce da un gesto spettacolare, ma da tante piccole <b>fedeltà</b> quotidiane e tenaci."}
+    ],
+    work:{
+      type:"open", badge:"Open Ended · Riflessione",
+      h3:"Il tuo «campo che conosci»",
+      ask:"Tolkien parla del «campo che conosci»: il piccolo pezzo di mondo dove puoi agire davvero. Qual è il tuo? Scrivi UNA cosa concreta che puoi fare questa settimana — a scuola, a casa, online — per «custodire la logica della pace».",
+      placeholder:"Il mio campo è… e questa settimana posso…",
+      hint:"Non c'è una risposta giusta o sbagliata: conta la tua riflessione personale."
+    },
+    monitor:"Di tutte le 8 tappe, quale idea ti è rimasta più impressa? Perché proprio quella?"
+  }
 ];
 
-/* ============ ARGOMENTI (per etichetta e barra) ============ */
-const ARGOMENTI = [
-  {da:1,  a:5,  nome:"Introduzione"},
-  {da:6,  a:7,  nome:"Come funziona l'IA · Piergiorgio Odifreddi"},
-  {da:8,  a:14, nome:"I grandi modelli linguistici · Gino Roncaglia"},
-  {da:15, a:21, nome:"Il futuro dell'IA · Giovanni Severini (Microsoft)"},
-  {da:22, a:28, nome:"Digitale e coscienza · Federico Faggin"},
-  {da:29, a:37, nome:"Omologazione e pregiudizio · Alex Braga"},
-  {da:38, a:44, nome:"Privacy e diritto · Guido Scorza"},
-  {da:45, a:47, nome:"Dati ed etica · Ivana Bartoletti"},
-  {da:48, a:49, nome:"Ricerca pubblica europea · Giorgio Parisi"},
-  {da:50, a:52, nome:"Intelligenza aumentata · Alberto Tripi"},
-  {da:53, a:59, nome:"I libri consigliati"}
-];
-function argomentoDi(n){
-  for(const a of ARGOMENTI){ if(n>=a.da && n<=a.a) return a.nome; }
-  return "";
+const CONSEGNE = {
+  t1:{
+    action:"Lavora «alla Neemia» nel prossimo lavoro di gruppo",
+    intro:"Quando lavori in squadra, prova a costruire come Neemia e non come Babele: ascolta, dividi i compiti, valorizza tutti.",
+    examples:[
+      "Affida a ogni compagno un pezzo del lavoro, anche al più timido.",
+      "Prima di decidere chiedi «Voi cosa ne pensate?» e ascolta davvero.",
+      "Se qualcuno è in difficoltà, dagli una mano invece di fare tutto tu."
+    ],
+    prompt:"Scrivi UNA cosa «da Neemia» che proverai a fare nel prossimo lavoro di gruppo.",
+    placeholder:"Nel prossimo lavoro di gruppo io…"
+  },
+  t2:{
+    action:"Smaschera le scelte nascoste in un'app che usi",
+    intro:"Scegli un'app, un sito o un gioco che usi spesso e indaga: nessuno strumento è davvero «neutro».",
+    examples:[
+      "A chi serve? A te, o a chi guadagna con la tua attenzione?",
+      "Cosa premia? Certi social mettono in alto i video che fanno arrabbiare.",
+      "Com'è «gratis»? Spesso paghi con i tuoi dati o con la pubblicità."
+    ],
+    prompt:"Scegli un'app e scrivi una scelta «nascosta» che hai scoperto dietro di essa.",
+    placeholder:"L'app … in realtà…"
+  },
+  t3:{
+    action:"Trova ciò che l'IA non potrà mai vivere davvero",
+    intro:"Senza usare nessuna IA, allenati a riconoscere ciò che ti rende diverso da lei: l'IA imita le parole, ma non ha corpo, esperienze né coscienza.",
+    examples:[
+      "Pensa a una cosa che l'IA sa «descrivere» ma non ha mai provato: il sapore della neve, la paura, l'emozione di un primo giorno.",
+      "Annota un momento della tua giornata che nessuna macchina potrebbe vivere: un abbraccio, una risata, la fatica di una corsa.",
+      "Spiega a un compagno la differenza tra «conoscere le parole» di una cosa e «averla vissuta» davvero."
+    ],
+    prompt:"Scrivi una cosa che l'IA sa solo descrivere a parole, ma che tu puoi vivere davvero. Perché questo fa la differenza?",
+    placeholder:"L'IA può descrivere… ma io posso viverlo, e questo conta perché…"
+  },
+  t4:{
+    action:"Allenati a non «delegare il pensiero»",
+    intro:"L'IA dà risposte pronte che sembrano «oggettive»: il rischio è smettere di pensare. Anche senza usarla, puoi allenarti a non cercare scorciatoie quando studi.",
+    examples:[
+      "1) Provo prima da solo, anche se faccio fatica: la fatica fa parte dell'imparare.",
+      "2) Se sono bloccato chiedo a una persona — un compagno, l'insegnante, un genitore.",
+      "3) Non mi fido della prima risposta che trovo: controllo se è vera su un'altra fonte."
+    ],
+    prompt:"Racconta un momento in cui hai resistito alla «risposta pronta» e hai ragionato con la tua testa.",
+    placeholder:"Invece della scorciatoia, io…"
+  },
+  t5:{
+    action:"Fai un «digiuno dall'IA» questa settimana",
+    intro:"Scegli un compito da svolgere senza nessun aiuto digitale: scoprirai che cosa sai fare da solo.",
+    examples:[
+      "Scrivi un tema a mano, dall'inizio alla fine.",
+      "Risolvi i problemi di matematica senza cercare la soluzione online.",
+      "Leggi un capitolo senza farti fare il riassunto automatico."
+    ],
+    prompt:"Quale compito farai senza IA? Dopo, scrivi com'è andata: più difficile? più tuo?",
+    placeholder:"Farò senza IA… ed è andata…"
+  },
+  t6:{
+    action:"Fai un mini fact-check prima di condividere",
+    intro:"Prima di girare una notizia o un'immagine, fermati trenta secondi e verifica.",
+    examples:[
+      "Chi l'ha pubblicata? Cerca il nome del sito o della fonte.",
+      "Quando? Una foto «di oggi» a volte è di anni fa.",
+      "Lo dicono anche fonti affidabili? Cerca la stessa notizia altrove."
+    ],
+    prompt:"Porta una notizia o un'immagine «sospetta» e scrivi come hai capito se era vera o falsa.",
+    placeholder:"Ho controllato… e ho scoperto che…"
+  },
+  t7:{
+    action:"«Disarma» le tue parole per un giorno",
+    intro:"Per una giornata fai attenzione a come parli e scrivi: trasforma le frasi aggressive in frasi rispettose.",
+    examples:[
+      "«Sei un disastro» → «Questa parte non è venuta, riproviamo insieme».",
+      "In chat, prima di inviare rileggi: lo direi anche guardandolo in faccia?",
+      "Quando sei arrabbiato, aspetta un minuto prima di rispondere."
+    ],
+    prompt:"Scrivi 2 frasi «armate» che senti spesso e la loro versione «disarmata».",
+    placeholder:"Armata: … → Disarmata: …"
+  },
+  t8:{
+    action:"Fai UN gesto concreto nel tuo «campo che conosci»",
+    intro:"Scegli il tuo piccolo campo d'azione e fai questa settimana un gesto di cura o di pace, anche piccolo.",
+    examples:[
+      "Aiuta un compagno in difficoltà con un'app o con un compito.",
+      "Insegna a un nonno o a un genitore a usare qualcosa sul telefono.",
+      "Vedi un contenuto che ferisce qualcuno? Non condividerlo: parlane con un adulto."
+    ],
+    prompt:"Scrivi il gesto che farai questa settimana. Poi torna qui e racconta com'è andato.",
+    placeholder:"Questa settimana io…"
+  }
+};
+
+/* ============================================================
+   STATO + localStorage (per nick, app autonoma)
+   ============================================================ */
+let NICK = localStorage.getItem("mh_nick") || "";
+let STATE = {};
+function storeKey(){ return "mh_state_"+(NICK||"ospite"); }
+function loadState(){
+  try{ STATE = JSON.parse(localStorage.getItem(storeKey())) || {}; }
+  catch(e){ STATE = {}; }
+}
+function saveState(){ localStorage.setItem(storeKey(), JSON.stringify(STATE)); }
+function ensure(id){ if(!STATE[id]) STATE[id] = {done:false, answers:null, monitor:"", scale:0, reflection:"", read:null, task:"", taskDone:false}; return STATE[id]; }
+
+/* ============================================================
+   ICONE SVG
+   ============================================================ */
+const ICO = {
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg>',
+  arrUp:'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>',
+  arrDown:'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M18 13l-6 6-6-6"/></svg>',
+  next:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  prev:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>',
+  pen:'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>',
+  target:'<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>',
+  eye:'<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>',
+  brain:'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 0V5a3 3 0 0 0-3-2z"/><path d="M15 3a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 0"/></svg>'
+};
+
+/* ============================================================
+   RENDER NAV + WALL
+   ============================================================ */
+let CURRENT = "home";
+function renderNav(){
+  const nav = document.getElementById("nav");
+  let h = `<button class="tab" data-go="home"><span class="tnum" aria-hidden="true">★</span>Home</button>`;
+  TAPPE.forEach(t=>{
+    const done = STATE[t.id] && STATE[t.id].done;
+    h += `<button class="tab" data-go="${t.id}">
+      <span class="tnum">${t.n}</span>${t.titolo}
+      <span class="tdot ${done?'done':''}" aria-hidden="true"></span>
+    </button>`;
+  });
+  nav.innerHTML = h;
+  nav.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+  updateNavState();
+}
+function updateNavState(){
+  document.querySelectorAll("#nav .tab").forEach(b=>{
+    b.setAttribute("aria-current", b.dataset.go===CURRENT ? "true":"false");
+  });
+  const done = TAPPE.filter(t=>STATE[t.id]&&STATE[t.id].done).length;
+  const bricks = document.getElementById("bricks");
+  bricks.innerHTML = TAPPE.map(t=>`<span class="brick ${STATE[t.id]&&STATE[t.id].done?'laid':''}"></span>`).join("");
+  document.getElementById("wallCount").textContent = done+"/8";
 }
 
-/* ============ DOMANDE — una alla fine di ogni argomento ============ */
-/* time = secondo in cui il video si ferma (= inizio dell'argomento successivo) */
-const DOMANDE = [
-  {time:160, dom:"Cosa intendiamo davvero, secondo l'introduzione, quando diciamo «intelligenza artificiale»?",
-   opz:["Una singola tecnologia uniforme e identica per tutti","Un mondo plurale, un mondo di «intelligenze»","Soltanto ChatGPT","Un robot fisico con braccia e gambe"], risposta:1,
-   spiega:"Il programma sottolinea che dietro l'espressione «intelligenza artificiale» c'è un mondo plurale di intelligenze diverse."},
+/* ============================================================
+   ROUTER
+   ============================================================ */
+function go(id){
+  CURRENT = id;
+  const main = document.getElementById("main");
+  main.innerHTML = "";
+  if(id==="home"){ main.appendChild(renderHome()); }
+  else{
+    const t = TAPPE.find(x=>x.id===id);
+    main.appendChild(renderTappa(t));
+  }
+  updateNavState();
+  window.scrollTo({top:0,behavior:"auto"});
+}
 
-  {time:317, dom:"In che anno e da chi è stata inventata la prima rete neurale, secondo il prof. Odifreddi?",
-   opz:["Nel 2022, da OpenAI","Nel 1970, da padre Busa","Nel 1943, da McCulloch (neurofisiologo) e Pitts (matematico)","Nel 1986, da Theodore Roszak"], risposta:2,
-   spiega:"La prima rete neurale risale al 1943: nasce dall'incontro tra la neurofisiologia di McCulloch e la matematica di Pitts."},
+/* ============================================================
+   HOME
+   ============================================================ */
+function renderHome(){
+  const wrap = document.createElement("div");
+  wrap.className = "page active";
+  const done = TAPPE.filter(t=>STATE[t.id]&&STATE[t.id].done).length;
+  wrap.innerHTML = `
+    <div class="hero">
+      <div class="h-eyebrow">Lettera Enciclica · 15 maggio 2026</div>
+      <h2>Custodire l'umano nel tempo dell'IA</h2>
+      <div class="h-tag">«Babele o Gerusalemme?»</div>
+      <p>Papa Leone XIV ha scritto una lettera a tutta l'umanità per chiedersi una cosa semplice e gigantesca: ora che esistono macchine sempre più potenti, <b>come restiamo umani</b>? Non dice «no» alla tecnologia. Dice che dobbiamo scegliere <b>come</b> usarla: per dominare gli altri o per costruire insieme.</p>
+      <p>In questa lezione leggiamo <b>otto passaggi</b> dell'enciclica, adattati per noi. Ogni tappa ha il <b>testo a sinistra</b> e un <b>lavoro a destra</b>: servono a capire meglio e a renderti conto di cosa hai capito (e di cosa no).</p>
+    </div>
 
-  {time:532, dom:"Come producono i contenuti i grandi modelli linguistici, secondo il prof. Roncaglia?",
-   opz:["Copiandoli direttamente dal corpus di addestramento","In maniera statistico-probabilistica, sulla base dei loro modelli numerici","Cercandoli su Internet in tempo reale","Chiedendo a degli esperti umani"], risposta:1,
-   spiega:"Non copiano i testi: li generano in modo statistico-probabilistico a partire dai modelli numerici costruiti durante l'addestramento."},
+    <div class="home-grid">
+      <div class="info-card">
+        <h3>${ICO.brain} Come funziona</h3>
+        <ol class="steps">
+          <li>Leggi il testo della tappa, con calma. I numeri tra parentesi (§) sono i paragrafi dell'enciclica.</li>
+          <li>Svolgi il <b>lavoro</b> a destra: ogni tappa ha un tipo di esercizio diverso.</li>
+          <li>Premi <b>Controlla</b> dove c'è una soluzione; le domande aperte servono solo a farti riflettere.</li>
+          <li>Compila il <b>monitoraggio</b>: quanto è stato chiaro? Cosa non hai capito?</li>
+          <li>Ogni tappa completata posa un <b>mattone</b> nel muro in alto.</li>
+        </ol>
+        <div class="nick-box">
+          <label for="homeNick">Il tuo nome o soprannome</label>
+          <div class="nick-row">
+            <input type="text" id="homeNick" maxlength="28" placeholder="Es. Giulia_3A" value="${escapeHtml(NICK)}" autocomplete="off">
+            <button class="btn btn-gold" id="homeNickSave">Salva</button>
+          </div>
+          <p class="note" style="margin-top:10px">I progressi restano salvati su questo dispositivo. Senza nome lavori come «Ospite».</p>
+        </div>
+      </div>
 
-  {time:735, dom:"Quali sono le tre fasi dell'IA descritte dal dott. Severini di Microsoft?",
-   opz:["Passato, presente e futuro","Testo, immagini e video","Chatbot → agenti personalizzati → agenti che collaborano tra loro","Infanzia, adolescenza ed età adulta"], risposta:2,
-   spiega:"Prima i chatbot, poi gli agenti personalizzati che lavorano per noi, infine agenti che collaborano e negoziano tra loro."},
+      <div class="info-card">
+        <h3>A che punto sei</h3>
+        <p style="font-size:15px;margin:0 0 6px"><b>${done}</b> tappe su <b>8</b> completate.</p>
+        <div class="bricks" style="height:18px;margin-bottom:6px" aria-hidden="true">
+          ${TAPPE.map(t=>`<span class="brick ${STATE[t.id]&&STATE[t.id].done?'laid':''}" style="border-radius:3px"></span>`).join("")}
+        </div>
+        <p class="note">Il muro di Gerusalemme si costruisce «mattone dopo mattone». Anche la comprensione.</p>
+      </div>
+    </div>
 
-  {time:954, dom:"Secondo l'ing. Faggin, quali sono i tre elementi che ci compongono?",
-   opz:["Cervello, cuore e sangue","Corpo, mente e spirito","Bit, token e prompt","Passato, presente e futuro"], risposta:1,
-   spiega:"Faggin parla di corpo (informazione classica, il bit), mente (informazione quantistica) e spirito, collegati tra loro: i qualia sono il significato dell'esperienza cosciente."},
+    <div class="tappa-list">
+      ${TAPPE.map(t=>`
+        <button class="tappa-card" data-go="${t.id}">
+          <span class="tc-n">${t.n}</span>
+          <span>
+            <span class="tc-t">${t.titolo}</span>
+            <span class="tc-type">${t.work.badge.split(" · ")[0]} · ${t.typeLabel}</span>
+          </span>
+          <span class="tc-done ${STATE[t.id]&&STATE[t.id].done?'done':''}" aria-hidden="true"></span>
+        </button>`).join("")}
+    </div>
+  `;
+  // events
+  wrap.querySelectorAll(".tappa-card").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
+  wrap.querySelector("#homeNickSave").addEventListener("click",()=>{
+    const v = wrap.querySelector("#homeNick").value.trim();
+    setNick(v);
+  });
+  return wrap;
+}
 
-  {time:1204, dom:"Perché, secondo Alex Braga, i Large Language Model sono «omologanti»?",
-   opz:["Perché sono troppo lenti","Perché, addestrati con tutta la cultura umana, riproducono tutti i pregiudizi","Perché costano troppo","Perché non parlano italiano"], risposta:1,
-   spiega:"Essendo addestrati su tutta la cultura umana, restituiscono come «collo di bottiglia statistico» anche i pregiudizi, risultando omologanti. Per Braga sono anche eticamente insostenibili perché non citano le fonti."},
+/* ============================================================
+   RENDER TAPPA (split: testo sx / lavoro dx)
+   ============================================================ */
+function renderTappa(t){
+  const st = ensure(t.id);
+  const page = document.createElement("div");
+  page.className = "page active";
 
-  {time:1438, dom:"Che cosa ha chiesto l'avvocato Guido Scorza a OpenAI e con quale diritto?",
-   opz:["Di cancellare del tutto ChatGPT","Di togliere il suo nome e cognome dal sistema, con il diritto di opposizione","Di essere pagato per i suoi dati","Di diventare socio dell'azienda"], risposta:1,
-   spiega:"Ha esercitato il diritto di opposizione: ChatGPT conosce il suo nome ma non può pronunciarlo. Oggi, dopo l'intervento del Garante, può farlo chiunque viva in Europa."},
+  // text column — capoversi cliccabili (lettura attenta)
+  const textHtml = t.text.map((b,i)=>{
+    const quote = !!b.cite;
+    const inner = quote ? b.cite : b.p;
+    return `<div class="blk${quote?' isquote':''}" data-pi="${i}" tabindex="0" role="button" aria-pressed="false" aria-label="Capoverso ${i+1}: tocca quando viene letto ad alta voce">`
+      + `<span class="tick" aria-hidden="true">${ICO.check}</span><p>${inner}</p></div>`;
+  }).join("");
 
-  {time:1537, dom:"Secondo il servizio, a chi appartengono oggi i grandi modelli linguistici e dov'è l'Europa?",
-   opz:["All'Europa, che è in netto vantaggio","A Stati Uniti e Cina; l'Europa è in ritardo","Soltanto alla Cina","A nessuno, sono di tutti"], risposta:1,
-   spiega:"Oggi i grandi modelli appartengono a USA e Cina; l'Europa è in ritardo ma può recuperare con scelte etiche e investimenti pubblici."},
+  page.innerHTML = `
+    <div class="eyebrow">${t.eyebrow}<span class="para">${t.para}</span></div>
+    <h2>${t.h2}</h2>
+    <p class="lead">${t.lead}</p>
+    <div class="split">
+      <article class="scroll" id="scrollCard">
+        <div class="read-head">
+          <div class="rh-top">
+            <span class="rh-eye" aria-hidden="true">${ICO.eye}</span>
+            <span class="rh-title">Lettura attenta</span>
+            <span class="rh-pct" id="rhPct">0<small>%</small></span>
+          </div>
+          <div class="read-bar" id="rhBar"><i></i></div>
+          <div class="read-meta">
+            <span>Passaggi seguiti: <b id="rhCount">0/${t.text.length}</b></span>
+            <span class="read-hint" id="rhHint">Segui il ritmo della voce</span>
+          </div>
+          <p class="read-howto">Mentre l'insegnante legge ad alta voce, tocca ogni capoverso quando viene letto: si illumina di verde. Andare al ritmo della voce fa salire l'attenzione; cliccare di corsa no.</p>
+        </div>
+        <p class="src">${t.src}</p>
+        ${textHtml}
+      </article>
+      <section class="work" id="workZone"></section>
+    </div>
+    <section id="taskZone"></section>
+    <div class="pagenav" id="pagenav"></div>
+  `;
 
-  {time:1643, dom:"Cosa propone il premio Nobel Giorgio Parisi per l'IA in Europa?",
-   opz:["Vietare del tutto l'intelligenza artificiale","Lasciare tutta la ricerca alle industrie private","Un grande centro di ricerca pubblico europeo, sul modello del CERN","Costruire data center militari segreti"], risposta:2,
-   spiega:"Propone un grande centro di ricerca pubblico europeo come il CERN, perché la ricerca resti aperta a tutti e non solo nelle mani dei privati."},
+  // work
+  const zone = page.querySelector("#workZone");
+  buildWork(zone, t, st);
 
-  {time:1857, dom:"Come preferisce chiamare l'intelligenza artificiale l'ingegner Alberto Tripi?",
-   opz:["Intelligenza artificiale","Intelligenza aumentata, perché l'uomo resta sempre al centro","Intelligenza sostitutiva","Intelligenza quantistica"], risposta:1,
-   spiega:"Tripi, che lavorò all'Index Thomisticus di padre Busa, la chiama «intelligenza aumentata»: non sostituisce l'uomo, che resta al centro del nostro mondo."}
-];
+  // monitor
+  zone.appendChild(buildMonitor(t, st));
 
-/* ============ ELEMENTI ============ */
-const player    = document.getElementById('player');
-const paragrafo = document.getElementById('paragrafo');
-const argLabel  = document.getElementById('argomentoLabel');
-const boxDom    = document.getElementById('boxDomanda');
-const domNum    = document.getElementById('domandaNum');
-const domDom    = document.getElementById('domandaDom');
-const domOpz    = document.getElementById('domandaOpzioni');
-const domFb     = document.getElementById('domandaFeedback');
-const btnCont   = document.getElementById('btnContinua');
-const barra     = document.getElementById('barraArgomenti');
-const LETTERE   = ['A','B','C','D'];
+  // page nav
+  const pn = page.querySelector("#pagenav");
+  const idx = TAPPE.findIndex(x=>x.id===t.id);
+  const prev = idx>0 ? TAPPE[idx-1] : null;
+  const next = idx<TAPPE.length-1 ? TAPPE[idx+1] : null;
+  pn.innerHTML =
+    (prev?`<button class="btn btn-ghost" data-go="${prev.id}">${ICO.prev} Tappa ${prev.n}</button>`
+         :`<button class="btn btn-ghost" data-go="home">${ICO.prev} Home</button>`) +
+    (next?`<button class="btn btn-gold" data-go="${next.id}">Tappa ${next.n}: ${next.titolo} ${ICO.next}</button>`
+         :`<button class="btn btn-gold" data-go="home">Hai finito! Torna alla Home ${ICO.next}</button>`);
+  pn.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>go(b.dataset.go)));
 
-let segAttivo = -1;
-let bloccato  = false;
-let domandaAttiva = null;
+  setupReading(page, t, st);
+  buildTask(page.querySelector("#taskZone"), t, st);
+  return page;
+}
 
-document.getElementById('contaTotali').textContent = DOMANDE.length;
-DOMANDE.forEach(d=>{
-  d.fatta=false; d.giusta=false; d.primaSbagliata=false;
-  // indice dell'ultimo segmento da mostrare prima della domanda
-  let mi=0; for(let i=0;i<SEGMENTI.length;i++){ if(SEGMENTI[i].t < d.time) mi=i; else break; }
-  d.mostraIdx = mi;
-});
+/* ============================================================
+   LETTURA ATTENTA: capoversi cliccabili + indice di attenzione
+   (clic troppo rapidi non contano: bisogna seguire la voce)
+   ============================================================ */
+function wordsOf(htmlStr){
+  return htmlStr.replace(/<[^>]+>/g," ").trim().split(/\s+/).filter(Boolean).length;
+}
+function readFloor(words){
+  // tempo minimo (ms) prima che il capoverso possa contare: ~ lettura ad alta voce, con tolleranza
+  return Math.min(4500, Math.max(900, Math.round(words*170)));
+}
+function setupReading(page, t, st){
+  const total = t.text.length;
+  if(!Array.isArray(st.read) || st.read.length!==total){ st.read = new Array(total).fill(false); }
+  const card = page.querySelector("#scrollCard");
+  const blks = [...card.querySelectorAll(".blk")];
+  const pctEl = page.querySelector("#rhPct");
+  const barI  = page.querySelector("#rhBar i");
+  const barEl = page.querySelector("#rhBar");
+  const countEl = page.querySelector("#rhCount");
+  const hintEl = page.querySelector("#rhHint");
+  let lastTs = Date.now();   // cancello di partenza al caricamento pagina
+  let hintTimer = null;
 
-/* barra pallini = un pallino per domanda/argomento */
-DOMANDE.forEach((d,i)=>{
-  const p=document.createElement('span'); p.className='pallino'; p.id='pallino'+i;
-  p.title='Argomento '+(i+1); barra.appendChild(p);
-});
-function aggiornaBarra(idxCorrente){
-  DOMANDE.forEach((d,i)=>{
-    const p=document.getElementById('pallino'+i);
-    p.className='pallino'+(d.giusta?' fatto':'')+(i===idxCorrente?' corrente':'');
+  function refresh(){
+    const done = st.read.filter(Boolean).length;
+    const pct = Math.round(done/total*100);
+    pctEl.innerHTML = pct+"<small>%</small>";
+    barI.style.width = pct+"%";
+    barEl.classList.toggle("full", done===total);
+    countEl.textContent = done+"/"+total;
+    blks.forEach((b,i)=>{ b.classList.toggle("read", !!st.read[i]); b.setAttribute("aria-pressed", !!st.read[i]); });
+  }
+  function rushed(b){
+    b.classList.add("rushed"); hintEl.classList.add("show");
+    clearTimeout(hintTimer);
+    hintTimer = setTimeout(()=>{ b.classList.remove("rushed"); hintEl.classList.remove("show"); }, 1400);
+  }
+  function mark(i){
+    if(st.read[i]) return;
+    const words = wordsOf(t.text[i].cite || t.text[i].p);
+    const gap = Date.now() - lastTs;
+    if(gap < readFloor(words)){ rushed(blks[i]); return; }
+    st.read[i] = true; lastTs = Date.now(); saveState(); refresh();
+  }
+  blks.forEach((b,i)=>{
+    b.addEventListener("click",()=>mark(i));
+    b.addEventListener("keydown",(e)=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); mark(i); } });
+  });
+  refresh();
+}
+
+/* ============================================================
+   CONSEGNA: dall'idea all'azione (con esempi)
+   ============================================================ */
+function buildTask(zone, t, st){
+  const c = CONSEGNE[t.id];
+  if(!c){ return; }
+  const fid = "taskF-"+t.id;
+  zone.innerHTML = `
+    <section class="task">
+      <div class="task-head">
+        <span class="task-ico" aria-hidden="true">${ICO.target}</span>
+        <div>
+          <p class="task-eyebrow">Consegna &middot; Dall'idea all'azione</p>
+          <h3 class="task-title">${c.action}</h3>
+        </div>
+      </div>
+      <p class="task-intro">${c.intro}</p>
+      <p class="task-ex-label">Per esempio</p>
+      <ul class="task-ex">${c.examples.map(e=>`<li>${e}</li>`).join("")}</ul>
+      <label class="task-field-label" for="${fid}">${c.prompt}</label>
+      <textarea class="open-field" id="${fid}" placeholder="${escapeHtml(c.placeholder||'')}">${escapeHtml(st.task||'')}</textarea>
+      <div class="task-foot">
+        <button class="btn btn-gold" id="taskSave">${ICO.pen} Salva l'impegno</button>
+        <label class="task-check"><input type="checkbox" id="taskDone" ${st.taskDone?'checked':''}><span class="box" aria-hidden="true">${ICO.check}</span> L'ho messo in pratica</label>
+      </div>
+      <div class="feedback" id="taskFb"></div>
+    </section>`;
+  const fb = zone.querySelector("#taskFb");
+  zone.querySelector("#taskSave").addEventListener("click",()=>{
+    st.task = zone.querySelector("#"+fid).value.trim(); saveState();
+    if(st.task.length<3){ fb.className="feedback saved show"; fb.innerHTML="Scrivi il tuo impegno in una frase, poi salva."; return; }
+    fb.className="feedback good show";
+    fb.innerHTML="<strong>Impegno salvato.</strong> Ora prova davvero: è qui che l'idea diventa azione.";
+  });
+  zone.querySelector("#taskDone").addEventListener("change",(e)=>{ st.taskDone=e.target.checked; saveState(); });
+}
+
+/* ============================================================
+   COSTRUTTORI DELLE ATTIVITÀ
+   ============================================================ */
+function header(w){
+  return `<span class="badge">${w.badge}</span><h3>${w.h3}</h3><p class="ask">${w.ask}</p>`;
+}
+function markComplete(t){
+  ensure(t.id).done = true; saveState(); updateNavState();
+  // refresh tappa-done dot on footer-less; nav already updated
+}
+
+function buildWork(zone, t, st){
+  const w = t.work;
+  switch(w.type){
+    case "categorize": return W_categorize(zone,t,st);
+    case "truefalse": return W_truefalse(zone,t,st);
+    case "multiselect": return W_choice(zone,t,st,true);
+    case "multiplechoice": return W_choice(zone,t,st,false);
+    case "hottext": return W_hottext(zone,t,st);
+    case "fillblanks": return W_fill(zone,t,st);
+    case "reorder": return W_reorder(zone,t,st);
+    case "open": return W_open(zone,t,st);
+  }
+}
+
+/* ---- CATEGORIZE ---- */
+function W_categorize(zone,t,st){
+  const w=t.work;
+  const saved = st.answers || {}; // {itemIndex: binKey}
+  const assign = {};
+  w.items.forEach((it,i)=>{ assign[i] = saved[i] || null; });
+
+  const binsHtml = w.bins.map(b=>`
+    <div class="cat-bin b-${b.key==='babele'?'babele':'gerus'}" data-bin="${b.key}">
+      <h4>${b.label}</h4>
+      <div class="bin-items" data-bin-items="${b.key}"></div>
+    </div>`).join("");
+
+  zone.innerHTML = header(w) + `
+    <div class="cat-pool"><div class="pool-label">Da smistare — tocca una frase per spostarla:</div><div id="catPool"></div></div>
+    <div class="cat-bins">${binsHtml}</div>
+    <div class="actions">
+      <button class="btn btn-check" id="catCheck">Controlla</button>
+      <button class="btn btn-ghost" id="catReset">Ricomincia</button>
+    </div>
+    <div class="feedback" id="catFb"></div>`;
+
+  const pool = zone.querySelector("#catPool");
+  let checked = false;
+
+  function chipHtml(i){
+    const it=w.items[i];
+    return `<button class="chip" data-i="${i}">${it.t}<span class="arrows">sposta</span></button>`;
+  }
+  function place(){
+    pool.innerHTML=""; 
+    w.bins.forEach(b=>zone.querySelector(`[data-bin-items="${b.key}"]`).innerHTML="");
+    w.items.forEach((it,i)=>{
+      const target = assign[i]===null ? pool : zone.querySelector(`[data-bin-items="${assign[i]}"]`);
+      target.insertAdjacentHTML("beforeend", chipHtml(i));
+    });
+    zone.querySelectorAll(".chip").forEach(c=>c.addEventListener("click",()=>{
+      if(checked) return;
+      const i=+c.dataset.i;
+      // cycle: pool -> bin0 -> bin1 -> pool
+      const order=[null, w.bins[0].key, w.bins[1].key];
+      const cur=order.indexOf(assign[i]);
+      assign[i]=order[(cur+1)%order.length];
+      place();
+    }));
+  }
+  place();
+
+  zone.querySelector("#catCheck").addEventListener("click",()=>{
+    let correct=0, placed=0;
+    w.items.forEach((it,i)=>{
+      const chip=zone.querySelector(`.chip[data-i="${i}"]`);
+      if(assign[i]===null){ return; }
+      placed++;
+      if(assign[i]===it.a){ chip.classList.add("ok"); correct++; }
+      else chip.classList.add("bad");
+    });
+    checked=true;
+    st.answers=Object.assign({},assign); saveState();
+    const fb=zone.querySelector("#catFb");
+    if(correct===w.items.length){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Tutto giusto!</strong> Hai distinto bene lo stile di Babele da quello di Gerusalemme. Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML=`Hai messo al posto giusto <strong>${correct} su ${w.items.length}</strong>. Le frasi in ambra vanno spostate: rileggi il testo e premi «Ricomincia».`;
+    }
+  });
+  zone.querySelector("#catReset").addEventListener("click",()=>{ W_categorize(zone,t,st); });
+}
+
+/* ---- TRUE / FALSE ---- */
+function W_truefalse(zone,t,st){
+  const w=t.work;
+  const saved = st.answers || {};
+  const ans = {};
+  w.items.forEach((it,i)=> ans[i] = (i in saved)? saved[i] : null);
+  zone.innerHTML = header(w) +
+    w.items.map((it,i)=>`
+      <div class="tf-row" data-i="${i}">
+        <div class="tf-q">${it.q}</div>
+        <div class="tf-btns">
+          <button class="tf-btn" data-i="${i}" data-v="true">Vero</button>
+          <button class="tf-btn" data-i="${i}" data-v="false">Falso</button>
+        </div>
+        <div class="tf-why">${it.why}</div>
+      </div>`).join("") +
+    `<div class="actions">
+      <button class="btn btn-check" id="tfCheck">Controlla</button>
+      <button class="btn btn-ghost" id="tfReset">Ricomincia</button>
+    </div><div class="feedback" id="tfFb"></div>`;
+
+  let checked=false;
+  function paintSel(){
+    zone.querySelectorAll(".tf-btn").forEach(b=>{
+      const i=+b.dataset.i, v=(b.dataset.v==="true");
+      b.classList.toggle("sel", ans[i]===v);
+    });
+  }
+  zone.querySelectorAll(".tf-btn").forEach(b=>b.addEventListener("click",()=>{
+    if(checked) return;
+    ans[+b.dataset.i]=(b.dataset.v==="true"); paintSel();
+  }));
+  paintSel();
+
+  zone.querySelector("#tfCheck").addEventListener("click",()=>{
+    let correct=0, answered=0;
+    w.items.forEach((it,i)=>{
+      const row=zone.querySelector(`.tf-row[data-i="${i}"]`);
+      row.classList.add("checked");
+      if(ans[i]===null) return;
+      answered++;
+      if(ans[i]===it.a){ row.classList.add("ok"); correct++; }
+      else row.classList.add("bad");
+    });
+    checked=true; st.answers=Object.assign({},ans); saveState();
+    const fb=zone.querySelector("#tfFb");
+    if(correct===w.items.length){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Perfetto, ${correct}/${w.items.length}.</strong> Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML=`<strong>${correct}/${w.items.length}.</strong> Leggi le spiegazioni qui sopra, poi correggi e ricontrolla.`;
+    }
+  });
+  zone.querySelector("#tfReset").addEventListener("click",()=>{ W_truefalse(zone,t,st); });
+}
+
+/* ---- CHOICE (multiselect / single) ---- */
+function W_choice(zone,t,st,multi){
+  const w=t.work;
+  const sel = new Set(st.answers || []);
+  zone.innerHTML = header(w) +
+    w.options.map((o,i)=>`
+      <button class="opt ${sel.has(i)?'sel':''}" data-type="${multi?'check':'radio'}" data-i="${i}">
+        <span class="mark">${ICO.check}</span><span>${o.t}</span>
+      </button>`).join("") +
+    `<div class="actions">
+      <button class="btn btn-check" id="chCheck">Controlla</button>
+      <button class="btn btn-ghost" id="chReset">Ricomincia</button>
+    </div><div class="feedback" id="chFb"></div>`;
+
+  let checked=false;
+  zone.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+    if(checked) return;
+    const i=+b.dataset.i;
+    if(multi){ sel.has(i)?sel.delete(i):sel.add(i); }
+    else { sel.clear(); sel.add(i); }
+    zone.querySelectorAll(".opt").forEach(x=>x.classList.toggle("sel", sel.has(+x.dataset.i)));
+  }));
+
+  zone.querySelector("#chCheck").addEventListener("click",()=>{
+    if(sel.size===0){ flash(zone.querySelector("#chFb"),"saved","Seleziona almeno una risposta prima di controllare."); return; }
+    checked=true;
+    let allRight=true;
+    w.options.forEach((o,i)=>{
+      const el=zone.querySelector(`.opt[data-i="${i}"]`);
+      if(o.a && sel.has(i)) el.classList.add("ok");
+      else if(o.a && !sel.has(i)){ el.classList.add("miss"); allRight=false; }
+      else if(!o.a && sel.has(i)){ el.classList.add("bad"); allRight=false; }
+    });
+    st.answers=[...sel]; saveState();
+    const fb=zone.querySelector("#chFb");
+    if(allRight){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Esatto!</strong> ${multi?'Hai trovato tutte le risposte giuste.':'Risposta corretta.'} Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML= multi
+        ? `Quasi: il <span style="color:var(--verde)">verde</span> è giusto, l'<span style="color:var(--ambra)">ambra</span> è di troppo, il bordo tratteggiato è una risposta che mancava. Ricomincia e riprova.`
+        : `Non è la risposta più precisa. Rileggi il punto 1 del testo e riprova.`;
+    }
+  });
+  zone.querySelector("#chReset").addEventListener("click",()=>{ W_choice(zone,t,st,multi); });
+}
+
+/* ---- HOT TEXT ---- */
+function W_hottext(zone,t,st){
+  const w=t.work;
+  const sel = new Set(st.answers || []);
+  const toks = w.tokens.map((tk,i)=>`<span class="tok ${sel.has(i)?'sel':''}" data-i="${i}">${tk.w}</span>`).join(" ");
+  zone.innerHTML = header(w) +
+    `<div class="ht" id="htBox">${toks}</div>
+     <div class="actions">
+       <button class="btn btn-check" id="htCheck">Controlla</button>
+       <button class="btn btn-ghost" id="htReset">Ricomincia</button>
+     </div><div class="feedback" id="htFb"></div>`;
+  const box=zone.querySelector("#htBox");
+  let checked=false;
+  box.querySelectorAll(".tok").forEach(s=>s.addEventListener("click",()=>{
+    if(checked) return;
+    const i=+s.dataset.i; sel.has(i)?sel.delete(i):sel.add(i);
+    s.classList.toggle("sel", sel.has(i));
+  }));
+  zone.querySelector("#htCheck").addEventListener("click",()=>{
+    checked=true; box.classList.add("checked");
+    let good=0,goodTotal=0,wrong=0;
+    w.tokens.forEach((tk,i)=>{
+      const el=box.querySelector(`.tok[data-i="${i}"]`);
+      el.classList.remove("sel");
+      if(tk.g){ goodTotal++;
+        if(sel.has(i)){ el.classList.add("good"); good++; } else el.classList.add("missed");
+      } else if(sel.has(i)){ el.classList.add("wrong"); wrong++; }
+    });
+    st.answers=[...sel]; saveState();
+    const fb=zone.querySelector("#htFb");
+    if(good===goodTotal && wrong===0){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Hai trovato l'idea-chiave!</strong> «Imparare quando NON usare l'IA» per non spegnere le domande. Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML=`Le parole in <span style="color:var(--verde)">verde</span> erano da evidenziare; quelle con il bordo tratteggiato ti sono sfuggite. Le parole-chiave sono attorno a <em>«tempo»</em> e <em>«imparare quando NON usare l'IA»</em>.`;
+    }
+  });
+  zone.querySelector("#htReset").addEventListener("click",()=>{ W_hottext(zone,t,st); });
+}
+
+/* ---- FILL IN THE BLANKS ---- */
+function W_fill(zone,t,st){
+  const w=t.work;
+  const saved = st.answers || {};
+  let html = header(w) + `<div class="fb" id="fbBox">`;
+  w.template.forEach(seg=>{
+    if(seg.t) html += escapeHtml(seg.t);
+    else {
+      const b=w.blanks[seg.b];
+      const cur = (seg.b in saved)? saved[seg.b] : "";
+      html += `<select data-b="${seg.b}"><option value="" ${cur===""?"selected":""}>—</option>` +
+        b.opts.map((o,oi)=>`<option value="${oi}" ${cur===oi?"selected":""}>${escapeHtml(o)}</option>`).join("") +
+        `</select>`;
+    }
+  });
+  html += `</div><div class="actions">
+      <button class="btn btn-check" id="fbCheck">Controlla</button>
+      <button class="btn btn-ghost" id="fbReset">Ricomincia</button>
+    </div><div class="feedback" id="fbFb"></div>`;
+  zone.innerHTML = html;
+
+  let checked=false;
+  zone.querySelector("#fbCheck").addEventListener("click",()=>{
+    const selects=[...zone.querySelectorAll("#fbBox select")];
+    if(selects.some(s=>s.value==="")){ flash(zone.querySelector("#fbFb"),"saved","Completa tutti gli spazi prima di controllare."); return; }
+    let correct=0; const ansObj={};
+    selects.forEach(s=>{
+      const bi=+s.dataset.b, val=+s.value; ansObj[bi]=val;
+      s.classList.remove("ok","bad");
+      if(val===w.blanks[bi].a){ s.classList.add("ok"); correct++; }
+      else s.classList.add("bad");
+    });
+    checked=true; st.answers=ansObj; saveState();
+    const fb=zone.querySelector("#fbFb");
+    if(correct===w.blanks.length){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Testo completato!</strong> opinioni · verifica · fiducia · bene. Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML=`<strong>${correct}/${w.blanks.length}</strong> spazi corretti. Quelli in ambra vanno rivisti: rileggi le frasi in corsivo del testo.`;
+    }
+  });
+  zone.querySelector("#fbReset").addEventListener("click",()=>{ W_fill(zone,t,st); });
+}
+
+/* ---- REORDER ---- */
+function W_reorder(zone,t,st){
+  const w=t.work;
+  // order array of item indices
+  let order = (st.answers && st.answers.length===w.items.length)? st.answers.slice() : w.items.map((_,i)=>i);
+  let checked=false;
+  zone.innerHTML = header(w) + `<div id="roList"></div>
+    <div class="actions">
+      <button class="btn btn-check" id="roCheck">Controlla</button>
+      <button class="btn btn-ghost" id="roReset">Ricomincia</button>
+    </div><div class="feedback" id="roFb"></div>`;
+  const list=zone.querySelector("#roList");
+  function draw(){
+    list.innerHTML = order.map((itemIdx,pos)=>{
+      return `<div class="ro-item" data-pos="${pos}">
+        <span class="ro-pos">${pos+1}</span>
+        <span class="ro-txt">${w.items[itemIdx].t}</span>
+        <span class="ro-move">
+          <button data-pos="${pos}" data-dir="-1" ${pos===0?'disabled':''} aria-label="Su">${ICO.arrUp}</button>
+          <button data-pos="${pos}" data-dir="1" ${pos===order.length-1?'disabled':''} aria-label="Giù">${ICO.arrDown}</button>
+        </span>
+      </div>`;
+    }).join("");
+    list.querySelectorAll(".ro-move button").forEach(b=>b.addEventListener("click",()=>{
+      if(checked) return;
+      const p=+b.dataset.pos, d=+b.dataset.dir, np=p+d;
+      if(np<0||np>=order.length) return;
+      [order[p],order[np]]=[order[np],order[p]]; draw();
+    }));
+  }
+  draw();
+  zone.querySelector("#roCheck").addEventListener("click",()=>{
+    let ok=true;
+    order.forEach((itemIdx,pos)=>{
+      const row=list.querySelector(`.ro-item[data-pos="${pos}"]`);
+      if(w.items[itemIdx].o===pos+1) row.classList.add("ok");
+      else { row.classList.add("bad"); ok=false; }
+    });
+    checked=true; st.answers=order.slice(); saveState();
+    const fb=zone.querySelector("#roFb");
+    if(ok){
+      fb.className="feedback good show";
+      fb.innerHTML=`<strong>Ordine giusto!</strong> Dalle parole → allo sguardo → alla pace → al mondo. Mattone posato.`;
+      markComplete(t);
+    } else {
+      fb.className="feedback partial show";
+      fb.innerHTML=`Non ancora: le righe in ambra sono fuori posto. Parti dal gesto più piccolo (le tue parole) verso l'effetto più grande (il mondo).`;
+    }
+  });
+  zone.querySelector("#roReset").addEventListener("click",()=>{ st.answers=null; W_reorder(zone,t,st); });
+}
+
+/* ---- OPEN ENDED (riflessivo, no soluzione) ---- */
+function W_open(zone,t,st){
+  const w=t.work;
+  zone.innerHTML = header(w) +
+    `<textarea class="open-field" id="openF" placeholder="${escapeHtml(w.placeholder||'')}">${escapeHtml(st.reflection||'')}</textarea>
+     <p class="open-hint">${w.hint||''}</p>
+     <div class="actions"><button class="btn btn-gold" id="openSave">${ICO.pen} Salva la mia risposta</button></div>
+     <div class="feedback" id="openFb"></div>`;
+  zone.querySelector("#openSave").addEventListener("click",()=>{
+    const v=zone.querySelector("#openF").value.trim();
+    st.reflection=v; saveState();
+    const fb=zone.querySelector("#openFb");
+    if(v.length<3){ fb.className="feedback saved show"; fb.innerHTML="Scrivi almeno una frase: anche poche parole, ma tue."; return; }
+    st.done=true; saveState(); updateNavState();
+    fb.className="feedback good show";
+    fb.innerHTML="<strong>Riflessione salvata.</strong> Qui non c'è una risposta «giusta»: hai posato l'ultimo mattone con il tuo pensiero.";
   });
 }
 
-/* ============ SINCRONIZZAZIONE ============ */
-player.addEventListener('timeupdate',()=>{
-  if(bloccato) return;
-  const tc = player.currentTime;
-
-  // 1) domanda da aprire?
-  for(let i=0;i<DOMANDE.length;i++){
-    const d=DOMANDE[i];
-    if(!d.fatta && tc >= d.time){ apriDomanda(d,i); return; }
-  }
-  // 2) paragrafo corrente
-  let idx=-1;
-  for(let i=0;i<SEGMENTI.length;i++){ if(tc >= SEGMENTI[i].t) idx=i; else break; }
-  if(idx>=0 && idx!==segAttivo){ mostraParagrafo(idx); segAttivo=idx; }
-});
-
-player.addEventListener('ended', mostraFine);
-
-function fmt(s){ return String(Math.floor(s/60)).padStart(2,'0')+':'+String(Math.floor(s%60)).padStart(2,'0'); }
-
-function mostraParagrafo(idx){
-  const s = SEGMENTI[idx];
-  argLabel.innerHTML = '<span class="tc">'+fmt(s.t)+'</span> '+argomentoDi(s.n);
-  paragrafo.className='paragrafo';
-  void paragrafo.offsetWidth;            // reset animazione
-  paragrafo.classList.add('cambio');
-  paragrafo.textContent = s.txt;
-  // indice argomento corrente per la barra
-  const ai = ARGOMENTI.findIndex(a=>s.n>=a.da && s.n<=a.a);
-  aggiornaBarra(ai>0?ai-1:-1);
-}
-
-/* ============ DOMANDA INLINE ============ */
-function apriDomanda(d,i){
-  bloccato = true;
-  domandaAttiva = d;
-  player.pause();
-
-  // mostra l'ultimo paragrafo dell'argomento appena concluso
-  mostraParagrafo(d.mostraIdx);
-  segAttivo = d.mostraIdx;
-  aggiornaBarra(i);
-
-  domNum.textContent = 'Domanda '+(i+1)+' di '+DOMANDE.length;
-  domDom.textContent = d.dom;
-  domOpz.innerHTML='';
-  domFb.className='feedback';
-  domFb.textContent='';
-  btnCont.className='btn-continua';
-
-  d.opz.forEach((testo,k)=>{
-    const b=document.createElement('button');
-    b.className='opz';
-    b.innerHTML='<span class="lettera">'+LETTERE[k]+'</span><span>'+testo+'</span>';
-    b.addEventListener('click',()=>rispondi(d,k,b));
-    domOpz.appendChild(b);
+/* ============================================================
+   MONITORAGGIO DELLA COMPRENSIONE (metacognizione)
+   ============================================================ */
+function buildMonitor(t,st){
+  const m=document.createElement("div");
+  m.className="monitor";
+  m.innerHTML=`
+    <h4>${ICO.brain} Monitoraggio: cosa ho capito?</h4>
+    <p class="m-sub">Quanto è stato chiaro per te questo passaggio?</p>
+    <div class="scale" id="mScale">
+      <button data-v="1"><span class="s-n">1</span>Da rivedere</button>
+      <button data-v="2"><span class="s-n">2</span>Quasi chiaro</button>
+      <button data-v="3"><span class="s-n">3</span>Chiaro</button>
+    </div>
+    <p class="m-sub">${t.monitor}</p>
+    <textarea class="m-field" id="mField" placeholder="Scrivi qui la tua riflessione…">${escapeHtml(st.monitor||'')}</textarea>
+    <button class="btn btn-ghost" id="mSave" style="margin-top:10px">Salva il monitoraggio</button>
+    <p class="m-saved" id="mSaved"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg> Salvato</p>
+  `;
+  // scale
+  const paint=()=>m.querySelectorAll("#mScale button").forEach(b=>b.classList.toggle("sel", +b.dataset.v===st.scale));
+  m.querySelectorAll("#mScale button").forEach(b=>b.addEventListener("click",()=>{
+    st.scale=+b.dataset.v; saveState(); paint();
+  }));
+  paint();
+  m.querySelector("#mSave").addEventListener("click",()=>{
+    st.monitor=m.querySelector("#mField").value.trim(); saveState();
+    const s=m.querySelector("#mSaved"); s.classList.add("show");
+    setTimeout(()=>s.classList.remove("show"),2200);
   });
-
-  boxDom.classList.add('attiva');
-  boxDom.scrollIntoView({block:'end',behavior:'smooth'});
+  return m;
 }
 
-function rispondi(d,scelta,btn){
-  if(d.fatta) return;
-  const bottoni = domOpz.querySelectorAll('.opz');
-  if(scelta === d.risposta){
-    d.fatta=true; d.giusta=true;
-    btn.classList.add('giusta');
-    bottoni.forEach(b=>b.disabled=true);
-    domFb.className='feedback ok mostra';
-    domFb.innerHTML='✅ <b>Esatto!</b> '+d.spiega;
-    btnCont.classList.add('mostra');
-    aggiornaContatori();
-  } else {
-    d.primaSbagliata=true;
-    btn.classList.add('sbagliata'); btn.disabled=true;
-    domFb.className='feedback ko mostra';
-    domFb.innerHTML='❌ Non è la risposta giusta. Rileggi il passaggio qui sopra e riprova.';
+/* ============================================================
+   NICK + MODAL
+   ============================================================ */
+function setNick(v){
+  NICK = v;
+  localStorage.setItem("mh_nick", NICK);
+  loadState();
+  document.getElementById("nickName").textContent = NICK || "Ospite";
+  renderNav();
+  go(CURRENT);
+}
+function openNickModal(){
+  document.getElementById("nickInput").value = NICK;
+  document.getElementById("modalBg").classList.add("show");
+  document.getElementById("nickInput").focus();
+}
+function closeNickModal(){ document.getElementById("modalBg").classList.remove("show"); }
+
+document.getElementById("nickChip").addEventListener("click", openNickModal);
+document.getElementById("nickSave").addEventListener("click",()=>{
+  setNick(document.getElementById("nickInput").value.trim()); closeNickModal();
+});
+document.getElementById("nickReset").addEventListener("click",()=>{
+  if(confirm("Vuoi azzerare tutti i progressi e le risposte di «"+(NICK||"Ospite")+"»? L'operazione non si può annullare.")){
+    localStorage.removeItem(storeKey());
+    loadState(); renderNav(); go(CURRENT); closeNickModal();
   }
-}
-
-btnCont.addEventListener('click',()=>{
-  boxDom.classList.remove('attiva');
-  bloccato=false;
-  domandaAttiva=null;
-  player.play().catch(()=>{});
 });
+document.getElementById("modalBg").addEventListener("click",(e)=>{ if(e.target.id==="modalBg") closeNickModal(); });
+document.getElementById("nickInput").addEventListener("keydown",(e)=>{ if(e.key==="Enter"){ setNick(e.target.value.trim()); closeNickModal(); } });
 
-function aggiornaContatori(){
-  document.getElementById('contaRisposte').textContent = DOMANDE.filter(d=>d.fatta).length;
-  document.getElementById('contaCorrette').textContent = DOMANDE.filter(d=>d.giusta && !d.primaSbagliata).length;
-}
+/* ============================================================
+   UTILS
+   ============================================================ */
+function escapeHtml(s){ return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function flash(el,cls,msg){ el.className="feedback "+cls+" show"; el.innerHTML=msg; }
 
-/* ============ START / FINE ============ */
-document.getElementById('btnStart').addEventListener('click',()=>{
-  document.getElementById('schermoStart').style.display='none';
-  player.play().catch(()=>{});
-});
-
-function mostraFine(){
-  const tot = DOMANDE.length;
-  const corrette = DOMANDE.filter(d=>d.giusta && !d.primaSbagliata).length;
-  document.getElementById('punteggioFinale').textContent = corrette+' / '+tot;
-  const perc = corrette/tot;
-  let msg;
-  if(perc>=0.85) msg='Comprensione eccellente! Hai colto i punti chiave della puntata.';
-  else if(perc>=0.6) msg='Buon lavoro! Hai compreso bene la maggior parte dei contenuti.';
-  else msg='Hai completato la lezione. Ti consigliamo di rivedere alcuni passaggi del video.';
-  document.getElementById('messaggioFinale').textContent = msg;
-  document.getElementById('schermoFine').classList.add('mostra');
-}
-
-document.getElementById('btnRicomincia').addEventListener('click',()=>location.reload());
+/* ============================================================
+   INIT
+   ============================================================ */
+loadState();
+document.getElementById("nickName").textContent = NICK || "Ospite";
+renderNav();
+go("home");
 </script>
 </body>
 </html>
